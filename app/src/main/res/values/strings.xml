@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Baby Dots</string>
+    <string name="colour_scheme">Colour Scheme</string>
+    <string name="size">Size</string>
+    <string name="speed">Speed</string>
+</resources>

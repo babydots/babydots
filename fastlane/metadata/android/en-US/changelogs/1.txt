@@ -1,0 +1,6 @@
+First release of Baby Dots:
+
+ * Watch dancing dots with your baby.
+ * Choose from different sizes, colours, and speed.
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
