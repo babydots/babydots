@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <array name="dotsSchemeMonochrome">
+        <item>#000000</item>
+    </array>
+
+    <array name="dotsSchemeSplashOfColour">
+        <item>#000000</item>
+        <item>#000000</item>
+        <item>#000000</item>
+        <item>#000000</item>
+        <item>#FF0000</item>
+    </array>
+
+    <array name="dotsSchemeRainbow">
+        <item>#00FF00</item>
+        <item>#0000FF</item>
+        <item>#FFFF00</item>
+        <item>#FF00FF</item>
+        <item>#00FFFF</item>
+        <item>#FF0000</item>
+    </array>
+
+</resources>
