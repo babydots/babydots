@@ -1,5 +1,6 @@
 package com.serwylo.babydots
 
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -8,6 +9,9 @@ import android.view.MenuItem
 class MainActivity : AppCompatActivity() {
 
     private lateinit var dots: AnimatedDots
+    private lateinit var mediaPlayer: MediaPlayer
+
+    private var isMusicOn = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -21,19 +25,53 @@ class MainActivity : AppCompatActivity() {
             dots.restartDots()
         }
 
+        mediaPlayer = MediaPlayer.create(this, R.raw.classical)
+
     }
 
-    override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
+    override fun onResume() {
+        super.onResume()
+
+        if (isMusicOn) {
+            mediaPlayer.start();
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
+
+        setMenuIconForSound(menu?.findItem(R.id.menu_sound), isMusicOn)
+
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+            R.id.menu_sound -> onSoundSelected(item)
             R.id.menu_colour -> dots.changeColour()
             R.id.menu_size -> dots.changeSize()
             R.id.menu_speed -> dots.changeSpeed()
         }
         return false
+    }
+
+    private fun onSoundSelected(item: MenuItem) {
+        if (isMusicOn) {
+            mediaPlayer.pause()
+            isMusicOn = false
+        } else {
+            mediaPlayer.start()
+            isMusicOn = true
+        }
+
+        setMenuIconForSound(item, isMusicOn)
+    }
+
+    private fun setMenuIconForSound(item: MenuItem?, isMusicOn: Boolean) {
+        if (isMusicOn) {
+            item?.setIcon(R.drawable.ic_sound_on)
+        } else {
+            item?.setIcon(R.drawable.ic_sound_off)
+        }
     }
 }
