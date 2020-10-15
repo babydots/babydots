@@ -1,5 +1,6 @@
 package com.serwylo.babydots
 
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         mediaPlayer = MediaPlayer.create(this, R.raw.classical)
+        mediaPlayer.isLooping = true
 
         speedDial = findViewById<SpeedDialView>(R.id.speed_dial)
         speedDial.inflate(R.menu.speed_dial)
@@ -62,9 +64,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_sound -> onSoundSelected(item)
-            R.id.menu_colour -> dots.changeColour()
-            R.id.menu_size -> dots.changeSize()
-            R.id.menu_speed -> dots.changeSpeed()
+            R.id.menu_about -> startActivity(Intent(this, AboutActivity::class.java))
         }
         return false
     }

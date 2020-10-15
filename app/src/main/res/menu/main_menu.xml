@@ -5,7 +5,13 @@
     <item
         android:id="@+id/menu_sound"
         android:icon="@drawable/ic_sound_on"
-        android:title="@string/colour_scheme"
+        android:title="@string/mute"
         app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/ic_help"
+        android:title="@string/about"
+        app:showAsAction="ifRoom" />
 
 </menu>
