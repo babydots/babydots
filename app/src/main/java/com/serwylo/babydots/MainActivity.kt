@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         mediaPlayer = MediaPlayer.create(this, R.raw.classical)
+        mediaPlayer.isLooping = true
 
         speedDial = findViewById<SpeedDialView>(R.id.speed_dial)
         speedDial.inflate(R.menu.speed_dial)
