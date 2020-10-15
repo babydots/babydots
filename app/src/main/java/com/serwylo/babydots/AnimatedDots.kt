@@ -71,6 +71,12 @@ class AnimatedDots @JvmOverloads constructor(
             Colour.Rainbow to context.resources.getIntArray(R.array.dotsSchemeRainbow),
     )
 
+    private val dotStrokePaints = mapOf(
+        Colour.Monochrome to context.resources.getIntArray(R.array.dotsSchemeMonochromeBorders),
+        Colour.SplashOfColour to context.resources.getIntArray(R.array.dotsSchemeSplashOfColourBorders),
+        Colour.Rainbow to context.resources.getIntArray(R.array.dotsSchemeRainbowBorders),
+    )
+
     private val numDots = 15
 
     /**
@@ -80,9 +86,8 @@ class AnimatedDots @JvmOverloads constructor(
 
     init {
 
-        dotStrokePaint.color = Color.GRAY
         dotStrokePaint.style = Paint.Style.STROKE
-        dotStrokePaint.strokeWidth = 4f
+        dotStrokePaint.strokeWidth = 8f
 
         linePaint.style = Paint.Style.STROKE
         linePaint.color = Color.BLACK
@@ -121,7 +126,9 @@ class AnimatedDots @JvmOverloads constructor(
         }
 
         val colourScheme = dotFillPaints[colour] ?: intArrayOf(android.R.color.black)
+        val borderColourScheme = dotStrokePaints[colour] ?: intArrayOf(android.R.color.black)
         var colours = colourScheme.iterator()
+        var borderColours = borderColourScheme.iterator()
 
         dots.forEach { dot ->
             dot.pathMeasure.getPosTan(dot.pathMeasure.length * animator.animatedValue as Float, point, null)
@@ -130,9 +137,12 @@ class AnimatedDots @JvmOverloads constructor(
                 colours = colourScheme.iterator()
             }
 
-            val colour = colours.next()
+            if (!borderColours.hasNext()) {
+                borderColours = borderColourScheme.iterator()
+            }
 
-            dotFillPaint.color = colour
+            dotFillPaint.color = colours.next()
+            dotStrokePaint.color = borderColours.next()
 
             val x = point[0]
             val y = point[1]
