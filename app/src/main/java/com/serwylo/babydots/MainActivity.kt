@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import com.leinardi.android.speeddial.SpeedDialView
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var dots: AnimatedDots
     private lateinit var mediaPlayer: MediaPlayer
+    private lateinit var speedDial: SpeedDialView
 
     private var isMusicOn = false
 
@@ -23,9 +25,21 @@ class MainActivity : AppCompatActivity() {
 
         dots.setOnClickListener {
             dots.restartDots()
+            speedDial.close()
         }
 
         mediaPlayer = MediaPlayer.create(this, R.raw.classical)
+
+        speedDial = findViewById<SpeedDialView>(R.id.speed_dial)
+        speedDial.inflate(R.menu.speed_dial)
+        speedDial.setOnActionSelectedListener { item ->
+            when (item.id) {
+                R.id.menu_colour -> dots.changeColour()
+                R.id.menu_size -> dots.changeSize()
+                R.id.menu_speed -> dots.changeSpeed()
+            }
+            true // Prevents the menu from closing when an option is selected.
+        }
 
     }
 
@@ -33,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
 
         if (isMusicOn) {
-            mediaPlayer.start();
+            mediaPlayer.start()
         }
     }
 
