@@ -8,22 +8,4 @@
         android:title="@string/colour_scheme"
         app:showAsAction="always" />
 
-    <item
-        android:id="@+id/menu_colour"
-        android:icon="@drawable/ic_colour"
-        android:title="@string/colour_scheme"
-        app:showAsAction="ifRoom" />
-
-    <item
-        android:id="@+id/menu_size"
-        android:icon="@drawable/ic_size"
-        android:title="@string/size"
-        app:showAsAction="ifRoom" />
-
-    <item
-        android:id="@+id/menu_speed"
-        android:icon="@drawable/ic_speed"
-        android:title="@string/speed"
-        app:showAsAction="ifRoom" />
-
 </menu>

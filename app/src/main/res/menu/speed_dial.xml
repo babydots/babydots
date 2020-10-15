@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_colour"
+        android:icon="@drawable/ic_colour"
+        android:title="@string/colour_scheme" />
+
+    <item
+        android:id="@+id/menu_size"
+        android:icon="@drawable/ic_size"
+        android:title="@string/size" />
+
+    <item
+        android:id="@+id/menu_speed"
+        android:icon="@drawable/ic_speed"
+        android:title="@string/speed" />
+
+</menu>
