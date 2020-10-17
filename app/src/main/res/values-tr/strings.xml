@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="about_credits">Emeği geçenler</string>
+    <string name="about_suggestions">Öneriler ve hata bildirimleri</string>
+    <string name="attribution"><b>Müzik - </b> John Harrison w/ Wichita State University Chamber - Vivaldi Spring mvt 1 Allegro - <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
+    <string name="url_github">https://github.com/babydots/babydots</string>
+    <string name="about">Hakkında</string>
+    <string name="mute">Sessiz</string>
+    <string name="speed">Hız</string>
+    <string name="size">Boyut</string>
+    <string name="colour_scheme">Renk Düzeni</string>
+    <string name="app_name">Baby Dots</string>
+</resources>
