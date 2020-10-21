@@ -5,15 +5,15 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
-    <array name="dotsSchemeMonochrome">
+    <array name="scheme_monochrome_dots">
         <item>#000000</item>
     </array>
 
-    <array name="dotsSchemeMonochromeBorders">
+    <array name="scheme_monochrome_dot_borders">
         <item>#555555</item>
     </array>
 
-    <array name="dotsSchemeSplashOfColour">
+    <array name="scheme_splash_of_colour_dots">
         <item>#000000</item>
         <item>#000000</item>
         <item>#000000</item>
@@ -21,7 +21,7 @@
         <item>#FF0000</item>
     </array>
 
-    <array name="dotsSchemeSplashOfColourBorders">
+    <array name="scheme_splash_of_colour_dot_borders">
         <item>#555555</item>
         <item>#555555</item>
         <item>#555555</item>
@@ -29,7 +29,7 @@
         <item>#BB0000</item>
     </array>
 
-    <array name="dotsSchemeRainbow">
+    <array name="scheme_rainbow_dots">
         <item>#00FF00</item>
         <item>#0000FF</item>
         <item>#FFFF00</item>
@@ -38,7 +38,7 @@
         <item>#FF0000</item>
     </array>
 
-    <array name="dotsSchemeRainbowBorders">
+    <array name="scheme_rainbow_dot_borders">
         <item>#00BB00</item>
         <item>#0000BB</item>
         <item>#BBBB00</item>

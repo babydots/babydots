@@ -70,15 +70,15 @@ class AnimatedDots @JvmOverloads constructor(
     private val linePaint = Paint()
 
     private val dotFillPaints = mapOf(
-            ColourScheme.Monochrome to context.resources.getIntArray(R.array.dotsSchemeMonochrome),
-            ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.dotsSchemeSplashOfColour),
-            ColourScheme.Rainbow to context.resources.getIntArray(R.array.dotsSchemeRainbow),
+            ColourScheme.Monochrome to context.resources.getIntArray(R.array.scheme_monochrome_dots),
+            ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.scheme_splash_of_colour_dots),
+            ColourScheme.Rainbow to context.resources.getIntArray(R.array.scheme_rainbow_dots),
     )
 
     private val dotStrokePaints = mapOf(
-        ColourScheme.Monochrome to context.resources.getIntArray(R.array.dotsSchemeMonochromeBorders),
-        ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.dotsSchemeSplashOfColourBorders),
-        ColourScheme.Rainbow to context.resources.getIntArray(R.array.dotsSchemeRainbowBorders),
+        ColourScheme.Monochrome to context.resources.getIntArray(R.array.scheme_monochrome_dot_borders),
+        ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.scheme_splash_of_colour_dot_borders),
+        ColourScheme.Rainbow to context.resources.getIntArray(R.array.scheme_rainbow_dot_borders),
     )
 
     private val numDots = 15
