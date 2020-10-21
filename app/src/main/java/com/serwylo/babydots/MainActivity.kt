@@ -109,7 +109,9 @@ class MainActivity : AppCompatActivity() {
         dots.colourScheme = when (dots.colourScheme) {
             AnimatedDots.ColourScheme.Rainbow -> AnimatedDots.ColourScheme.SplashOfColour
             AnimatedDots.ColourScheme.SplashOfColour -> AnimatedDots.ColourScheme.Monochrome
-            AnimatedDots.ColourScheme.Monochrome -> AnimatedDots.ColourScheme.Rainbow
+            AnimatedDots.ColourScheme.Monochrome -> AnimatedDots.ColourScheme.Dark
+            AnimatedDots.ColourScheme.Dark -> AnimatedDots.ColourScheme.Neon
+            AnimatedDots.ColourScheme.Neon -> AnimatedDots.ColourScheme.Rainbow
         }
 
         Preferences.setColourScheme(this, dots.colourScheme)

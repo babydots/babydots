@@ -18,6 +18,8 @@ class AnimatedDots @JvmOverloads constructor(
         Monochrome,
         SplashOfColour,
         Rainbow,
+        Dark,
+        Neon,
     }
 
     enum class Size {
@@ -70,15 +72,27 @@ class AnimatedDots @JvmOverloads constructor(
     private val linePaint = Paint()
 
     private val dotFillPaints = mapOf(
-            ColourScheme.Monochrome to context.resources.getIntArray(R.array.scheme_monochrome_dots),
-            ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.scheme_splash_of_colour_dots),
-            ColourScheme.Rainbow to context.resources.getIntArray(R.array.scheme_rainbow_dots),
+        ColourScheme.Monochrome to context.resources.getIntArray(R.array.scheme_monochrome_dots),
+        ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.scheme_splash_of_colour_dots),
+        ColourScheme.Rainbow to context.resources.getIntArray(R.array.scheme_rainbow_dots),
+        ColourScheme.Dark to context.resources.getIntArray(R.array.scheme_dark_dots),
+        ColourScheme.Neon to context.resources.getIntArray(R.array.scheme_neon_dots),
     )
 
     private val dotStrokePaints = mapOf(
         ColourScheme.Monochrome to context.resources.getIntArray(R.array.scheme_monochrome_dot_borders),
         ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.scheme_splash_of_colour_dot_borders),
         ColourScheme.Rainbow to context.resources.getIntArray(R.array.scheme_rainbow_dot_borders),
+        ColourScheme.Dark to context.resources.getIntArray(R.array.scheme_dark_dot_borders),
+        ColourScheme.Neon to context.resources.getIntArray(R.array.scheme_neon_dot_borders),
+    )
+
+    private val backgroundPaints = mapOf(
+        ColourScheme.Monochrome to R.color.scheme_monochrome_background,
+        ColourScheme.SplashOfColour to R.color.scheme_splash_of_colour_background,
+        ColourScheme.Rainbow to R.color.scheme_rainbow_background,
+        ColourScheme.Dark to R.color.scheme_dark_background,
+        ColourScheme.Neon to R.color.scheme_neon_background,
     )
 
     private val numDots = 15
@@ -121,7 +135,7 @@ class AnimatedDots @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 
-        canvas?.drawColor(Color.WHITE)
+        canvas?.drawColor(context.resources.getColor(backgroundPaints[colourScheme] ?: android.R.color.white))
 
         val radius = when (size) {
             Size.Large -> dotRadius * 1.5

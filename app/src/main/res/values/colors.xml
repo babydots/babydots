@@ -5,6 +5,8 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+    <color name="scheme_monochrome_background">#FFFFFF</color>
+
     <array name="scheme_monochrome_dots">
         <item>#000000</item>
     </array>
@@ -12,6 +14,8 @@
     <array name="scheme_monochrome_dot_borders">
         <item>#555555</item>
     </array>
+
+    <color name="scheme_splash_of_colour_background">#FFFFFF</color>
 
     <array name="scheme_splash_of_colour_dots">
         <item>#000000</item>
@@ -29,6 +33,8 @@
         <item>#BB0000</item>
     </array>
 
+    <color name="scheme_rainbow_background">#FFFFFF</color>
+
     <array name="scheme_rainbow_dots">
         <item>#00FF00</item>
         <item>#0000FF</item>
@@ -45,6 +51,31 @@
         <item>#BB00BB</item>
         <item>#00BBBB</item>
         <item>#BB0000</item>
+    </array>
+
+    <color name="scheme_dark_background">#000000</color>
+
+    <array name="scheme_dark_dots">
+        <item>#FFFFFF</item>
+    </array>
+
+    <array name="scheme_dark_dot_borders">
+        <item>#BBBBBB</item>
+    </array>
+
+    <color name="scheme_neon_background">#000000</color>
+
+    <array name="scheme_neon_dots">
+        <item>#00FF00</item>
+        <item>#0000FF</item>
+        <item>#FFFF00</item>
+        <item>#FF00FF</item>
+        <item>#00FFFF</item>
+        <item>#FF0000</item>
+    </array>
+
+    <array name="scheme_neon_dot_borders">
+        <item>#FFFFFF</item>
     </array>
 
 </resources>
