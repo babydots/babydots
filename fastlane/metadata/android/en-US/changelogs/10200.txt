@@ -1,0 +1,9 @@
+Translations, themes, and general improvements:
+
+* Translated to Santali (thanks Prasanta-Hembram!)
+* Two new themes (dark + neon)
+* Remember selected preferences
+* Wake lock (don't turn screen off)
+* Randomise speed of each dot
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
