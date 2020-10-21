@@ -55,7 +55,11 @@ class AnimatedDots @JvmOverloads constructor(
 
     companion object {
         const val DOT_RADIUS = 120f
-        const val DURATION = 12000
+
+        const val DURATION = 20000
+
+        const val PATH_MIN_POINTS = 4
+        const val PATH_MAX_POINTS = 12
     }
 
     // These items are used regularly in the onDraw method, so to prevent too many object
@@ -131,6 +135,10 @@ class AnimatedDots @JvmOverloads constructor(
         var borderColours = borderColourScheme.iterator()
 
         dots.forEach { dot ->
+            if (drawPaths) {
+                canvas?.drawPath(dot.path, linePaint)
+            }
+
             dot.pathMeasure.getPosTan(dot.pathMeasure.length * animator.animatedValue as Float, point, null)
 
             if (!colours.hasNext()) {
@@ -151,10 +159,6 @@ class AnimatedDots @JvmOverloads constructor(
                 canvas?.drawCircle(x, y, radius.toFloat(), dotFillPaint)
                 canvas?.drawCircle(x, y, radius.toFloat(), dotStrokePaint)
             }
-
-            if (drawPaths) {
-                canvas?.drawPath(dot.path, linePaint)
-            }
         }
     }
 
@@ -170,7 +174,7 @@ class AnimatedDots @JvmOverloads constructor(
         var x = startX
         var y = startY
 
-        val numPoints = 4
+        val numPoints = (Math.random() * (Companion.PATH_MAX_POINTS - Companion.PATH_MIN_POINTS) + Companion.PATH_MIN_POINTS).toInt()
 
         for (i in 0..numPoints * 3) {
             x += Math.random().toFloat() * maxMovement - maxMovement / 2
