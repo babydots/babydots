@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         dots = findViewById(R.id.dots)
+        dots.colourScheme = Preferences.getColourScheme(this)
+        dots.speed = Preferences.getSpeed(this)
+        dots.size = Preferences.getSize(this)
 
         dots.setOnClickListener {
             dots.restartDots()
@@ -36,9 +39,9 @@ class MainActivity : AppCompatActivity() {
         speedDial.inflate(R.menu.speed_dial)
         speedDial.setOnActionSelectedListener { item ->
             when (item.id) {
-                R.id.menu_colour -> dots.changeColour()
-                R.id.menu_size -> dots.changeSize()
-                R.id.menu_speed -> dots.changeSpeed()
+                R.id.menu_colour -> changeColour()
+                R.id.menu_size -> changeSize()
+                R.id.menu_speed -> changeSpeed()
             }
             true // Prevents the menu from closing when an option is selected.
         }
@@ -87,5 +90,35 @@ class MainActivity : AppCompatActivity() {
         } else {
             item?.setIcon(R.drawable.ic_sound_off)
         }
+    }
+
+    private fun changeSize() {
+        dots.size = when (dots.size) {
+            AnimatedDots.Size.Large -> AnimatedDots.Size.Small
+            AnimatedDots.Size.Medium -> AnimatedDots.Size.Large
+            else -> AnimatedDots.Size.Medium
+        }
+
+        Preferences.setSize(this, dots.size)
+    }
+
+    private fun changeColour() {
+        dots.colourScheme = when (dots.colourScheme) {
+            AnimatedDots.ColourScheme.Rainbow -> AnimatedDots.ColourScheme.SplashOfColour
+            AnimatedDots.ColourScheme.SplashOfColour -> AnimatedDots.ColourScheme.Monochrome
+            AnimatedDots.ColourScheme.Monochrome -> AnimatedDots.ColourScheme.Rainbow
+        }
+
+        Preferences.setColourScheme(this, dots.colourScheme)
+    }
+
+    private fun changeSpeed() {
+        dots.speed = when (dots.speed) {
+            AnimatedDots.Speed.Slow -> AnimatedDots.Speed.Normal
+            AnimatedDots.Speed.Normal -> AnimatedDots.Speed.Fast
+            AnimatedDots.Speed.Fast -> AnimatedDots.Speed.Slow
+        }
+
+        Preferences.setSpeed(this, dots.speed)
     }
 }
