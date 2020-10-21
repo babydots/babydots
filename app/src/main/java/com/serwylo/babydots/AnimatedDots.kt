@@ -14,7 +14,7 @@ class AnimatedDots @JvmOverloads constructor(
         defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
-    enum class Colour {
+    enum class ColourScheme {
         Monochrome,
         SplashOfColour,
         Rainbow,
@@ -32,9 +32,9 @@ class AnimatedDots @JvmOverloads constructor(
         Fast,
     }
 
-    private var size: Size = Size.Medium
-    private var colour: Colour = Colour.SplashOfColour
-    private var speed: Speed = Speed.Normal
+    var size: Size = Size.Medium
+    var colourScheme: ColourScheme = ColourScheme.SplashOfColour
+    var speed: Speed = Speed.Normal
         set(value) {
             val current = animator.animatedValue as Float
 
@@ -66,15 +66,15 @@ class AnimatedDots @JvmOverloads constructor(
     private val linePaint = Paint()
 
     private val dotFillPaints = mapOf(
-            Colour.Monochrome to context.resources.getIntArray(R.array.dotsSchemeMonochrome),
-            Colour.SplashOfColour to context.resources.getIntArray(R.array.dotsSchemeSplashOfColour),
-            Colour.Rainbow to context.resources.getIntArray(R.array.dotsSchemeRainbow),
+            ColourScheme.Monochrome to context.resources.getIntArray(R.array.dotsSchemeMonochrome),
+            ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.dotsSchemeSplashOfColour),
+            ColourScheme.Rainbow to context.resources.getIntArray(R.array.dotsSchemeRainbow),
     )
 
     private val dotStrokePaints = mapOf(
-        Colour.Monochrome to context.resources.getIntArray(R.array.dotsSchemeMonochromeBorders),
-        Colour.SplashOfColour to context.resources.getIntArray(R.array.dotsSchemeSplashOfColourBorders),
-        Colour.Rainbow to context.resources.getIntArray(R.array.dotsSchemeRainbowBorders),
+        ColourScheme.Monochrome to context.resources.getIntArray(R.array.dotsSchemeMonochromeBorders),
+        ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.dotsSchemeSplashOfColourBorders),
+        ColourScheme.Rainbow to context.resources.getIntArray(R.array.dotsSchemeRainbowBorders),
     )
 
     private val numDots = 15
@@ -125,8 +125,8 @@ class AnimatedDots @JvmOverloads constructor(
             else -> dotRadius
         }
 
-        val colourScheme = dotFillPaints[colour] ?: intArrayOf(android.R.color.black)
-        val borderColourScheme = dotStrokePaints[colour] ?: intArrayOf(android.R.color.black)
+        val colourScheme = dotFillPaints[colourScheme] ?: intArrayOf(android.R.color.black)
+        val borderColourScheme = dotStrokePaints[this.colourScheme] ?: intArrayOf(android.R.color.black)
         var colours = colourScheme.iterator()
         var borderColours = borderColourScheme.iterator()
 
@@ -192,30 +192,6 @@ class AnimatedDots @JvmOverloads constructor(
         path.quadTo(startX, startY, startX, startY)
 
         return path
-    }
-
-    fun changeSize() {
-        size = when (size) {
-            Size.Large -> Size.Small
-            Size.Medium -> Size.Large
-            else -> Size.Medium
-        }
-    }
-
-    fun changeColour() {
-        colour = when (colour) {
-            Colour.Rainbow -> Colour.SplashOfColour
-            Colour.SplashOfColour -> Colour.Monochrome
-            Colour.Monochrome -> Colour.Rainbow
-        }
-    }
-
-    fun changeSpeed() {
-        speed = when (speed) {
-            Speed.Slow -> Speed.Normal
-            Speed.Normal -> Speed.Fast
-            Speed.Fast -> Speed.Slow
-        }
     }
 
     data class Dot(val path: Path) {
