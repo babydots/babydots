@@ -11,12 +11,12 @@ import mehdi.sakout.fancybuttons.FancyButton
 class AboutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
         setContentView(R.layout.activity_about)
+
+        setSupportActionBar(findViewById(R.id.toolbar))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         findViewById<FancyButton>(R.id.button_github).setOnClickListener {
             val uri = Uri.parse(getString(R.string.url_github))
