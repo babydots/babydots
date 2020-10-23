@@ -6,9 +6,11 @@ import android.os.Bundle
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.leinardi.android.speeddial.SpeedDialActionItem
 import com.leinardi.android.speeddial.SpeedDialView
 import java.util.*
 
@@ -22,6 +24,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var timerWrapper: View
     private lateinit var timerLabel: TextView
     private lateinit var timerIcon: ImageView
+
+    /**
+     * Remember this item so that we can swap the "Sleep timer" with the "Stop timer".
+     */
+    private lateinit var sleepTimerMenuItem: SpeedDialActionItem
 
     private var isMusicOn = false
         set(value) {
@@ -59,13 +66,34 @@ class MainActivity : AppCompatActivity() {
         mediaPlayer.isLooping = true
 
         speedDial = findViewById(R.id.speed_dial)
-        speedDial.inflate(R.menu.speed_dial)
+
+        sleepTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_timer, R.drawable.ic_timer)
+            .setLabel(R.string.sleep_timer)
+            .create()
+
+        speedDial.addActionItem(sleepTimerMenuItem)
+
+        speedDial.addActionItem(
+            SpeedDialActionItem.Builder(R.id.menu_colour, R.drawable.ic_colour)
+                .setLabel(R.string.colour_scheme)
+                .create())
+
+        speedDial.addActionItem(
+            SpeedDialActionItem.Builder(R.id.menu_size, R.drawable.ic_size)
+                .setLabel(R.string.size)
+                .create())
+
+        speedDial.addActionItem(
+            SpeedDialActionItem.Builder(R.id.menu_speed, R.drawable.ic_speed)
+                .setLabel(R.string.speed)
+                .create())
+
         speedDial.setOnActionSelectedListener { item ->
             when (item.id) {
                 R.id.menu_colour -> changeColour()
                 R.id.menu_size -> changeSize()
                 R.id.menu_speed -> changeSpeed()
-                R.id.menu_timer -> startTimer()
+                R.id.menu_timer -> toggleTimer()
             }
             true // Prevents the menu from closing when an option is selected.
         }
@@ -174,11 +202,21 @@ class MainActivity : AppCompatActivity() {
         return (Preferences.getSleepTimerMins(this) * 60 * 1000).toLong()
     }
 
+    private fun toggleTimer() {
+        if (timerCounter > 0) {
+            cancelTimer()
+        } else {
+            startTimer()
+        }
+    }
+
     private fun startTimer() {
         timer?.cancel()
-        timerCounter = 0
+        timerCounter = 1000
 
         resumeTimer()
+
+        Toast.makeText(this, R.string.sleep_timer_started_help_text, Toast.LENGTH_SHORT).show()
     }
 
     private fun resumeTimer() {
@@ -199,6 +237,11 @@ class MainActivity : AppCompatActivity() {
 
         runOnUiThread {
             timerWrapper.visibility = View.VISIBLE
+
+            val stopTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_timer, R.drawable.ic_stop_sleep_timer).setLabel(R.string.stop_timer_button).create()
+            speedDial.replaceActionItem(sleepTimerMenuItem, stopTimerMenuItem)
+            sleepTimerMenuItem = stopTimerMenuItem
+
             updateTimer()
         }
     }
@@ -233,6 +276,10 @@ class MainActivity : AppCompatActivity() {
         timerCounter = 0
 
         timerWrapper.visibility = View.GONE
+
+        val startTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_timer, R.drawable.ic_timer).setLabel(R.string.sleep_timer).create()
+        speedDial.replaceActionItem(sleepTimerMenuItem, startTimerMenuItem)
+        sleepTimerMenuItem = startTimerMenuItem
     }
 
     private fun pauseTimer() {
