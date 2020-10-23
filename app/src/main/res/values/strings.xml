@@ -21,4 +21,5 @@
         <item quantity="other">%d minutes</item>
     </plurals>
     <string name="stop_timer_button">Stop timer</string>
+    <string name="sleep_timer_started_help_text">Touch the sleep timer for more info.</string>
 </resources>
