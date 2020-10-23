@@ -3,10 +3,7 @@ package com.serwylo.babydots
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
-import android.view.WindowManager
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
@@ -36,8 +33,6 @@ class MainActivity : AppCompatActivity() {
 
             field = value
         }
-
-    private val sleepTimer:Long = (10 * 60 * 1000).toLong()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -84,6 +79,11 @@ class MainActivity : AppCompatActivity() {
             promptToStopTimer()
         }
 
+        timerWrapper.setOnLongClickListener {
+            startSleepTime()
+            true
+        }
+
         sleepTimeWrapper.setOnClickListener {
             promptToCancelSleepTime()
         }
@@ -122,6 +122,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_sound -> onSoundSelected(item)
+            R.id.menu_settings -> startActivity(Intent(this, SettingsActivity::class.java))
             R.id.menu_about -> startActivity(Intent(this, AboutActivity::class.java))
         }
         return false
@@ -174,6 +175,10 @@ class MainActivity : AppCompatActivity() {
     private var timer: Timer? = null
     private var timerCounter = 0L
 
+    private fun sleepTimer(): Long {
+        return (Preferences.getSleepTimerMins(this) * 60 * 1000).toLong()
+    }
+
     private fun startTimer() {
         timer?.cancel()
         timerCounter = 0
@@ -188,7 +193,7 @@ class MainActivity : AppCompatActivity() {
             override fun run() {
                 timerCounter += 1000
                 runOnUiThread {
-                    if (timerCounter > sleepTimer) {
+                    if (timerCounter > sleepTimer()) {
                         startSleepTime()
                     } else {
                         updateTimer()
@@ -207,15 +212,16 @@ class MainActivity : AppCompatActivity() {
         AlertDialog.Builder(this)
             .setTitle(R.string.sleep_timer)
             .setMessage(getString(R.string.sleep_timer_description))
-            .setNegativeButton("Back", null)
-            .setPositiveButton("Stop timer") { _, _ -> cancelTimer() }
+            .setNegativeButton(R.string.back, null)
+            .setNeutralButton(R.string.settings) { _, _ -> startActivity(Intent(this, SettingsActivity::class.java))}
+            .setPositiveButton(R.string.stop_timer_button) { _, _ -> cancelTimer() }
             .create()
             .show()
     }
 
     private fun updateTimer() {
 
-        val timeLeft = sleepTimer - timerCounter
+        val timeLeft = sleepTimer() - timerCounter
 
         val seconds = (timeLeft / 1000) % 60
         val minutes = (timeLeft / 1000) / 60
@@ -264,6 +270,8 @@ class MainActivity : AppCompatActivity() {
         speedDial.visibility = View.INVISIBLE
 
         window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LOW_PROFILE
 
     }
 
@@ -272,7 +280,7 @@ class MainActivity : AppCompatActivity() {
             .setTitle(R.string.sleep_time)
             .setMessage(getString(R.string.stop_sleep_time_message))
             .setNegativeButton(getString(R.string.back), null)
-            .setPositiveButton(getString(R.string.stop_sleep_time_button)) { _, _ -> cancelSleepTime() }
+            .setPositiveButton(getString(R.string.resume_dots_button)) { _, _ -> cancelSleepTime() }
             .create()
             .show()
     }
@@ -286,6 +294,8 @@ class MainActivity : AppCompatActivity() {
         speedDial.visibility = View.VISIBLE
 
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_VISIBLE
     }
 
     override fun onDestroy() {
