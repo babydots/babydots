@@ -10,4 +10,17 @@
     <string name="speed">Hastighet</string>
     <string name="size">Størrelse</string>
     <string name="app_name">Babydotter</string>
+    <string name="sleep_timer_started_help_text">Trykk på tidsuret for mer info.</string>
+    <string name="stop_timer_button">Stopp tidsur</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d minutt</item>
+        <item quantity="other">%d minutter</item>
+    </plurals>
+    <string name="settings">Innstillinger</string>
+    <string name="sleep_timer_description">Når tidsuret utløper, dimmes skjermen, musikken pauses, og skjermen skrur seg av etter dette.</string>
+    <string name="stop_sleep_time_message">Gjenoppta dotter, fjern søvntidsuret, og avslutt søvntid.</string>
+    <string name="back">Tilbake</string>
+    <string name="resume_dots_button">Gjenoppta dotter</string>
+    <string name="sleep_time">Søvntid</string>
+    <string name="sleep_timer">Søvntidsur</string>
 </resources>
