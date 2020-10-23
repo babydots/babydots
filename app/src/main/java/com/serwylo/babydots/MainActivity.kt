@@ -3,6 +3,7 @@ package com.serwylo.babydots
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.os.Handler
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
@@ -77,11 +78,6 @@ class MainActivity : AppCompatActivity() {
 
         timerWrapper.setOnClickListener {
             promptToStopTimer()
-        }
-
-        timerWrapper.setOnLongClickListener {
-            startSleepTime()
-            true
         }
 
         sleepTimeWrapper.setOnClickListener {
