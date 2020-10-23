@@ -27,10 +27,10 @@ class SettingsActivity : AppCompatActivity() {
             addPreferencesFromResource(R.xml.settings)
 
             val sleepTimer = findPreference<ListPreference>("sleep_timer")
-            sleepTimer?.setDefaultValue(sleepTimerMinutes[0].toString())
+            sleepTimer?.setDefaultValue(Preferences.DEFAULT_SLEEP_TIMER.toString())
             sleepTimer?.entries = sleepTimerMinutes.map { getString(R.string.pref_x_minutes, it) }.toTypedArray()
             sleepTimer?.entryValues = sleepTimerMinutes.map { it.toString() }.toTypedArray()
-            sleepTimer?.summaryProvider = Preference.SummaryProvider<ListPreference> { getString(R.string.pref_x_minutes, it.value.toInt()) }
+            sleepTimer?.summaryProvider = Preference.SummaryProvider<ListPreference> { getString(R.string.pref_x_minutes, it.value?.toInt() ?: Preferences.DEFAULT_SLEEP_TIMER) }
         }
 
     }

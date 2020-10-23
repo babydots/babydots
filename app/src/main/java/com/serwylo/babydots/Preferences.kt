@@ -19,6 +19,7 @@ object Preferences {
      * This is defined in the settings.xml, others are just managed by this class.
      */
     private const val PREF_SLEEP_TIMER = "sleep_timer"
+    public const val DEFAULT_SLEEP_TIMER = 10
 
     fun getSpeed(context: Context): AnimatedDots.Speed {
         return try {
@@ -49,7 +50,10 @@ object Preferences {
     }
 
     fun getSleepTimerMins(context: Context): Int {
-        return PreferenceManager.getDefaultSharedPreferences(context).getString(PREF_SLEEP_TIMER, "3")?.toInt() ?: 3;
+        val pref = PreferenceManager.getDefaultSharedPreferences(context).getString(PREF_SLEEP_TIMER, DEFAULT_SLEEP_TIMER.toString())
+        val int = pref?.toInt()
+        val number = int ?: 10
+        return number
     }
 
     fun setSpeed(context: Context, speed: AnimatedDots.Speed) {
