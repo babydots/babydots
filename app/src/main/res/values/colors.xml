@@ -64,6 +64,7 @@
     </array>
 
     <color name="scheme_neon_background">#000000</color>
+    <color name="timer_background">#5C000000</color>
 
     <array name="scheme_neon_dots">
         <item>#00FF00</item>

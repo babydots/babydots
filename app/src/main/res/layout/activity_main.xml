@@ -4,12 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
     tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <com.serwylo.babydots.AnimatedDots
         android:id="@+id/dots"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <com.leinardi.android.speeddial.SpeedDialView
         android:id="@+id/speed_dial"
@@ -21,5 +34,70 @@
         app:sdMainFabOpenedBackgroundColor="@color/colorPrimary"
         app:sdMainFabClosedBackgroundColor="@color/colorPrimary"
     />
+
+    <LinearLayout
+        android:id="@+id/timer_wrapper"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/timer_background"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/timer_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_timer"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="03:45"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sleep_time_wrapper"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/timer_background"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_sleep"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sleep_time"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
