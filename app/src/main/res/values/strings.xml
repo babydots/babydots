@@ -16,6 +16,9 @@
     <string name="stop_sleep_time_message">Resume dots, remove the sleep timer, and exit sleep time.</string>
     <string name="sleep_timer_description">When the timer reaches zero, the screen will dim, the music will pause, and the screen will turn off soon after.</string>
     <string name="settings">Settings</string>
-    <string name="pref_x_minutes">%1$d minutes</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
     <string name="stop_timer_button">Stop timer</string>
 </resources>

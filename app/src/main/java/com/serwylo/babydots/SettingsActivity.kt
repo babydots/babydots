@@ -28,9 +28,12 @@ class SettingsActivity : AppCompatActivity() {
 
             val sleepTimer = findPreference<ListPreference>("sleep_timer")
             sleepTimer?.setDefaultValue(Preferences.DEFAULT_SLEEP_TIMER.toString())
-            sleepTimer?.entries = sleepTimerMinutes.map { getString(R.string.pref_x_minutes, it) }.toTypedArray()
+            sleepTimer?.entries = sleepTimerMinutes.map { resources.getQuantityString(R.plurals.pref_x_minutes, it, it) }.toTypedArray()
             sleepTimer?.entryValues = sleepTimerMinutes.map { it.toString() }.toTypedArray()
-            sleepTimer?.summaryProvider = Preference.SummaryProvider<ListPreference> { getString(R.string.pref_x_minutes, it.value?.toInt() ?: Preferences.DEFAULT_SLEEP_TIMER) }
+            sleepTimer?.summaryProvider = Preference.SummaryProvider<ListPreference> {
+                val mins = it.value?.toInt() ?: Preferences.DEFAULT_SLEEP_TIMER
+                resources.getQuantityString(R.plurals.pref_x_minutes, mins, mins)
+            }
         }
 
     }
