@@ -1,0 +1,3 @@
+Ajout de musique classique (par défaut en sourdine), amélioration de l'interface utilisateur pour la personnalisation.
+
+Veuillez fournir vos remarques ou signaler tout problème sur le suivi des problèmes à l'adresse https://github.com/babydots/babydots/issues.

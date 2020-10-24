@@ -1,0 +1,17 @@
+Traductions :
+* finnois (merci Edanas)
+* français (merci Edanas)
+* allemand (merci Edanas)
+* italien (merci Edanas)
+* norvégien bokmål (merci kingu)
+* santali (merci Prasanta-Hembram)
+* turc (merci ersen)
+
+Améliorations :
+
+* Deux nouveaux thèmes (sombre + néon)
+* Se rappelle les préférences
+* Verrouillage écran (empêche l'écran de s'éteindre)
+* Vitesse aléatoire pour chaque point
+
+Veuillez envoyer remarques et signalements sur cette page : https://github.com/babydots/babydots/issues.
