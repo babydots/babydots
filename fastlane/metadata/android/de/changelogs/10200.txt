@@ -1,0 +1,17 @@
+Übersetzungen:
+* Finnisch (danke Edanas)
+* Französisch (danke Edanas)
+* Deutsch (danke Edanas)
+* Italienisch (danke Edanas)
+* Norwegisch (danke kingu)
+* Santali (danke Prasanta-Hembram)
+* Türkisch (danke ersen)
+
+Verbesserungen:
+
+* Zwei neue Themen (dunkel + neon)
+* Erinnert sich an ausgewählten Einstellungen
+* „Bildschirm nicht ausschalten“-System
+* Zufällige Geschwindigkeit für jeden Punkt
+
+Bitte senden Sie Ihre Rückmeldung und Fehlerberichte hier: https://github.com/babydots/babydots/issues
