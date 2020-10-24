@@ -10,4 +10,17 @@
     <string name="size">Taille</string>
     <string name="colour_scheme">Thème de couleurs</string>
     <string name="app_name">Baby Dots</string>
+    <string name="sleep_timer_started_help_text">Touchez la minuterie de veille pour plus d’infos.</string>
+    <string name="stop_timer_button">Arrêter</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <string name="settings">Paramètres</string>
+    <string name="sleep_timer_description">Quand la minuterie atteindra zéro, l’écran s’assombrira, la musique s’arrêtera et l’écran s’éteindra peu après.</string>
+    <string name="stop_sleep_time_message">Relancer les points, retirer la minuterie de veille et quitter le mode veille.</string>
+    <string name="back">Retour</string>
+    <string name="resume_dots_button">Relancer les points</string>
+    <string name="sleep_time">Heure de veille</string>
+    <string name="sleep_timer">Minuterie de veille</string>
 </resources>
