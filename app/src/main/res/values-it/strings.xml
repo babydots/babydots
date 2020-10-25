@@ -10,4 +10,17 @@
     <string name="size">Dimensione</string>
     <string name="colour_scheme">Schema colori</string>
     <string name="app_name">Baby Dots</string>
+    <string name="sleep_timer_started_help_text">Tocca il temporizzatore di spegnimento per ulteriori informazioni.</string>
+    <string name="stop_timer_button">Ferma</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d minuto</item>
+        <item quantity="other">%d minuti</item>
+    </plurals>
+    <string name="settings">Impostazioni</string>
+    <string name="sleep_timer_description">Quando il temporaizzatore raggiunge lo zero, lo schermo si oscura, la musica si interrompe e lo schermo si spegne subito dopo.</string>
+    <string name="stop_sleep_time_message">Riavvia i punti, rimuovi il temporizzatore ed esci dalla modalità pausa.</string>
+    <string name="back">Indietro</string>
+    <string name="resume_dots_button">Riavvia i punti</string>
+    <string name="sleep_time">Tempo di spegnimento</string>
+    <string name="sleep_timer">Temporizzatore</string>
 </resources>
