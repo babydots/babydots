@@ -1,0 +1,3 @@
+Klasik müzik eklendi (öntanımlı olarak sesi kapalı), özelleştirme için kullanıcı arayüzü iyileştirildi.
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.

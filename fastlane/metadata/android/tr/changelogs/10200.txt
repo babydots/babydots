@@ -1,0 +1,17 @@
+Çeviriler:
+* Fince (teşekkürler Edanas)
+* Fransızca (teşekkürler Edanas)
+* Almanca (teşekkürler Edanas)
+* İtalyanca (teşekkürler Edanas)
+* Norveççe Bokmål (teşekkürler kingu)
+* Santali (teşekkürler Prasanta-Hembram)
+* Türkçe (teşekkürler ersen)
+
+İyileştirmeler:
+
+* İki yeni tema (karanlık + neon)
+* Seçili tercihleri hatırla
+* Uyanma kilidi (ekranı kapatma)
+* Her noktanın hızını rastgele seç
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.

@@ -1,0 +1,6 @@
+İlk Baby Dots sürümü:
+
+ * Bebeğinizle dans eden noktaları izleyin.
+ * Farklı boyut, renk ve hız arasından seçim yapın.
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
