@@ -10,4 +10,17 @@
     <string name="size">Koko</string>
     <string name="colour_scheme">Väriteema</string>
     <string name="app_name">Baby Dots</string>
+    <string name="stop_sleep_time_message">Aktivoi pisteitä, poista ajastin ja poistu taukotilasta.</string>
+    <string name="sleep_timer_started_help_text">Saat lisätietoja koskettaen ajastinta.</string>
+    <string name="stop_timer_button">Pysäytä ajastin</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d minuutti</item>
+        <item quantity="other">%d minuuttia</item>
+    </plurals>
+    <string name="settings">Asetukset</string>
+    <string name="sleep_timer_description">Kun ajastin saavuttaa nollan, näyttö himmenee, musiikki pysähtyy ja näyttö sammuu pian sen jälkeen.</string>
+    <string name="back">Takaisin</string>
+    <string name="resume_dots_button">Jatka</string>
+    <string name="sleep_time">Nukkumaanmenoaika</string>
+    <string name="sleep_timer">Ajastin</string>
 </resources>
