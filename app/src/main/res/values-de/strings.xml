@@ -10,4 +10,17 @@
     <string name="size">Größe</string>
     <string name="colour_scheme">Farbschema</string>
     <string name="app_name">Baby Dots</string>
+    <string name="sleep_timer_description">Wenn die Schaltuhr Null erreicht, wird der Bildschirm gedimmt, die Musik hört auf und der Bildschirm wird bald danach ausgeschaltet.</string>
+    <string name="sleep_timer_started_help_text">Berühren Sie die Schaltuhr, um weitere Informationen zu erhalten.</string>
+    <string name="stop_timer_button">Stopp</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d Minute</item>
+        <item quantity="other">%d Minuten</item>
+    </plurals>
+    <string name="settings">Einstellungen</string>
+    <string name="stop_sleep_time_message">Die Punkte fortsetzen, die Schaltuhr entfernen und die Schlafzeit beenden.</string>
+    <string name="back">Zurück</string>
+    <string name="resume_dots_button">Fortsetzen</string>
+    <string name="sleep_time">Schlafzeit</string>
+    <string name="sleep_timer">Schaltuhr</string>
 </resources>
