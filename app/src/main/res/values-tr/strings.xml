@@ -10,4 +10,17 @@
     <string name="size">Boyut</string>
     <string name="colour_scheme">Renk Düzeni</string>
     <string name="app_name">Baby Dots</string>
+    <string name="sleep_timer_started_help_text">Daha fazla bilgi için uyku zamanlayıcısına dokunun.</string>
+    <string name="stop_timer_button">Zamanlayıcıyı durdur</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d dakika</item>
+        <item quantity="other">%d dakika</item>
+    </plurals>
+    <string name="settings">Ayarlar</string>
+    <string name="sleep_timer_description">Zamanlayıcı sıfıra ulaştığında ekran kararacak, müzik duraklatılacak ve kısa bir süre sonra ekran kapanacaktır.</string>
+    <string name="stop_sleep_time_message">Noktaları devam ettir, uyku zamanlayıcısını kaldır ve uyku zamanından çık.</string>
+    <string name="back">Geri</string>
+    <string name="resume_dots_button">Noktaları devam ettir</string>
+    <string name="sleep_time">Uyku zamanı</string>
+    <string name="sleep_timer">Uyku Zamanlayıcısı</string>
 </resources>
