@@ -30,6 +30,15 @@ class MainActivity : AppCompatActivity() {
      */
     private lateinit var sleepTimerMenuItem: SpeedDialActionItem
 
+    companion object {
+        /**
+         * Starting the MainActivity with this mode will force it into sleep time.
+         * This is used for automated screenshot generation so we can easily get a screenshot
+         * of sleep time without having to wait 10 mins.
+         */
+        const val EXTRA_SLEEP_TIME = "com.serwylo.babydots.MainActivity.EXTRA_SLEEP_MODE"
+    }
+
     private var isMusicOn = false
         set(value) {
             if (value) {
@@ -109,6 +118,10 @@ class MainActivity : AppCompatActivity() {
 
         sleepTimeWrapper.setOnClickListener {
             promptToCancelSleepTime()
+        }
+
+        if (intent.getBooleanExtra(EXTRA_SLEEP_TIME, false)) {
+            startSleepTime()
         }
     }
 

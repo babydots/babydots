@@ -35,7 +35,17 @@ class AnimatedDots @JvmOverloads constructor(
     }
 
     var size: Size = Size.Medium
+        set(value) {
+            field = value
+            invalidate()
+        }
+
     var colourScheme: ColourScheme = ColourScheme.SplashOfColour
+        set(value) {
+            field = value
+            invalidate()
+        }
+
     var speed: Speed = Speed.Normal
         set(value) {
             val current = animator.animatedValue as Float
