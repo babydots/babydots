@@ -10,3 +10,7 @@
 
 fastlane/Appfile
 fastlane/api*.json
+
+.bundle
+vendor/
+Gemfile.lock
