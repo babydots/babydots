@@ -1,0 +1,4 @@
+Added sleep timer:
+ * When the timer reaches zero, the screen will dim, the music will pause, and the screen will turn off soon after.
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
