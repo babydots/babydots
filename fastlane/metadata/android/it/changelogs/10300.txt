@@ -1,0 +1,4 @@
+Aggiunto temporizzatore di spegnimento:
+ * Quando il temporizzatore raggiunge lo zero, lo schermo si oscura, la musica si interrompe e lo schermo si spegne subito dopo.
+
+Fornisci qualsiasi commento o segnala eventuali problemi sul su https://github.com/babydots/babydots/issues.
