@@ -1,6 +1,7 @@
 package com.serwylo.babydots
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.*
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var speedDial: SpeedDialView
     private lateinit var sleepTimeWrapper: View
     private lateinit var toolbar: Toolbar
+    private lateinit var unlockWrapper: View
     private lateinit var timerWrapper: View
     private lateinit var timerLabel: TextView
     private lateinit var timerIcon: ImageView
@@ -85,17 +87,26 @@ class MainActivity : AppCompatActivity() {
         speedDial.addActionItem(
             SpeedDialActionItem.Builder(R.id.menu_colour, R.drawable.ic_colour)
                 .setLabel(R.string.colour_scheme)
-                .create())
+                .create()
+        )
 
         speedDial.addActionItem(
             SpeedDialActionItem.Builder(R.id.menu_size, R.drawable.ic_size)
                 .setLabel(R.string.size)
-                .create())
+                .create()
+        )
 
         speedDial.addActionItem(
             SpeedDialActionItem.Builder(R.id.menu_speed, R.drawable.ic_speed)
                 .setLabel(R.string.speed)
-                .create())
+                .create()
+        )
+
+        speedDial.addActionItem(
+            SpeedDialActionItem.Builder(R.id.menu_lock, R.drawable.ic_lock)
+                .setLabel("Lock")
+                .create()
+        )
 
         speedDial.setOnActionSelectedListener { item ->
             when (item.id) {
@@ -103,9 +114,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.menu_size -> changeSize()
                 R.id.menu_speed -> changeSpeed()
                 R.id.menu_timer -> toggleTimer()
+                R.id.menu_lock -> startImmersiveMode()
             }
             true // Prevents the menu from closing when an option is selected.
         }
+
+        unlockWrapper = findViewById(R.id.unlock_wrapper)
 
         sleepTimeWrapper = findViewById(R.id.sleep_time_wrapper)
         timerWrapper = findViewById(R.id.timer_wrapper)
@@ -123,6 +137,65 @@ class MainActivity : AppCompatActivity() {
         if (intent.getBooleanExtra(EXTRA_SLEEP_TIME, false)) {
             startSleepTime()
         }
+    }
+
+    private fun startImmersiveMode() {
+
+        // Set a bunch of flags to make it full screen. If any of the features are
+        // not available, ignore them
+
+        try {
+            requestWindowFeature(Window.FEATURE_NO_TITLE)
+        } catch (e: Exception) {}
+
+        try {
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN
+            )
+        } catch (e: Exception) {}
+
+        try {
+            window.decorView.systemUiVisibility =
+                View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+        } catch (e: Exception) {}
+
+        startLockTask()
+
+        speedDial.visibility = View.GONE
+        toolbar.visibility = View.GONE
+        unlockWrapper.visibility = View.VISIBLE
+
+        unlockWrapper.setOnClickListener {
+            Toast.makeText(this, "Touch the lock 5 more times to unlock.", Toast.LENGTH_SHORT).show()
+        }
+
+    }
+
+    private fun stopImmersiveMode() {
+
+        unlockWrapper.visibility = View.GONE
+        toolbar.visibility = View.VISIBLE
+        speedDial.visibility = View.VISIBLE
+
+        stopLockTask()
+
+        try {
+            // requestWindowFeature(Window.FEATURE_NO_TITLE)
+        } catch (e: Exception) {}
+
+        try {
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN
+            )
+        } catch (e: Exception) {}
+
+        try {
+            window.decorView.systemUiVisibility =
+                View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+        } catch (e: Exception) {}
+
     }
 
     override fun onPause() {
@@ -251,7 +324,10 @@ class MainActivity : AppCompatActivity() {
         runOnUiThread {
             timerWrapper.visibility = View.VISIBLE
 
-            val stopTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_timer, R.drawable.ic_stop_sleep_timer).setLabel(R.string.stop_timer_button).create()
+            val stopTimerMenuItem = SpeedDialActionItem.Builder(
+                R.id.menu_timer,
+                R.drawable.ic_stop_sleep_timer
+            ).setLabel(R.string.stop_timer_button).create()
             speedDial.replaceActionItem(sleepTimerMenuItem, stopTimerMenuItem)
             sleepTimerMenuItem = stopTimerMenuItem
 
@@ -264,7 +340,12 @@ class MainActivity : AppCompatActivity() {
             .setTitle(R.string.sleep_timer)
             .setMessage(getString(R.string.sleep_timer_description))
             .setNegativeButton(R.string.back, null)
-            .setNeutralButton(R.string.settings) { _, _ -> startActivity(Intent(this, SettingsActivity::class.java))}
+            .setNeutralButton(R.string.settings) { _, _ -> startActivity(
+                Intent(
+                    this,
+                    SettingsActivity::class.java
+                )
+            )}
             .setPositiveButton(R.string.stop_timer_button) { _, _ -> cancelTimer() }
             .create()
             .show()
@@ -290,7 +371,9 @@ class MainActivity : AppCompatActivity() {
 
         timerWrapper.visibility = View.GONE
 
-        val startTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_timer, R.drawable.ic_timer).setLabel(R.string.sleep_timer).create()
+        val startTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_timer, R.drawable.ic_timer).setLabel(
+            R.string.sleep_timer
+        ).create()
         speedDial.replaceActionItem(sleepTimerMenuItem, startTimerMenuItem)
         sleepTimerMenuItem = startTimerMenuItem
     }

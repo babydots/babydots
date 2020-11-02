@@ -21,4 +21,9 @@
         android:icon="@drawable/ic_speed"
         android:title="@string/speed" />
 
+    <item
+        android:id="@+id/menu_lock"
+        android:icon="@drawable/ic_lock"
+        android:title="Lock" />
+
 </menu>
