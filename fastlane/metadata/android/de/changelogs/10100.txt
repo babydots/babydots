@@ -1,0 +1,3 @@
+Klassische Musik hinzugefügt (standardmäßig stummgeschaltet) und Benutzeroberfläche für die Anpassung verbessert.
+
+Bitte geben Sie Rückmeldung oder melden Sie Probleme unter https://github.com/babydots/babydots/issues.

@@ -1,0 +1,4 @@
+Schaltuhr hinzugefügt:
+ * Wenn der Schaltuhr Null erreicht, wird der Bildschirm gedimmt, die Musik wird angehalten und der Bildschirm wird bald danach ausgeschaltet.
+
+Bitte geben Sie Rückmeldung oder melden Sie Probleme unter https://github.com/babydots/babydots/issues.

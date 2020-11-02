@@ -1,0 +1,6 @@
+Erste Veröffentlichung von Baby Dots:
+
+ * Beobachten Sie tanzende Punkte mit Ihrem Baby.
+ * Wählen Sie aus verschiedenen Größen, Farben und Geschwindigkeiten.
+
+Bitte geben Sie Rückmeldung oder melden Sie Probleme unter https://github.com/babydots/babydots/issues.
