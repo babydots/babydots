@@ -1,0 +1,4 @@
+Minuterie de veille ajoutée :
+ * Quand la minuterie atteindra zéro, l'écran s'assombrira, la musique s'arrêtera et l'écran s'éteindra peu après.
+
+Veuillez fournir vos remarques ou signaler tout problème sur le suivi des problèmes à l'adresse https://github.com/babydots/babydots/issues.
