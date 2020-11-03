@@ -1,0 +1,6 @@
+De allereerste uitgave!
+
+ * Kijk samen met je baby naar dansende stippen
+ * Kies uit verschillende groottes, kleuren en snelheden
+
+Deel je feedback of problemen op https://github.com/babydots/babydots/issues

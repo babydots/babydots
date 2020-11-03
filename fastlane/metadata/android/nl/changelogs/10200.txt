@@ -1,0 +1,17 @@
+Vertalingen:
+* Duits (met dank aan Edanas)
+* Fins (met dank aan Edanas)
+* Frans (met dank aan Edanas)
+* Italiaans (met dank aan Edanas)
+* Noors (Bokmål) - (met dank aan kingu)
+* Santali (met dank aan Prasanta-Hembram)
+* Turks (met dank aan ersen)
+
+Verbeteringen:
+
+* Twee nieuwe kleurenschema's (donker + neon)
+* Instellingen worden voortaan onthouden
+* Optie om scherm niet uit te schakelen
+* Willekeurige snelheden
+
+Deel je feedback of problemen op https://github.com/babydots/babydots/issues

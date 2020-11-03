@@ -1,0 +1,4 @@
+Nieuw: een tijdklok.
+ * Als de klok de nul aantikt, verduistert het scherm, wordt de muziek onderbroken en het scherm langzaam uitgeschakeld.
+
+Deel je feedback of problemen op https://github.com/babydots/babydots/issues
