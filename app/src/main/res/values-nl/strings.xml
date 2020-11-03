@@ -1,2 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="sleep_timer_description">Als de klok de nul aantikt, verduistert het scherm, wordt de muziek onderbroken en het scherm langzaam uitgeschakeld.</string>
+    <string name="sleep_timer_started_help_text">Druk voor meer informatie op de tijdklok.</string>
+    <string name="stop_timer_button">Tijdklok stopzetten</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d minuut</item>
+        <item quantity="other">%d minuten</item>
+    </plurals>
+    <string name="settings">Instellingen</string>
+    <string name="stop_sleep_time_message">Toon de stippen weer, verwijder de tijdklok en sluit de bedtijd af.</string>
+    <string name="back">Terug</string>
+    <string name="resume_dots_button">Hervatten</string>
+    <string name="sleep_time">Bedtijd</string>
+    <string name="sleep_timer">Tijdklok</string>
+    <string name="about_credits">Met dank aan</string>
+    <string name="about_suggestions">Ideeën delen en fouten melden</string>
+    <string name="attribution"><b>Muziek:</b> John Harrison &amp; Wichita State University Chamber - Vivaldi Spring mvt 1 Allegro - <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
+    <string name="url_github">https://github.com/babydots/babydots</string>
+    <string name="about">Over</string>
+    <string name="mute">Dempen</string>
+    <string name="speed">Snelheid</string>
+    <string name="size">Grootte</string>
+    <string name="colour_scheme">Kleurenschema</string>
+    <string name="app_name">Babystippen</string>
+</resources>
