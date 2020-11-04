@@ -10,4 +10,9 @@
     <string name="size">ᱢᱟᱯ</string>
     <string name="colour_scheme">ᱨᱚᱸᱝ ᱥᱠᱤᱢ</string>
     <string name="app_name">ᱜᱤᱫᱨᱟᱹ ᱰᱚᱴ ᱠᱚ</string>
+    <string name="stop_sleep_time_message">ᱰᱚᱴ ᱠᱚ ᱞᱟᱦᱟ ᱪᱷᱚ, ᱜᱤᱛᱤᱡᱽ ᱴᱟᱭᱢᱟᱹᱨ ᱚᱪᱚᱜᱽ ᱢᱮᱸ, ᱟᱨ ᱜᱤᱛᱤᱡᱽ ᱴᱟᱭᱢᱟᱹᱨ ᱵᱚᱸᱫᱚᱭ ᱢᱮᱸ ᱾</string>
+    <string name="back">ᱛᱟᱭᱚᱢ</string>
+    <string name="resume_dots_button">ᱰᱚᱴ ᱠᱚ ᱞᱟᱦᱟᱭ ᱪᱷᱚ</string>
+    <string name="sleep_time">ᱜᱤᱛᱤᱡᱽ ᱴᱟᱭᱢᱟᱹᱨ</string>
+    <string name="sleep_timer">ᱜᱤᱛᱤᱡᱽ ᱴᱟᱭᱢᱟᱹᱨ</string>
 </resources>
