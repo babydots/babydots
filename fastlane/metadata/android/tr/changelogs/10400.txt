@@ -1,0 +1,3 @@
+Heyecanlı bebeklerin yanlışlıkla dokunmasını önleyen isteğe bağlı ekran kilidi eklendi.
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
