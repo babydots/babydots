@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="menu_speed_dial_colour" />
+    <item type="id" name="menu_speed_dial_size" />
+    <item type="id" name="menu_speed_dial_speed" />
+    <item type="id" name="menu_speed_dial_timer" />
+</resources>
