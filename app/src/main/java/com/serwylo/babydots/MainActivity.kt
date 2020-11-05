@@ -1,7 +1,6 @@
 package com.serwylo.babydots
 
 import android.content.Intent
-import android.content.pm.ActivityInfo
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.*
@@ -27,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var timerLabel: TextView
     private lateinit var timerIcon: ImageView
 
+
     /**
      * Remember this item so that we can swap the "Sleep timer" with the "Stop timer".
      */
@@ -39,6 +39,12 @@ class MainActivity : AppCompatActivity() {
          * of sleep time without having to wait 10 mins.
          */
         const val EXTRA_SLEEP_TIME = "com.serwylo.babydots.MainActivity.EXTRA_SLEEP_MODE"
+
+        /**
+         * To escape sticky immersive mode when locking the screen, the user must press the lock
+         * icon in the corner this many times.
+         */
+        const val TOUCHES_REQUIRED_TO_UNLOCK = 5
     }
 
     private var isMusicOn = false
@@ -78,43 +84,36 @@ class MainActivity : AppCompatActivity() {
 
         speedDial = findViewById(R.id.speed_dial)
 
-        sleepTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_timer, R.drawable.ic_timer)
+        sleepTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_speed_dial_timer, R.drawable.ic_timer)
             .setLabel(R.string.sleep_timer)
             .create()
 
         speedDial.addActionItem(sleepTimerMenuItem)
 
         speedDial.addActionItem(
-            SpeedDialActionItem.Builder(R.id.menu_colour, R.drawable.ic_colour)
+            SpeedDialActionItem.Builder(R.id.menu_speed_dial_colour, R.drawable.ic_colour)
                 .setLabel(R.string.colour_scheme)
                 .create()
         )
 
         speedDial.addActionItem(
-            SpeedDialActionItem.Builder(R.id.menu_size, R.drawable.ic_size)
+            SpeedDialActionItem.Builder(R.id.menu_speed_dial_size, R.drawable.ic_size)
                 .setLabel(R.string.size)
                 .create()
         )
 
         speedDial.addActionItem(
-            SpeedDialActionItem.Builder(R.id.menu_speed, R.drawable.ic_speed)
+            SpeedDialActionItem.Builder(R.id.menu_speed_dial_speed, R.drawable.ic_speed)
                 .setLabel(R.string.speed)
-                .create()
-        )
-
-        speedDial.addActionItem(
-            SpeedDialActionItem.Builder(R.id.menu_lock, R.drawable.ic_lock)
-                .setLabel("Lock")
                 .create()
         )
 
         speedDial.setOnActionSelectedListener { item ->
             when (item.id) {
-                R.id.menu_colour -> changeColour()
-                R.id.menu_size -> changeSize()
-                R.id.menu_speed -> changeSpeed()
-                R.id.menu_timer -> toggleTimer()
-                R.id.menu_lock -> startImmersiveMode()
+                R.id.menu_speed_dial_colour -> changeColour()
+                R.id.menu_speed_dial_size -> changeSize()
+                R.id.menu_speed_dial_speed -> changeSpeed()
+                R.id.menu_speed_dial_timer -> toggleTimer()
             }
             true // Prevents the menu from closing when an option is selected.
         }
@@ -139,23 +138,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Put the screen in "Immersive sticky mode" which prevents accidental clicking of home or other
+     * buttons that could leave the app. However the UX to escape this is pretty terrible (for
+     * somewhat understandable reasons), so also show a lock which can be used to unlock this mode.
+     *
+     * To unlock this mode, you need to tap the unlock button TOUCHES_REQUIRED_TO_UNLOCK times, each
+     * time no more  than 750ms apart.
+     */
     private fun startImmersiveMode() {
 
-        // Set a bunch of flags to make it full screen. If any of the features are
-        // not available, ignore them
-
         try {
-            requestWindowFeature(Window.FEATURE_NO_TITLE)
-        } catch (e: Exception) {}
-
-        try {
-            window.setFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN
-            )
-        } catch (e: Exception) {}
-
-        try {
+            @Suppress("DEPRECATION") // The recommended alternative was only introduced in API 30.
             window.decorView.systemUiVisibility =
                 View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
         } catch (e: Exception) {}
@@ -166,8 +160,26 @@ class MainActivity : AppCompatActivity() {
         toolbar.visibility = View.GONE
         unlockWrapper.visibility = View.VISIBLE
 
+        var lastClickTime = -1L
+        var counter = TOUCHES_REQUIRED_TO_UNLOCK
+
         unlockWrapper.setOnClickListener {
-            Toast.makeText(this, "Touch the lock 5 more times to unlock.", Toast.LENGTH_SHORT).show()
+            if (lastClickTime == -1L || System.currentTimeMillis() - lastClickTime > 750L) {
+                counter = TOUCHES_REQUIRED_TO_UNLOCK - 1
+            } else {
+                counter -= 1
+            }
+
+            if (counter == 0) {
+                stopImmersiveMode()
+            } else {
+                lastClickTime = System.currentTimeMillis()
+                Toast.makeText(
+                    this,
+                    resources.getQuantityString(R.plurals.touch_lock_to_unlock, counter, counter),
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
 
     }
@@ -181,20 +193,11 @@ class MainActivity : AppCompatActivity() {
         stopLockTask()
 
         try {
-            // requestWindowFeature(Window.FEATURE_NO_TITLE)
+            @Suppress("DEPRECATION") // The recommended alternative was only introduced in API 30.
+            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         } catch (e: Exception) {}
 
-        try {
-            window.setFlags(
-                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN
-            )
-        } catch (e: Exception) {}
-
-        try {
-            window.decorView.systemUiVisibility =
-                View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-        } catch (e: Exception) {}
+        Toast.makeText(this, getString(R.string.screen_unlocked), Toast.LENGTH_SHORT).show()
 
     }
 
@@ -232,6 +235,7 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.menu_sound -> onSoundSelected(item)
             R.id.menu_settings -> startActivity(Intent(this, SettingsActivity::class.java))
+            R.id.menu_lock -> startImmersiveMode()
             R.id.menu_about -> startActivity(Intent(this, AboutActivity::class.java))
         }
         return false
@@ -325,7 +329,7 @@ class MainActivity : AppCompatActivity() {
             timerWrapper.visibility = View.VISIBLE
 
             val stopTimerMenuItem = SpeedDialActionItem.Builder(
-                R.id.menu_timer,
+                R.id.menu_speed_dial_timer,
                 R.drawable.ic_stop_sleep_timer
             ).setLabel(R.string.stop_timer_button).create()
             speedDial.replaceActionItem(sleepTimerMenuItem, stopTimerMenuItem)
@@ -371,7 +375,7 @@ class MainActivity : AppCompatActivity() {
 
         timerWrapper.visibility = View.GONE
 
-        val startTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_timer, R.drawable.ic_timer).setLabel(
+        val startTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_speed_dial_timer, R.drawable.ic_timer).setLabel(
             R.string.sleep_timer
         ).create()
         speedDial.replaceActionItem(sleepTimerMenuItem, startTimerMenuItem)
@@ -407,8 +411,11 @@ class MainActivity : AppCompatActivity() {
         dots.visibility = View.INVISIBLE
         speedDial.visibility = View.INVISIBLE
 
-        window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        @Suppress("DEPRECATION") // The recommended alternative was only introduced in API 30.
         window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+
+        @Suppress("DEPRECATION") // The recommended alternative was only introduced in API 30.
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LOW_PROFILE
 
     }
@@ -431,8 +438,11 @@ class MainActivity : AppCompatActivity() {
         dots.visibility = View.VISIBLE
         speedDial.visibility = View.VISIBLE
 
-        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        @Suppress("DEPRECATION") // The recommended alternative was only introduced in API 30.
         window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+
+        @Suppress("DEPRECATION") // The recommended alternative was only introduced in API 30.
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_VISIBLE
     }
 

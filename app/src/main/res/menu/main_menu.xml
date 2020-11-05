@@ -15,6 +15,12 @@
         app:showAsAction="ifRoom" />
 
     <item
+        android:id="@+id/menu_lock"
+        android:icon="@drawable/ic_lock"
+        android:title="@string/lock"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/menu_about"
         android:icon="@drawable/ic_help"
         android:title="@string/about"
