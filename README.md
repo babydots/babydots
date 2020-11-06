@@ -2,7 +2,10 @@
 
 [<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80px">](https://f-droid.org/app/com.serwylo.babydots) [<img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/>](https://play.google.com/store/apps/details?id=com.serwylo.babydots)
 
-[<img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg">](https://liberapay.com/BabyDots/donate)
+[![Liberapay receiving](https://img.shields.io/liberapay/receives/BabyDots)](https://liberapay.com/BabyDots/donate)
+[![Translation status](https://hosted.weblate.org/widgets/babydots/-/svg-badge.svg)](https://hosted.weblate.org/engage/babydots/)
+[![F-Droid version](https://img.shields.io/f-droid/v/com.serwylo.babydots)](https://f-droid.org/packages/com.serwylo.babydots/)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/babydots/babydots/Android%20CI)](https://github.com/babydots/babydots/actions?query=workflow%3A%22Android+CI%22)
 
 Baby dots is a sensory Android app designed to calm and relax young babies.
 
@@ -25,6 +28,14 @@ If you wish to support the development financially, you can do so via:
 ### Reporting Issues
 
 Please report any issues or suggest features on the [issue tracker](https://github.com/babydots/babydots/issues).
+
+### Translating
+
+We use [Weblate](https://hosted.weblate.org/engage/babydots/) to manage translations. Please see [these instructions for using Weblate](https://hosted.weblate.org/engage/babydots/) to translate BabyDots.
+
+|Android app|F-Droid metadata|
+|-----------|----------------|
+|[![Translation status](https://hosted.weblate.org/widgets/babydots/-/android-strings/multi-auto.svg)](https://hosted.weblate.org/engage/babydots/)|[![Translation status](https://hosted.weblate.org/widgets/babydots/-/app-metadata/multi-auto.svg)](https://hosted.weblate.org/engage/babydots/)|
 
 ### Submitting changes
 
