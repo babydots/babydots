@@ -1,0 +1,5 @@
+Søvntidsur lagt til:
+ * Når tidsuret går ut, dimmes skjermen, musikken settes på pause, og skjermen skrur seg av rett etterpå.
+
+
+Gi tilbakemeldinger om problemer, eller i feilsporeren på https://github.com/babydots/babydots/issues.

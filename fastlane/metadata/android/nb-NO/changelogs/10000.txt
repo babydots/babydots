@@ -1,0 +1,6 @@
+Første utgave av Babydotter:
+
+ * Se dansende dotter med din baby.
+ * Velg fra forskjellige størrelser, farger, og hastighet.
+
+Gi tilbakemeldinger om problemer, eller i feilsporeren på https://github.com/babydots/babydots/issues.

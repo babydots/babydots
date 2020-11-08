@@ -1,0 +1,17 @@
+Oversettelser:
+* Finsk (takk til Edanas)
+* Fransk (takk til Edanas)
+* Tysk (takk til Edanas)
+* Italiensk (takk til Edanas)
+* Norsk bokmål (takk til Allan Nordhøy)
+* Santali (takk til Prasanta-Hembram)
+* Tyrkisk (takk til ersen)
+
+Forbedringer:
+
+* To nye drakter (mørk + neon)
+* Husker valgte innstillinger
+* Oppvåkningslås (ikke skru av skjermen)
+* Tilpass hastighet for hver dott
+
+Gi tilbakemeldinger om problemer, eller i feilsporeren på https://github.com/babydots/babydots/issues.

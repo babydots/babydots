@@ -1,0 +1,3 @@
+Klassisk musikk lagt til (forstummet som forvalg), forbedret grensesnitt for tilpasninger.
+
+Gi tilbakemeldinger om problemer, eller i feilsporeren på https://github.com/babydots/babydots/issues.
