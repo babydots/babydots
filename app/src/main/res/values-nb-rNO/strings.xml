@@ -23,4 +23,11 @@
     <string name="resume_dots_button">Gjenoppta dotter</string>
     <string name="sleep_time">Søvntid</string>
     <string name="sleep_timer">Søvntidsur</string>
+    <plurals name="touch_lock_to_unlock">
+        <item quantity="one">Trykk raskt på låsen %d gang til for å låse opp.</item>
+        <item quantity="other">Trykk raskt på låsen %d ganger til for å låse opp.</item>
+    </plurals>
+    <string name="touch_to_unlock">Trykk for å låse opp</string>
+    <string name="lock">Lås</string>
+    <string name="screen_unlocked">Skjerm opplåst</string>
 </resources>
