@@ -1,3 +1,5 @@
 Nieuw: optionele schermvergrendeling zodat baby's geen ongewenste aanrakingen doen.
 
+Nieuw: Nederlandse vertaling (met dank aan Vistaus)
+
 Deel je feedback of problemen op https://github.com/babydots/babydots/issues
