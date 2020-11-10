@@ -1,5 +1,6 @@
 package com.serwylo.babydots
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -146,6 +147,7 @@ class MainActivity : AppCompatActivity() {
      * To unlock this mode, you need to tap the unlock button TOUCHES_REQUIRED_TO_UNLOCK times, each
      * time no more  than 750ms apart.
      */
+    @SuppressLint("ShowToast") // We keep the toast so that we can cancel when the user is prompted to press many times quickly. Therefore "show()" is called later on.
     private fun startImmersiveMode() {
 
         try {
@@ -163,22 +165,40 @@ class MainActivity : AppCompatActivity() {
         var lastClickTime = -1L
         var counter = TOUCHES_REQUIRED_TO_UNLOCK
 
+        // Remember the toast, so that we can update it when the user touches multiple times quickly,
+        // rather than showing multiple toasts on top of eachother, whch tends to have a bad UX on
+        // some Android versions.
+        var toast:Toast? = null
+
         unlockWrapper.setOnClickListener {
             if (lastClickTime == -1L || System.currentTimeMillis() - lastClickTime > 750L) {
                 counter = TOUCHES_REQUIRED_TO_UNLOCK - 1
+                toast?.cancel()
+                toast = null
             } else {
                 counter -= 1
             }
 
             if (counter == 0) {
+                toast?.cancel()
+                toast = null
                 stopImmersiveMode()
             } else {
                 lastClickTime = System.currentTimeMillis()
-                Toast.makeText(
-                    this,
-                    resources.getQuantityString(R.plurals.touch_lock_to_unlock, counter, counter),
-                    Toast.LENGTH_SHORT
-                ).show()
+
+                val toastMessage = resources.getQuantityString(R.plurals.touch_lock_to_unlock, counter, counter)
+
+                if (toast == null) {
+                    toast = Toast.makeText(
+                        this,
+                        toastMessage,
+                        Toast.LENGTH_SHORT
+                    )
+                } else {
+                    toast?.setText(toastMessage)
+                }
+
+                toast?.show()
             }
         }
 
