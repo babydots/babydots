@@ -1,0 +1,6 @@
+Ajout du verrouillage optionnel de l'écran, évitant les contacts accidentels des bébés excités.
+
+Traductions :
+* Ajout du néerlandais (merci vistaus)
+
+Veuillez fournir vos remarques ou signaler tout problème sur le suivi des problèmes à l'adresse https://github.com/babydots/babydots/issues.
