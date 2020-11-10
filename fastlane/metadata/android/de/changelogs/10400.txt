@@ -1,0 +1,6 @@
+Eine optionale Bildschirmsperre hinzugefügt, um versehentliche Berührungen durch aufgeregte Babys zu verhindern.
+
+Übersetzungen:
+* Niederländisch hinzugefügt (danke vistaus)
+
+Bitte geben Sie Rückmeldung oder melden Sie Probleme unter https://github.com/babydots/babydots/issues.
