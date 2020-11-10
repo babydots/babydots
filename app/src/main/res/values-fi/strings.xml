@@ -23,4 +23,11 @@
     <string name="resume_dots_button">Jatka</string>
     <string name="sleep_time">Nukkumaanmenoaika</string>
     <string name="sleep_timer">Ajastin</string>
+    <plurals name="touch_lock_to_unlock">
+        <item quantity="one">Kosketa nopeasti lukkoa %d kerta avataksesi lukituksen.</item>
+        <item quantity="other">Kosketa nopeasti lukkoa %d kertaa avataksesi lukituksen.</item>
+    </plurals>
+    <string name="touch_to_unlock">Avaa lukitus koskettamalla</string>
+    <string name="lock">Lukitse</string>
+    <string name="screen_unlocked">Näytön lukitus avattu</string>
 </resources>
