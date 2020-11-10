@@ -23,4 +23,11 @@
     <string name="resume_dots_button">Relancer les points</string>
     <string name="sleep_time">Heure de veille</string>
     <string name="sleep_timer">Minuterie de veille</string>
+    <plurals name="touch_lock_to_unlock">
+        <item quantity="one">Appuyez rapidement sur le verrou %d fois de plus pour déverrouiller.</item>
+        <item quantity="other">Appuyez rapidement sur le verrou %d fois de plus pour déverrouiller.</item>
+    </plurals>
+    <string name="touch_to_unlock">Touchez pour déverrouiller</string>
+    <string name="lock">Verrouiller</string>
+    <string name="screen_unlocked">Écran déverrouillé</string>
 </resources>
