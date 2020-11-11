@@ -1,0 +1,6 @@
+Valgfri skjermlåsing lagt til, noe som forhindrer utiltenkte trykk fra babyfingre.
+
+Oversettelser:
+* Hollandsk (takk til vistaus)
+
+Gi tilbakemeldinger om problemer, eller i feilsporeren på https://github.com/babydots/babydots/issues.
