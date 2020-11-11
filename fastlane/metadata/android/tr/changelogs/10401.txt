@@ -1,6 +1,9 @@
 Heyecanlı bebeklerin yanlışlıkla dokunmasını önleyen isteğe bağlı ekran kilidi eklendi.
 
+Kilit açma düğmesine birçok kez hızlıca dokunulduğunda mesajların görüntülenmesi iyileştirildi.
+
 Çeviriler:
 * Flemenkçe eklendi (teşekkürler vistaus)
+* Çeviriler güncellendi
 
 Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
