@@ -1,0 +1,6 @@
+Aggiunge il blocco opzionale dello schermo, per prevenire i tocchi accidentali da parte dei bambini eccitati.
+
+Traduzioni:
+* olandese aggiunto (grazie vistaus)
+
+Fornisci qualsiasi commenti o segnala eventuali problemi su https://github.com/babydots/babydots/issues.

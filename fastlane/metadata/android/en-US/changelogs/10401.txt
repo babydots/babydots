@@ -1,0 +1,9 @@
+Add optional screen locking, preventing accidental touches from excited babies.
+
+Improved display of messages when tapping unlock button many times fast.
+
+Translations:
+* Added Dutch (thanks vistaus)
+* Updated translations
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
