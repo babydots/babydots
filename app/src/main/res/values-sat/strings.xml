@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="about_credits">ᱠᱨᱮᱰᱤᱴ ᱠᱚ</string>
-    <string name="about_suggestions">ᱵᱟᱛᱟᱣᱟᱭ ᱠᱚ ᱟᱨ ᱵᱟᱹᱜ ᱠᱚ ᱨᱤᱯᱚᱴ ᱟᱭ</string>
-    <string name="attribution"><b>ᱥᱮᱨᱮᱸᱧ - </b> ᱡᱚᱦᱱ ᱦᱟᱨᱨᱤᱥᱚᱱ w/ ᱣᱤᱠᱤᱴᱟ ᱯᱚᱱᱚᱛ ᱡᱮᱜᱮᱛ ᱵᱤᱨᱫᱟᱜᱟᱰ ᱪᱮᱢᱵᱟᱹᱨ - ᱣᱤᱣᱟᱞᱰᱤ ᱥᱯᱨᱤᱝ mvt 1 ᱟᱞᱞᱮᱜᱚ - <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
+    <string name="about_suggestions">ᱵᱟᱛᱟᱣᱟᱜᱠᱚ ᱟᱨ ᱵᱟᱹᱜ ᱨᱤᱯᱚᱴ ᱠᱚ</string>
+    <string name="attribution"><b>ᱥᱮᱨᱮᱸᱧ - </b> ᱡᱚᱦᱱ ᱦᱟᱨᱤᱥᱚᱱ w/ ᱣᱤᱠᱤᱴᱟ ᱯᱚᱱᱚᱛ ᱡᱮᱜᱮᱛ ᱵᱤᱨᱫᱟᱜᱟᱰ ᱪᱮᱢᱵᱟᱹᱨ - ᱣᱤᱣᱟᱞᱰᱤ ᱥᱯᱨᱤᱝ mvt 1 ᱟᱞᱮᱜᱚ - <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
     <string name="url_github">https://github.com/babydots/babydots</string>
     <string name="about">ᱵᱟᱵᱚᱛ</string>
     <string name="mute">ᱢᱭᱩᱴ</string>
     <string name="speed">ᱛᱮᱡᱤ</string>
     <string name="size">ᱢᱟᱯ</string>
     <string name="colour_scheme">ᱨᱚᱸᱝ ᱥᱠᱤᱢ</string>
-    <string name="app_name">ᱜᱤᱫᱨᱟᱹ ᱰᱚᱴ ᱠᱚ</string>
-    <string name="stop_sleep_time_message">ᱰᱚᱴ ᱠᱚ ᱞᱟᱦᱟ ᱪᱷᱚ, ᱜᱤᱛᱤᱡᱽ ᱴᱟᱭᱢᱟᱹᱨ ᱚᱪᱚᱜᱽ ᱢᱮᱸ, ᱟᱨ ᱜᱤᱛᱤᱡᱽ ᱴᱟᱭᱢᱟᱹᱨ ᱵᱚᱸᱫᱚᱭ ᱢᱮᱸ ᱾</string>
+    <string name="app_name">ᱜᱤᱫᱽᱨᱟᱹ ᱰᱚᱴ ᱠᱚ</string>
+    <string name="stop_sleep_time_message">ᱰᱚᱴ ᱠᱚ ᱞᱟᱦᱟ ᱪᱷᱚ, ᱜᱤᱛᱤᱡ ᱴᱟᱭᱢᱟᱹᱨ ᱚᱪᱚᱜᱽ ᱢᱮ, ᱟᱨ ᱜᱤᱛᱤᱡ ᱴᱟᱭᱢᱟᱹᱨ ᱵᱚᱸᱫᱚᱭ ᱢᱮ ᱾</string>
     <string name="back">ᱛᱟᱭᱚᱢ</string>
     <string name="resume_dots_button">ᱰᱚᱴ ᱠᱚ ᱞᱟᱦᱟᱭ ᱪᱷᱚ</string>
-    <string name="sleep_time">ᱜᱤᱛᱤᱡᱽ ᱴᱟᱭᱢᱟᱹᱨ</string>
-    <string name="sleep_timer">ᱜᱤᱛᱤᱡᱽ ᱴᱟᱭᱢᱟᱹᱨ</string>
+    <string name="sleep_time">ᱜᱤᱛᱤᱡ ᱴᱟᱭᱢᱟᱹᱨ</string>
+    <string name="sleep_timer">ᱜᱤᱛᱤᱡ ᱴᱟᱭᱢᱟᱹᱨ</string>
     <plurals name="touch_lock_to_unlock">
-        <item quantity="one">ᱡᱟᱹᱥᱛᱤ ᱥᱚᱢᱚᱭ ᱦᱟᱹᱵᱤᱡᱽ ᱛᱮ ᱠᱷᱭᱞᱟᱹ ᱫᱚᱦᱚ ᱞᱟᱹᱜᱤᱹᱫᱽ %d ᱠᱩᱞᱩᱯ ᱨᱮ ᱞᱚᱜᱚᱱ ᱚᱛᱟᱭ ᱢᱮᱸ ᱾</item>
-        <item quantity="other">ᱡᱟᱹᱥᱛᱤ ᱥᱚᱢᱚᱭ ᱦᱟᱹᱵᱤᱡᱽ ᱛᱮ ᱠᱷᱩᱞᱟᱹ ᱫᱚᱦᱚ ᱞᱟᱹᱜᱤᱹᱫᱽ %d ᱠᱩᱞᱩᱯ ᱨᱮ ᱞᱚᱜᱚᱱ ᱚᱛᱟᱭ ᱢᱮᱸ ᱾</item>
+        <item quantity="one">ᱡᱟᱹᱥᱛᱤ ᱥᱚᱢᱚᱭ ᱦᱟᱹᱵᱤᱡ ᱛᱮ ᱠᱷᱭᱞᱟᱹ ᱫᱚᱦᱚ ᱞᱟᱹᱜᱤᱹᱫ %d ᱠᱩᱞᱩᱯ ᱨᱮ ᱞᱚᱜᱚᱱ ᱚᱛᱟᱭ ᱢᱮ ᱾</item>
+        <item quantity="other">ᱡᱟᱹᱥᱛᱤ ᱥᱚᱢᱚᱭ ᱦᱟᱹᱵᱤᱡ ᱛᱮ ᱠᱷᱩᱞᱟᱹ ᱫᱚᱦᱚ ᱞᱟᱹᱜᱤᱹᱫ %d ᱠᱩᱞᱩᱯ ᱨᱮ ᱞᱚᱜᱚᱱ ᱚᱛᱟᱭ ᱢᱮ ᱾</item>
     </plurals>
-    <string name="touch_to_unlock">ᱠᱩᱞᱩᱯ ᱠᱷᱩᱞᱟᱹ ᱨᱮ ᱚᱛᱟᱭ ᱢᱮᱸ</string>
+    <string name="touch_to_unlock">ᱠᱩᱞᱩᱯ ᱠᱷᱩᱞᱟᱹ ᱨᱮ ᱚᱛᱟᱭ ᱢᱮ</string>
     <string name="lock">ᱠᱩᱞᱩᱯ</string>
     <string name="screen_unlocked">ᱥᱠᱨᱤᱻᱱ ᱠᱷᱩᱞᱟᱹᱭᱮᱱᱟ</string>
-    <string name="sleep_timer_started_help_text">ᱡᱟᱹᱥᱛᱤ ᱵᱤᱵᱨᱚᱬ ᱞᱟᱹᱜᱤᱫᱽ ᱜᱤᱛᱤᱡᱽ ᱴᱟᱭᱢᱟᱹᱨ ᱚᱛᱟᱭ ᱢᱮᱸ ᱾</string>
-    <string name="stop_timer_button">ᱴᱟᱭᱢᱟᱹᱨ ᱵᱚᱸᱫᱽᱚᱭ ᱢᱮᱸ</string>
+    <string name="sleep_timer_started_help_text">ᱡᱟᱹᱥᱛᱤ ᱵᱤᱵᱨᱚᱬ ᱞᱟᱹᱜᱤᱫ ᱜᱤᱛᱤᱡ ᱴᱟᱭᱢᱟᱹᱨ ᱚᱛᱟᱭ ᱢᱮ ᱾</string>
+    <string name="stop_timer_button">ᱴᱟᱭᱢᱟᱹᱨ ᱵᱚᱸᱫ</string>
     <plurals name="pref_x_minutes">
         <item quantity="one">%d ᱴᱤᱯᱤᱡᱽ</item>
         <item quantity="other">%d ᱴᱤᱯᱤᱡᱽ ᱠᱚ</item>
