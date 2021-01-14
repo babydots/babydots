@@ -1,2 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Baby Dots</string>
+    <plurals name="touch_lock_to_unlock">
+        <item quantity="one">Szybko dotknij blokadę %d więcej czasu na odblokowanie.</item>
+        <item quantity="few">Szybko dotknij blokady %d więcej czasu na odblokowanie.</item>
+        <item quantity="many">Szybko dotknij blokad %d więcej czasu na odblokowanie.</item>
+        <item quantity="other">Szybko dotknij blokad %d więcej czasu na odblokowanie.</item>
+    </plurals>
+    <string name="touch_to_unlock">Dotknij, aby odblokować</string>
+    <string name="lock">Zablokuj</string>
+    <string name="screen_unlocked">Ekran odblokowany</string>
+    <string name="sleep_timer_started_help_text">Dotknij wyłącznika czasowego, aby uzyskać więcej informacji.</string>
+    <string name="stop_timer_button">Czas zatrzymania</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d minuta</item>
+        <item quantity="few">%d minuty</item>
+        <item quantity="many">%d minut</item>
+        <item quantity="other">%d minut</item>
+    </plurals>
+    <string name="settings">Ustawienia</string>
+    <string name="sleep_timer_description">Gdy licznik osiągnie zero, ekran zgaśnie, muzyka zostanie wstrzymana, a ekran wkrótce się wyłączy.</string>
+    <string name="stop_sleep_time_message">Wznów kropki, usuń wyłącznik czasowy i wyjdź z trybu uśpienia.</string>
+    <string name="back">Wstecz</string>
+    <string name="resume_dots_button">Wznów kropki</string>
+    <string name="sleep_time">Czas snu</string>
+    <string name="sleep_timer">Wyłącznik czasowy</string>
+    <string name="about_credits">Podziękowania</string>
+    <string name="about_suggestions">Sugestie i raporty o błędach</string>
+    <string name="attribution"><b> Muzyka - </b> John Harrison w/ Wichita State University Chamber - Vivaldi Spring mvt 1 Allegro - <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
+    <string name="url_github">https://github.com/babydots/babydots</string>
+    <string name="about">O aplikacji</string>
+    <string name="mute">Wycisz</string>
+    <string name="speed">Prędkość</string>
+    <string name="size">Rozmiar</string>
+    <string name="colour_scheme">Schemat kolorów</string>
+</resources>
