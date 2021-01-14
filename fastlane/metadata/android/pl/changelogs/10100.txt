@@ -1,0 +1,3 @@
+Dodaj muzykę klasyczną (domyślnie wyciszona), popraw interfejs użytkownika w celu dostosowania.
+
+Prosimy o przesłanie opinii lub zgłoszenie jakichkolwiek problemów z narzędziem do śledzenia problemów na stronie https://github.com/babydots/babydots/issues.

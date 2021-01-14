@@ -1,0 +1,4 @@
+Dodano wyłącznik czasowy:
+ * Gdy licznik osiągnie zero, ekran zgaśnie, muzyka zostanie wstrzymana, a ekran wkrótce się wyłączy.
+
+Prosimy o przesłanie opinii lub zgłoszenie jakichkolwiek problemów z narzędziem do śledzenia problemów na stronie https://github.com/babydots/babydots/issues.

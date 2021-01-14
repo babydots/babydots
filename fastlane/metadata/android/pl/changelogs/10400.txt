@@ -1,0 +1,6 @@
+Dodaj opcjonalne blokowanie ekranu, zapobiegając przypadkowym dotknięciom podekscytowanych dzieci.
+
+Tłumaczenia:
+* Dodano holenderski (dzięki vistaus)
+
+Prosimy o przekazanie opinii lub zgłoszenie jakichkolwiek problemów dotyczących śledzenia problemów w https://github.com/babydots/babydots/issues.

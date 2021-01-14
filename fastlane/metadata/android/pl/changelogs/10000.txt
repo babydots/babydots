@@ -1,0 +1,6 @@
+Pierwsze wydanie Baby Dots:
+
+ * Oglądaj tańczące kropki ze swoim dzieckiem.
+ * Wybierz spośród różnych rozmiarów, kolorów i prędkości.
+
+Prosimy o przesłanie opinii lub zgłoszenie jakichkolwiek problemów z narzędziem do śledzenia problemów na stronie https://github.com/babydots/babydots/issues.

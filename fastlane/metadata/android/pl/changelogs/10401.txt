@@ -1,0 +1,9 @@
+Dodaj opcjonalne blokowanie ekranu, zapobiegające przypadkowym dotknięciom podekscytowanych dzieci.
+
+Ulepszone wyświetlanie wiadomości po wielokrotnym dotknięciu przycisku odblokowania.
+
+Tłumaczenia:
+* Dodano holenderski (dzięki vistaus)
+* Zaktualizowane tłumaczenia
+
+Prosimy o przesłanie opinii lub zgłoszenie jakichkolwiek problemów z narzędziem do śledzenia problemów na stronie https://github.com/babydots/babydots/issues.

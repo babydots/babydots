@@ -1,0 +1,13 @@
+Tłumaczenia:
+* Fiński (dzięki Edanas)
+* Francuski (dzięki Edanas)
+* Niemiecki (dzięki Edanas)
+* Włoski (dzięki Edanas)
+* Norweski Bokmål (dzięki kingu)
+* Santali (dzięki Prasanta-Hembram)
+* Turecki (dzięki ersen)
+Ulepszenia:
+* Dwa nowe motywy (ciemny + neon)
+* Zapamiętaj wybrane preferencje
+*Obudź blokadę (nie wyłączaj ekranu)
+* Losowa prędkość każdej kropki
