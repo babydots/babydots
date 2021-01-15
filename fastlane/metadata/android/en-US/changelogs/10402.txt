@@ -1,0 +1,7 @@
+Properly feedback about how many touches required to unlock.
+
+Translations:
+* Added Polish (thanks WaldiS)
+* Updated translations
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
