@@ -1,0 +1,7 @@
+Verbeterde feedback omtrent het aantal tikken om te ontgrendelen.
+
+Vertalingen:
+* Pools toegevoegd (met dank aan @WaldiS)
+* Overige vertalingen bijgewerkt
+
+Deel je feedback, problemen en ideeën op onze probleemtracker: https://github.com/babydots/babydots/issues.
