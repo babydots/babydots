@@ -1,0 +1,7 @@
+Kilidi açmak için kaç dokunuşun gerekli olduğu konusunda doğru şekilde geri bildirimde bulun.
+
+Çeviriler:
+* Lehçe eklendi (teşekkürler WaldiS)
+* Çeviriler güncellendi
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
