@@ -58,33 +58,33 @@ class FastlaneScreengrabTest {
         Screengrab.screenshot("01_splash_of_colour")
 
         clickFloatingActionButton()
-        clickSpeedDialButton(R.id.menu_colour)
-        clickSpeedDialButton(R.id.menu_colour)
+        clickSpeedDialButton(R.id.menu_speed_dial_colour)
+        clickSpeedDialButton(R.id.menu_speed_dial_colour)
 
         // Rename to 02_dark_with_menu when fdroidserver#490 is fixed
         Screengrab.screenshot("04_dark")
 
-        clickSpeedDialButton(R.id.menu_colour)
-        clickSpeedDialButton(R.id.menu_size)
-        clickSpeedDialButton(R.id.menu_size)
+        clickSpeedDialButton(R.id.menu_speed_dial_colour)
+        clickSpeedDialButton(R.id.menu_speed_dial_size)
+        clickSpeedDialButton(R.id.menu_speed_dial_size)
         clickDots()
 
         // Rename to 03_neon_small when fdroidserver#490 is fixed
         Screengrab.screenshot("05_neon")
 
         clickFloatingActionButton()
-        clickSpeedDialButton(R.id.menu_colour)
-        clickSpeedDialButton(R.id.menu_size)
-        clickSpeedDialButton(R.id.menu_size)
+        clickSpeedDialButton(R.id.menu_speed_dial_colour)
+        clickSpeedDialButton(R.id.menu_speed_dial_size)
+        clickSpeedDialButton(R.id.menu_speed_dial_size)
         clickDots()
 
         // Rename to 04_rainbow_large when fdroidserver#490 is fixed
         Screengrab.screenshot("02_rainbow")
 
         clickFloatingActionButton()
-        clickSpeedDialButton(R.id.menu_colour)
-        clickSpeedDialButton(R.id.menu_size)
-        clickSpeedDialButton(R.id.menu_timer)
+        clickSpeedDialButton(R.id.menu_speed_dial_colour)
+        clickSpeedDialButton(R.id.menu_speed_dial_size)
+        clickSpeedDialButton(R.id.menu_speed_dial_timer)
         Thread.sleep(3000) // Wait for toast message to disappear
 
         // Rename to 05_timer_with_menu when fdroidserver#490 is fixed
