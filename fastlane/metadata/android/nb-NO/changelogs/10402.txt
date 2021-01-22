@@ -1,0 +1,7 @@
+Ordentlig tilbakemelding om hvor mange trykk som kreves for opplåsing
+
+Oversettelser:
+* Polsk lagt til (takk til WaldiS)
+* Oppdaterte oversettelser
+
+Gi tilbakemeldinger om alle problemer på feilsporeren på https://github.com/babydots/babydots/issues.
