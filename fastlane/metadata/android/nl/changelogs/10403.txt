@@ -1,0 +1,6 @@
+Vertalingen:
+* Kroatisch toegevoegd (met dank aan @milotype)
+* Russisch toegevoegd (met dank aan @Kudesu)
+* Overige vertalingen bijgewerkt
+
+Deel je feedback, problemen en ideeën op onze probleemtracker: https://github.com/babydots/babydots/issues
