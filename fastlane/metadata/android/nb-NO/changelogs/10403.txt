@@ -1,0 +1,6 @@
+Oversettelser:
+* Ny for kroatisk (takk til milotype)
+* Ny for Russisk (takk til Kudesu)
+* Oppdaterte oversettelser
+
+Gi tilbakemeldinger om problemer på feilsporeren på https://github.com/babydots/babydots/issues.
