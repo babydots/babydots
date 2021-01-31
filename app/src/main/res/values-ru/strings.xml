@@ -1,2 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="about_credits">Кредиты</string>
+    <plurals name="touch_lock_to_unlock">
+        <item quantity="one">Чтобы разблокировать, быстро коснитесь замка еще %d раз.</item>
+        <item quantity="few">Чтобы разблокировать, быстро коснитесь замка еще %d раза.</item>
+        <item quantity="many">Чтобы разблокировать, быстро коснитесь замка еще %d раз.</item>
+        <item quantity="other">Чтобы разблокировать, быстро коснитесь замка еще %d раз.</item>
+    </plurals>
+    <string name="lock">Блокировано</string>
+    <string name="touch_to_unlock">Нажмите, чтобы разблокировать</string>
+    <string name="screen_unlocked">Экран разблокирован</string>
+    <string name="sleep_timer_started_help_text">Коснитесь таймера сна, чтобы получить дополнительную информацию.</string>
+    <string name="stop_timer_button">Остановить таймер</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+        <item quantity="other">%d минут</item>
+    </plurals>
+    <string name="settings">Настройки</string>
+    <string name="sleep_timer_description">Когда таймер достигает нуля, экран тускнеет, музыка приостанавливается, а экран вскоре выключается.</string>
+    <string name="resume_dots_button">Возобновить точки</string>
+    <string name="stop_sleep_time_message">Возобновить точки, удалить таймер сна и выйти из режима сна.</string>
+    <string name="back">Назад</string>
+    <string name="sleep_time">Время сна</string>
+    <string name="sleep_timer">Таймер сна</string>
+    <string name="about_suggestions">Предложения и отчеты об ошибках</string>
+    <string name="attribution"><b>Музыка - </b> Джон Харрисон w/Палата государственного университета Уичито- Весна Вивальди mvt 1 Allegro - <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
+    <string name="about">О приложении</string>
+    <string name="mute">Выкл. звук</string>
+    <string name="speed">Скорость</string>
+    <string name="size">Размер</string>
+    <string name="colour_scheme">Цветовая схема</string>
+</resources>
