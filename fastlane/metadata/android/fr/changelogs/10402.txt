@@ -1,0 +1,7 @@
+Commentaires sur le nombre de touches nécessaires pour déverrouiller correctement.
+
+Traductions :
+* Ajout du polonais (merci WaldiS)
+* Traductions mises à jour
+
+Veuillez fournir vos remarques ou signaler tout problème sur le suivi des problèmes à l'adresse https://github.com/babydots/babydots/issues.
