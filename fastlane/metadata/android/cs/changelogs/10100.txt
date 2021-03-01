@@ -1,0 +1,3 @@
+Přidána vážná hudba (ztišena ve výchozím stavu), vylepšeno uživatelské rozhraní pro změnu vzhledu.
+
+Prosím o zpětnou vazbu a hlášení jakýchkoliv problémů na https://github.com/babydots/babydots/issues.

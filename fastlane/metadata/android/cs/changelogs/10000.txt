@@ -1,0 +1,6 @@
+První verze Baby Dots:
+
+* Sledujte tancující barevné tečky s vaším dítětem.
+* Vybírejte z různých velikosti, barev a rychlosti.
+
+Prosím o zpětnou vazbu a hlášení jakýchkoliv problémů na https://github.com/babydots/babydots/issues.

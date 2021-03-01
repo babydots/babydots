@@ -1,0 +1,6 @@
+Překlady:
+* Přidána Chorvatština (poděkování milotype)
+* Přidána Ruština (poděkování Kudesu)
+* Aktualizovány překlady
+
+Prosím o zpětnou vazbu a hlášení jakýchkoliv problémů na https://github.com/babydots/babydots/issues.

@@ -1,0 +1,9 @@
+Přidána možnost zámku obrazovky pro zabránění dotykům nadšených miminek.
+
+Vylepšeno zobrazení zpráv při poklepání na zámek rychle a vícekrát.
+
+Překlady:
+* Přidána Dánština (poděkování vistaus)
+* Aktualizovány překlady
+
+Prosím o zpětnou vazbu a hlášení jakýchkoliv problémů na https://github.com/babydots/babydots/issues.

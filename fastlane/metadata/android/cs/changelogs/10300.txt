@@ -1,0 +1,4 @@
+Přidán odpočet usnutí:
+* Když odpočet dojde k nule, obrazovka se ztlumí, hudba se pozastaví a obrazovka se krátce na to vypne.
+
+Prosím o zpětnou vazbu a hlášení jakýchkoliv problémů na https://github.com/babydots/babydots/issues.

@@ -1,0 +1,6 @@
+Přidána možnost zámku obrazovky pro zabránění dotykům nadšených miminek.
+
+Překlady:
+* Přidána Dánština (poděkování vistaus)
+
+Prosím o zpětnou vazbu a hlášení jakýchkoliv problémů na https://github.com/babydots/babydots/issues.

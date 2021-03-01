@@ -1,0 +1,7 @@
+Adekvátní zpětná vazba o tom, kolikrát je třeba ještě klepnout pro odemčení-
+
+Překlady:
+* Přidána Polština (poděkování WaldiS)
+* Aktualizovány překlady
+
+Prosím o zpětnou vazbu a hlášení jakýchkoliv problémů na https://github.com/babydots/babydots/issues.

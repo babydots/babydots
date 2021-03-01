@@ -1,0 +1,17 @@
+Překlady:
+* Finština (poděkování Edanas)
+* Francouzština (poděkování Edanas)
+* Němčina (poděkování Edanas)
+* Italština (poděkování Edanas)
+* Norština Bokmål (poděkování kingu)
+* Santali (poděkování Prasanta-Hembram)
+* Turečtina (poděkování ersen)
+
+Vylepšení:
+
+* Dva nové vzhledy (tmavý + neon)
+* Zapamatování vybraných nastavení
+* Zámek probuzení (nevypínejte obrazovku)
+* Náhodná rychlost teček
+
+Prosím o zpětnou vazbu a hlášení jakýchkoliv problémů na https://github.com/babydots/babydots/issues.
