@@ -1,0 +1,6 @@
+Prijevodi:
+* Dodan je hrvatski (hvala milotype)
+* Dodan je ruski (hvala Kudesu)
+* Aktualiyirani prijevodi
+
+Pošalji povratne informacije ili prijavi probleme na sustavu za praćenje grešaka pri https://github.com/babydots/babydots/issues.
