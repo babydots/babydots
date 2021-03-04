@@ -1,2 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <plurals name="touch_lock_to_unlock">
+        <item quantity="one">Швидко торкніться замка ще %d раз, щоб розблокувати.</item>
+        <item quantity="few">Швидко торкніться замка ще %d рази, щоб розблокувати.</item>
+        <item quantity="many">Швидко торкніться замка ще %d разів, щоб розблокувати.</item>
+        <item quantity="other">Швидко торкніться замка ще %d разів, щоб розблокувати.</item>
+    </plurals>
+    <string name="touch_to_unlock">Торкніться, щоб розблокувати</string>
+    <string name="lock">Блокувати</string>
+    <string name="screen_unlocked">Екран розблоковано</string>
+    <string name="sleep_timer_started_help_text">Торкніться таймера сну для отримання додаткових відомостей.</string>
+    <string name="stop_timer_button">Зупинити таймер</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d хвилина</item>
+        <item quantity="few">%d хвилини</item>
+        <item quantity="many">%d хвилин</item>
+        <item quantity="other">%d хвилин</item>
+    </plurals>
+    <string name="settings">Параметри</string>
+    <string name="sleep_timer_description">Коли таймер досягне нуля, екран затемниться, музика зупиниться, а екран незабаром вимкнеться.</string>
+    <string name="stop_sleep_time_message">Відновити крапки, прибрати таймер сну та вийти з режиму сну.</string>
+    <string name="back">Назад</string>
+    <string name="resume_dots_button">Відновити крапки</string>
+    <string name="sleep_time">Час сну</string>
+    <string name="sleep_timer">Таймер сну</string>
+    <string name="about_credits">Подяки</string>
+    <string name="about_suggestions">Пропозиції та звіти про помилки</string>
+    <string name="attribution"><b>Музика — </b> John Harrison w/ Wichita State University Chamber — Vivaldi Spring mvt 1 Allegro - <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
+    <string name="url_github">https://github.com/babydots/babydots</string>
+    <string name="about">Про застосунок</string>
+    <string name="mute">Вимкнути звук</string>
+    <string name="speed">Швидкість</string>
+    <string name="size">Розмір</string>
+    <string name="colour_scheme">Колірна схема</string>
+    <string name="app_name">Baby Dots</string>
+</resources>
