@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <plurals name="touch_lock_to_unlock">
+        <item quantity="one">Toca rápidamente la cerradura %d vez más para desbloquear.</item>
+        <item quantity="other">Toca rápidamente la cerradura %d veces más para desbloquear.</item>
+    </plurals>
+    <string name="touch_to_unlock">Toca para desbloquear</string>
+    <string name="lock">Bloquear</string>
+    <string name="screen_unlocked">Pantalla desbloqueada</string>
+    <string name="sleep_timer_started_help_text">Toca el temporizador de reposo para más info.</string>
+    <string name="stop_timer_button">Detener temporizador</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d minuto</item>
+        <item quantity="other">%d minutos</item>
+    </plurals>
+    <string name="settings">Ajustes</string>
+    <string name="sleep_timer_description">Cuando el temporizador llega a cero, la pantalla se atenúa, la música se detiene y la pantalla se apaga poco después.</string>
+    <string name="stop_sleep_time_message">Reanuda los puntos, quita el temporizador de reposo y sale de la hora de reposo.</string>
+    <string name="sleep_time">Hora de reposar</string>
+    <string name="sleep_timer">Temporizador de reposo</string>
+    <string name="back">Atrás</string>
+    <string name="resume_dots_button">Continuar puntos</string>
+    <string name="about_credits">Créditos</string>
+    <string name="about_suggestions">Sugerencias y reporte de bugs</string>
+    <string name="attribution"><b>Música - </b> John Harrison w/ Wichita State University Chamber - Vivaldi Spring mvt 1 Allegro - <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
+    <string name="url_github">https://github.com/babydots/babydots</string>
+    <string name="about">Acerca de</string>
+    <string name="mute">Silenciar</string>
+    <string name="speed">Velocidad</string>
+    <string name="size">Tamaño</string>
+    <string name="colour_scheme">Esquema de colores</string>
+    <string name="app_name">Baby Dots</string>
+</resources>
