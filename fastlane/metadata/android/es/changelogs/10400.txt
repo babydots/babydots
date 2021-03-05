@@ -1,0 +1,6 @@
+Añade el bloqueo opcional de la pantalla, para evitar los toques accidentales de los bebés hiperactivos.
+
+Traducciones:
+* Añadido holandés (gracias vistaus)
+
+Agradecemos comentar o reportar algún problema en el gestor de incidentes en https://github.com/babydots/babydots/issues.

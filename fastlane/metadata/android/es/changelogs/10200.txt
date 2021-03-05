@@ -1,0 +1,17 @@
+Traducciones:
+* Finlandés (gracias Edanas)
+* Francés (gracias Edanas)
+* Alemán (gracias Edanas)
+* Italiano (gracias Edanas)
+* Bokmål noruego (gracias kingu)
+* Santali (gracias Prasanta-Hembram)
+* Turco (gracias ersen)
+
+Mejoras:
+
+* Nuevos temas (oscuro + neón)
+* Recuerda las preferencias seleccionadas
+* Bloqueo del despertador (sin apagar la pantalla)
+* Alateoriza la velocidad de cada punto
+
+Agradecemos comentar o reportar en el gestor de incidentes en https://github.com/babydots/babydots/issues.

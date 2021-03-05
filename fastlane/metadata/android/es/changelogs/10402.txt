@@ -1,0 +1,7 @@
+Retroalimentación adecuada sobre el número de toques necesarios para desbloquear.
+
+Traducciones:
+* Añadido el polaco (gracias WaldiS)
+* Traducciones actualizadas
+
+Agradecemos comentar o reportar algún problema en el gestor de incidentes en https://github.com/babydots/babydots/issues.

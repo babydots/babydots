@@ -1,0 +1,6 @@
+Traducciones:
+* Añadido croata (gracias milotype)
+* Añadido ruso (gracias Kudesu)
+* Traducciones actualizadas
+
+Agradecemos comentar o reportar algún problema en el gestor de incidentes en https://github.com/babydots/babydots/issues.

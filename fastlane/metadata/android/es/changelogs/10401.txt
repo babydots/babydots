@@ -1,0 +1,9 @@
+Añade el bloqueo opcional de la pantalla, para evitar los toques accidentales de los bebés hiperactivos.
+
+Mejora de la visualización de los mensajes cuando se toca el botón de desbloqueo muchas veces rápidamente.
+
+Traducciones:
+* Añadido el holandés (gracias vistaus)
+* Traducciones actualizadas
+
+Agradecemos comentar o reportar algún problema en el gestor de incidentes en https://github.com/babydots/babydots/issues.

@@ -1,0 +1,6 @@
+Primer lanzamiento de Baby Dots:
+
+* Mira los puntos que bailan con tu bebé.
+* Elige entre diferentes tamaños, colores y velocidad.
+
+Agradecemos comentar o reportar algún problema en el gestor de incidentes en https://github.com/babydots/babydots/issues.

@@ -1,0 +1,3 @@
+Añade música clásica (silenciada por defecto), mejora la interfaz de usuario para su personalización.
+
+Agradecemos comentar o reportar algún problema en el gestor de incidentes en https://github.com/babydots/babydots/issues.

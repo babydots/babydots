@@ -1,0 +1,4 @@
+Se ha añadido un temporizador para dormir:
+* Cuando el temporizador llega a cero, la pantalla se atenuará, la música se pausará y la pantalla se apagará poco después.
+
+Agradecemos comentar o reportar algún problema en el gestor de incidentes en https://github.com/babydots/babydots/issues.
