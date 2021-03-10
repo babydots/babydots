@@ -1,0 +1,7 @@
+Dettaglia adeguatamente su quanti tocchi sono richiesti per lo sblocco
+
+Traduzioni:
+* Aggiunto Polacco (grazie WaldiS)
+* Aggiornato traduzioni
+
+Sentitevi liberi di fornirci commenti o farci sapere di eventuali problemi tramite il tracker dei problemi a https://github.com/babydots/babydots/issues.

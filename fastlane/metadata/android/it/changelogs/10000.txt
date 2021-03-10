@@ -1,0 +1,6 @@
+Prima versione di Baby Dots:
+
+ * Guarda i punti danzanti con il tuo bambino.
+ * Scegli tra diverse dimensioni, colori e velocità.
+
+Fornisci qualsiasi commento o segnala eventuali problemi sul tracker dei problemi su https://github.com/babydots/babydots/issues.

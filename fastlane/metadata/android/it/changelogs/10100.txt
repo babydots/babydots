@@ -1,0 +1,3 @@
+Aggiungta di musica classica (l'impostazione predefinita è disattivata), migliora l'interfaccia utente per la personalizzazione.
+
+Fornisci qualsiasi commento o segnala eventuali problemi sul tracker dei problemi su https://github.com/babydots/babydots/issues.
