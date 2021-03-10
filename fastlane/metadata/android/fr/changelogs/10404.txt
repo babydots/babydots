@@ -1,0 +1,7 @@
+Traductions :
+* Ajout du tchèque (merci petrhejna)
+* Ajout de l’espagnol (merci sguinetti)
+* Ajout de l’ukrainien (merci IhorHordiichuk)
+* Traductions mises à jour (merci à toute la communauté des traducteurs)
+
+Veuillez fournir vos remarques ou signaler tout problème sur le suivi des problèmes à l’adresse https://github.com/babydots/babydots/issues.
