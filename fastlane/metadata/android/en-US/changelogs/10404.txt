@@ -1,0 +1,7 @@
+Translations:
+* Added Czech (thanks petrhejna)
+* Added Spanish (thanks sguinetti)
+* Added Ukranian (thanks IhorHordiichuk)
+* Updated translations (many thanks to all the community of translators)
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
