@@ -1,6 +1,9 @@
-Aggiunge il blocco opzionale dello schermo, per prevenire i tocchi accidentali da parte dei bambini eccitati.
+Aggiunto il blocco dello schermo opzionale, prevenendo tocchi accidentali da parte dei bambini vivaci.
+
+Visualizzazione dei messaggi migliorata quando si tocca il pulsante di sblocco molte volte in rapida successione.
 
 Traduzioni:
-* olandese aggiunto (grazie vistaus)
+* Aggiunto olandese (grazie vistaus)
+* Traduzioni aggiornate
 
-Fornisci qualsiasi commenti o segnala eventuali problemi su https://github.com/babydots/babydots/issues.
+Fornisci qualsiasi commenti o segnala eventuali problemi sul tracker dei problemi su https://github.com/babydots/babydots/issues.
