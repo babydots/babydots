@@ -32,4 +32,5 @@
     <string name="speed">Скорость</string>
     <string name="size">Размер</string>
     <string name="colour_scheme">Цветовая схема</string>
+    <string name="app_name">Baby Dots</string>
 </resources>
