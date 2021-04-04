@@ -1,0 +1,7 @@
+Oversettelser:
+* Tsjekkisk, ved petrhejna
+* Spansk, ved sguinetti
+* Ukrainsk, ved IhorHordiichuk
+* Oppdaterte oversettelser, takk til alle oversettere
+
+Gi tilbakemeldinger eller rapporter problemer i feilsporeren på https://github.com/babydots/babydots/issues.
