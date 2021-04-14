@@ -1,12 +1,16 @@
 package com.serwylo.babydots
 
 import android.animation.ValueAnimator
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
+import android.view.MotionEvent
 import android.view.View
 import android.view.animation.LinearInterpolator
+import kotlin.math.abs
 import kotlin.math.min
+import kotlin.math.sqrt
 
 class AnimatedDots @JvmOverloads constructor(
         context: Context,
@@ -62,6 +66,7 @@ class AnimatedDots @JvmOverloads constructor(
         }
 
     private val dots = mutableListOf<Dot>()
+    private val touchLocations = mutableMapOf<Int, Point>()
     private val dotRadius = DOT_RADIUS
     private val animator = ValueAnimator.ofFloat(0f, 1f)
 
@@ -134,6 +139,38 @@ class AnimatedDots @JvmOverloads constructor(
         restartDots()
     }
 
+    /**
+     * Record the location of each touch event. Later on during rendering we will use this information
+     * to render touched dots differently.
+     *
+     * Doesn't implement 'performClick' because a click probably means "a dot was touched", however
+     * this happens many times for one ACTION_POINTER_DOWN, as dots move in or out of the cursors path.
+     * There also isn't much to be gained in terms of accessibility from this click.
+     */
+    @SuppressLint("ClickableViewAccessibility")
+    override fun onTouchEvent(event: MotionEvent?): Boolean {
+
+        if (event != null) {
+            if (event.actionMasked == MotionEvent.ACTION_POINTER_DOWN || event.actionMasked == MotionEvent.ACTION_DOWN) {
+                (0 until event.pointerCount).map { pointerId ->
+                    touchLocations[pointerId] = Point(event.getX(pointerId).toInt(), event.getY(pointerId).toInt())
+                }
+            } else if (event.actionMasked == MotionEvent.ACTION_MOVE) {
+                (0 until event.pointerCount).map { pointerId ->
+                    touchLocations[pointerId]?.set(event.getX(pointerId).toInt(), event.getY(pointerId).toInt())
+                }
+            } else if (event.actionMasked == MotionEvent.ACTION_POINTER_UP || event.actionMasked == MotionEvent.ACTION_UP) {
+                (0 until event.pointerCount).map { pointerId ->
+                    touchLocations.remove(pointerId)
+                }
+            } else if (event.actionMasked == MotionEvent.ACTION_CANCEL) {
+                touchLocations.clear()
+            }
+        }
+
+        return super.onTouchEvent(event)
+    }
+
     fun restartDots() {
         dots.clear()
 
@@ -142,21 +179,22 @@ class AnimatedDots @JvmOverloads constructor(
         }
     }
 
+    private fun dotRadius() = when (size) {
+        Size.Large -> dotRadius * 1.5f
+        Size.Small -> dotRadius * 0.5f
+        else -> dotRadius
+    }
+
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 
         canvas?.drawColor(context.resources.getColor(backgroundPaints[colourScheme] ?: android.R.color.white))
 
-        val radius = when (size) {
-            Size.Large -> dotRadius * 1.5
-            Size.Small -> dotRadius * 0.5
-            else -> dotRadius
-        }
-
         val colourScheme = dotFillPaints[colourScheme] ?: intArrayOf(android.R.color.black)
         val borderColourScheme = dotStrokePaints[this.colourScheme] ?: intArrayOf(android.R.color.black)
         var colours = colourScheme.iterator()
         var borderColours = borderColourScheme.iterator()
+        val radius = dotRadius()
 
         dots.forEach { dot ->
             if (drawPaths) {
@@ -179,11 +217,38 @@ class AnimatedDots @JvmOverloads constructor(
             val x = point[0]
             val y = point[1]
 
-            if (x > -radius.toFloat() && x < width + radius.toFloat() && y > -radius.toFloat() && y < height + radius.toFloat()) {
-                canvas?.drawCircle(x, y, radius.toFloat(), dotFillPaint)
-                canvas?.drawCircle(x, y, radius.toFloat(), dotStrokePaint)
+            val isTouching = isTouching(x, y, radius)
+
+            if (x > -radius && x < width + radius && y > -radius && y < height + radius) {
+                val size = if(isTouching) radius * 2 else radius
+                canvas?.drawCircle(x, y, size, dotFillPaint)
+                canvas?.drawCircle(x, y, size, dotStrokePaint)
             }
         }
+    }
+
+    private fun isTouching(x: Float, y: Float, radius: Float): Boolean {
+
+        return touchLocations.values.any { touchPoint ->
+
+            // Use a bounding box check to eliminate those which are definitely not touching...
+            if (touchPoint.x < x - radius || touchPoint.x > x + radius || touchPoint.y < y - radius || touchPoint.y > y + radius) {
+
+                false
+
+            } else {
+
+                // ...before performing a more accurate check.
+                val dx = abs(touchPoint.x - x)
+                val dy = abs(touchPoint.y - y)
+                val distance = sqrt(dx * dx + dy * dy)
+
+                distance < radius
+
+            }
+
+        }
+
     }
 
     private fun createRandomPath(w: Int, h: Int): Path {
@@ -198,7 +263,7 @@ class AnimatedDots @JvmOverloads constructor(
         var x = startX
         var y = startY
 
-        val numPoints = (Math.random() * (Companion.PATH_MAX_POINTS - Companion.PATH_MIN_POINTS) + Companion.PATH_MIN_POINTS).toInt()
+        val numPoints = (Math.random() * (PATH_MAX_POINTS - PATH_MIN_POINTS) + PATH_MIN_POINTS).toInt()
 
         for (i in 0..numPoints * 3) {
             x += Math.random().toFloat() * maxMovement - maxMovement / 2
