@@ -1,0 +1,7 @@
+Korrektes Feedback darüber, wie viele Berührungen zum Entsperren erforderlich sind.
+
+Übersetzungen:
+* Polnisch hinzugefügt (danke WaldiS)
+* Übersetzungen aktualisiert
+
+Bitte geben Sie uns Feedback oder melden Sie Probleme im Problem-Tracker unter https://github.com/babydots/babydots/issues.
