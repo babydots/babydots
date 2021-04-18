@@ -1,0 +1,3 @@
+Maak de stippen leuker voor kinderen: door ze aan te raken worden ze voortaan vergroot.
+
+Deel je feedback of problemen op https://github.com/babydots/babydots/issues
