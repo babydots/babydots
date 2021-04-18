@@ -1,0 +1,3 @@
+Die Interaktion mit Punkten macht für kleine Finger mehr Spaß. Wenn Sie Punkte berühren, werden sie jetzt größer.
+
+Bitte geben Sie uns Rückmeldung oder melden Sie Probleme im Problem-Tracker unter https://github.com/babydots/babydots/issues.
