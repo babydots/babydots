@@ -1,0 +1,3 @@
+Küçük parmaklar için noktalarla etkileşime girmeyi daha eğlenceli hale getirin. Noktalara dokunmak artık onları daha da büyütüyor.
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
