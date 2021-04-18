@@ -1,0 +1,3 @@
+Tee pisteistä hauskempia vuorovaikutteisia pienille sormille. Pisteiden koskettaminen tekee niistä nyt suurempia.
+
+Anna palautetta tai ilmoita ongelmista ongelmanseurantaan osoitteessa https://github.com/babydots/babydots/issues.
