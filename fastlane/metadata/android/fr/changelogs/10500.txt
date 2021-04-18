@@ -1,0 +1,3 @@
+Rendez l'interaction avec les points plus amusante pour les petits doigts. Toucher les points les rend désormais plus grands.
+
+N'hésitez pas à nous faire part de vos remarques ou à signaler tout problème sur le gestionnaire de problèmes à l'adresse https://github.com/babydots/babydots/issues.
