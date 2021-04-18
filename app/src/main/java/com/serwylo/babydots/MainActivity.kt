@@ -70,20 +70,19 @@ class MainActivity : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+        speedDial = findViewById(R.id.speed_dial)
+
         dots = findViewById(R.id.dots)
         dots.colourScheme = Preferences.getColourScheme(this)
         dots.speed = Preferences.getSpeed(this)
         dots.size = Preferences.getSize(this)
 
         dots.setOnClickListener {
-            dots.restartDots()
             speedDial.close()
         }
 
         mediaPlayer = MediaPlayer.create(this, R.raw.classical)
         mediaPlayer.isLooping = true
-
-        speedDial = findViewById(R.id.speed_dial)
 
         sleepTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_speed_dial_timer, R.drawable.ic_timer)
             .setLabel(R.string.sleep_timer)
