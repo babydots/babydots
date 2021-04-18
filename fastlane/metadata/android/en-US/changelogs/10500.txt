@@ -1,0 +1,3 @@
+Make dots more fun to interact with for tiny fingers. Touching dots now makes them bigger.
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
