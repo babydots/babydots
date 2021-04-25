@@ -1,5 +1,5 @@
 Çeviriler:
-* Çekçe eklendi (teşekkürler petrhejna)
+* Çekçe eklendi
 * İspanyolca eklendi (teşekkürler sguinetti)
 * Ukraynaca eklendi (teşekkürler IhorHordiichuk)
 * Çeviriler güncellendi (tüm çevirmenler topluluğuna çok teşekkürler)

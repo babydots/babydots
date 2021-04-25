@@ -1,6 +1,6 @@
 Nieuw:
 
-* Tsjechische vertaling (met dank aan @petrhejna)
+* Tsjechische vertaling
 * Spaanse vertaling (met dank aan @sguinetti)
 * Oekraïense vertaling (met dan aan @IhorHordiichuk)
 

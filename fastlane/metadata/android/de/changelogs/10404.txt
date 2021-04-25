@@ -1,5 +1,5 @@
 Übersetzungen:
-* Tschechisch hinzugefügt (danke petrhejna)
+* Tschechisch hinzugefügt
 * Spanisch hinzugefügt (danke sguinetti)
 * Ukrainisch hinzugefügt (danke IhorHordiichuk)
 * Aktualisierte Übersetzungen (vielen Dank an die gesamte Übersetzergemeinschaft)

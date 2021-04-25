@@ -1,5 +1,5 @@
 Translations:
-* Added Czech (thanks petrhejna)
+* Added Czech
 * Added Spanish (thanks sguinetti)
 * Added Ukranian (thanks IhorHordiichuk)
 * Updated translations (many thanks to all the community of translators)
