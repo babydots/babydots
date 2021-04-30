@@ -1,0 +1,3 @@
+Mer gøy med dotter som reagerer med små fingre. Å trykke på dem gjør dem nå større.
+
+Gi tilbakemeldinger eller rapporter feil til problemsporeren på https://github.com/babydots/babydots/issues.
