@@ -1,0 +1,7 @@
+Traducciones:
+*Se añadió el idioma Checho
+*Se añadió el idioma Español (gracias sguinetti)
+*Se añadió el idioma Ucraniano (gracias IhorHordiichuk)
+*Se actualizaron las traducciones (gracias a toda la comunidad de traductores)
+
+Por favor, deja tus sugerencias o avisa de cualquier problema en la pagina de seguimiento: https://github.com/babydots/babydots/issues.
