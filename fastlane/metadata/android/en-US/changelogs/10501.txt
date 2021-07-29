@@ -1,0 +1,3 @@
+Bugfix: Prevent babies from unlocking BabyDots when rotating the device (thanks to yamatt for reporting).
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
