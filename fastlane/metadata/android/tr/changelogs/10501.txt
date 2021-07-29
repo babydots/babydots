@@ -1,0 +1,3 @@
+Hata düzeltme: Bebeklerin aygıtı döndürürken BabyDots'ın kilidini açmasını önle (bildirdiği için yamatt'a teşekkürler).
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
