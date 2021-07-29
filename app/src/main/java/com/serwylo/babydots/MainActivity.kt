@@ -2,7 +2,10 @@ package com.serwylo.babydots
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.pm.ActivityInfo
+import android.graphics.Point
 import android.media.MediaPlayer
+import android.os.Build
 import android.os.Bundle
 import android.view.*
 import android.widget.ImageView
@@ -15,6 +18,7 @@ import com.leinardi.android.speeddial.SpeedDialActionItem
 import com.leinardi.android.speeddial.SpeedDialView
 import java.util.*
 
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var dots: AnimatedDots
@@ -26,7 +30,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var timerWrapper: View
     private lateinit var timerLabel: TextView
     private lateinit var timerIcon: ImageView
-
 
     /**
      * Remember this item so that we can swap the "Sleep timer" with the "Stop timer".
@@ -155,6 +158,8 @@ class MainActivity : AppCompatActivity() {
                 View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
         } catch (e: Exception) {}
 
+        lockActivityOrientation()
+
         startLockTask()
 
         speedDial.visibility = View.GONE
@@ -203,11 +208,62 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * During immersive mode, don't let the screen change orientation in immersive mode - the baby
+     * will likely be moving the phone all about and there is no benefit to changing orientation
+     * (there is no real sense of "up" when in full screen).
+     *
+     * See:
+     *  - Original bug report: https://github.com/babydots/babydots/issues/40 and
+     *  - Source for this fix: https://stackoverflow.com/questions/3611457/android-temporarily-disable-orientation-changes-in-an-activity
+     */
+    @SuppressLint("NewApi", "SourceLockedOrientationActivity")
+    private fun lockActivityOrientation() {
+
+        val display = windowManager.defaultDisplay
+        val rotation = display.rotation
+
+        val size = Point()
+        display.getSize(size)
+
+        val height = size.y
+        val width = size.x
+
+        requestedOrientation = when (rotation) {
+            Surface.ROTATION_90 ->
+                if (width > height) {
+                    ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+                } else {
+                    ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT
+                }
+            Surface.ROTATION_180 ->
+                if (height > width) {
+                    ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT
+                } else {
+                    ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
+                }
+            Surface.ROTATION_270 ->
+                if (width > height) {
+                    ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
+                } else {
+                    ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+                }
+            else ->
+                if (height > width) {
+                    ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+                } else {
+                    ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+                }
+        }
+    }
+
     private fun stopImmersiveMode() {
 
         unlockWrapper.visibility = View.GONE
         toolbar.visibility = View.VISIBLE
         speedDial.visibility = View.VISIBLE
+
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
 
         stopLockTask()
 
