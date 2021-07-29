@@ -1,0 +1,3 @@
+[OPGELOST] Baby's kunnen de app niet meer ontgrendelen door het apparaat te draaien (met dank aan @yamatt voor het melden).
+
+Deel je feedback of problemen op https://github.com/babydots/babydots/issues
