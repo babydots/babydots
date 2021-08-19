@@ -1,0 +1,6 @@
+Pridėkite pasirinktinį ekrano užraktą, kad susijaudinę kūdikiai negalėtų netyčia paliesti ekrano.
+
+Vertimai:
+* Pridėta olandų kalba (ačiū vistaus)
+
+Pateikite bet kokius atsiliepimus arba praneškite apie bet kokias problemas https://github.com/babydots/babydots/issues problemų stebėjimo sistemoje.

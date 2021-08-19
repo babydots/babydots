@@ -1,0 +1,3 @@
+Padarykite taškus įdomesnius mažiems pirštukams. Palietus taškus, jie tampa didesni.
+
+Pateikite bet kokius atsiliepimus arba praneškite apie bet kokias problemas https://github.com/babydots/babydots/issues problemų stebėjimo sistemoje.

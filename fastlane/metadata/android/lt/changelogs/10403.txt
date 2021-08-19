@@ -1,0 +1,6 @@
+Vertimai:
+* Pridėta kroatų kalba (ačiū milotype)
+* Pridėta rusų kalba (ačiū Kudesu)
+* Atnaujinti vertimai
+
+Prašome pateikti atsiliepimus arba pranešti apie problemas https://github.com/babydots/babydots/issues.

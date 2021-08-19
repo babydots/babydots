@@ -1,0 +1,3 @@
+Pridėti klasikinės muzikos (numatytasis nustatymas - nutildytas), patobulinti vartotojo sąsają, kad būtų galima ją pritaikyti.
+
+Pateikite bet kokius atsiliepimus arba praneškite apie bet kokias problemas https://github.com/babydots/babydots/issues.

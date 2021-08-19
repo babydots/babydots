@@ -1,0 +1,7 @@
+Tinkamai pateikite atsiliepimus apie tai, kiek prisilietimų reikia atrakinti.
+
+Vertimai:
+* Pridėta lenkų kalba (ačiū WaldiS)
+* Atnaujinti vertimai
+
+Prašome pateikti atsiliepimų arba pranešti apie problemas https://github.com/babydots/babydots/issues problemų stebėjimo sistemoje.

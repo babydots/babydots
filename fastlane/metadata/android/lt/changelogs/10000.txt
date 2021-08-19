@@ -1,0 +1,6 @@
+Pirmasis „Baby Dots“ leidimas:
+
+ * Žiūrėkite šokančius taškus su savo kūdikiu.
+ * Pasirinkite iš skirtingų dydžių, spalvų ir greičio.
+
+Pateikite atsiliepimų arba praneškite apie problemas, problemų stebėjimo priemonėje, adresu https://github.com/babydots/babydots/issues.

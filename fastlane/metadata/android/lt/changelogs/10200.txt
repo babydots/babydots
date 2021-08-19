@@ -1,0 +1,17 @@
+Vertimai:
+* suomių (ačiū Edanas)
+* prancūzų (ačiū Edanas)
+* vokiečių(ačiū Edanas)
+* italų (ačiū Edanas)
+* norvegų Bokmål (ačiū kingu)
+* santali (ačiū Prasanta-Hembram)
+* turkų (ačiū ersen)
+
+Patobulinimai:
+
+* Dvi naujos temos (tamsi + neoninė)
+* Įsimena pasirinktas nuostatas
+* Pabudimo užraktas (neišjunkite ekrano)
+* Atsitiktinis kiekvieno taško greitis
+
+Pateikite bet kokius atsiliepimus arba praneškite apie bet kokias problemas adresu https://github.com/babydots/babydots/issues.

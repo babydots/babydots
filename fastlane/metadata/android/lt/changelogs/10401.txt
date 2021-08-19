@@ -1,0 +1,9 @@
+Pridėkite pasirinktinį ekrano užraktą, kad susijaudinę kūdikiai negalėtų netyčia paliesti ekrano.
+
+Patobulintas žinučių rodymas, kai bakstelėjama atrakinimo mygtuką daug kartų greitai.
+
+Vertimai:
+* Pridėta olandų kalba (ačiū vistaus)
+* Atnaujinti vertimai
+
+Prašome pateikti bet kokius atsiliepimus arba pranešti apie problemas https://github.com/babydots/babydots/issues.

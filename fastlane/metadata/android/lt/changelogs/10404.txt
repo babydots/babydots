@@ -1,0 +1,7 @@
+Vertimai:
+* Pridėta čekų kalba
+* Pridėta ispanų kalba (ačiū sguinetti)
+* Pridėta ukrainiečių kalba (ačiū IhorHordiichuk)
+* Atnaujinti vertimai (ačiū visai vertėjų bendruomenei)
+
+Prašome pateikti bet kokius atsiliepimus arba pranešti apie problemas https://github.com/babydots/babydots/issues.

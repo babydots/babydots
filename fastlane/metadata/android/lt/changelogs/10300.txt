@@ -1,0 +1,4 @@
+Pridėtas miego laikmatis:
+ * Kai laikmatis pasieks nulį, ekranas užtemsta, muzika pristabdoma, o ekranas netrukus išsijungia.
+
+Pateikite bet kokius atsiliepimus arba praneškite apie bet kokias problemas problemų stebėjimo sistemoje adresu https://github.com/babydots/babydots/issues.

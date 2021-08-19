@@ -1,0 +1,3 @@
+Riktų pataisymas: neleiskite kūdikiams atrakinti „BabyDots“ sukant įrenginį (ačiū yamatt, kad pranešėte).
+
+Pateikite atsiliepimų arba praneškite apie problemas, susijusias su problemų stebėjimo priemone, adresu https://github.com/babydots/babydots/issues.
