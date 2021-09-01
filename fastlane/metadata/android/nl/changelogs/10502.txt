@@ -1,0 +1,8 @@
+Vertalingen:
+ - Litouwse vertaling (met dank aan @g!)
+ - Overige vertalingen bijgewerkt
+
+Opgelost:
+ - Het scherm ‘Over’ kan voortaan worden verschoven op apparaten met kleine schermen of grote lettertypen (met dank aan @yuhuitech voor het melden en oplossen hiervan!)
+
+Deel je feedback, problemen en ideeën op onze probleemtracker: https://github.com/babydots/babydots/issues
