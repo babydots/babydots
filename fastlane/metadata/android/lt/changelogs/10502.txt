@@ -1,0 +1,8 @@
+Vertimai:
+ - Pridėtas vertimas į lietuvių kalbą (ačiū @g)
+ - Atnaujinti vertimai
+
+Klaidų taisymai:
+ - Leisti slinkti „Apie“ ekraną, kai įrenginio ekranas yra per mažas arba šriftas yra didelis (ačiū @yuhuitech už tai, kad pirmiausia pranešė, o paskui ištaisė) 
+
+Pateikite atsiliepimų arba praneškite apie problemas, susijusias su problemų stebėjimo priemone, adresu https://github.com/babydots/babydots/issues.
