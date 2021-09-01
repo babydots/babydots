@@ -1,0 +1,8 @@
+Translations:
+ - Added Lithuanian translation (thanks @g)
+ - Updated translations
+
+Bugfixes:
+ - Allow the about screen to be scrolled when the device screen is too small or the font is large (thanks @yuhuitech for first reporting and then fixing)
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
