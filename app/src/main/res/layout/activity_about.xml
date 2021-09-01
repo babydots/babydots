@@ -1,97 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     tools:context=".AboutActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        android:layout_marginTop="32dp"
-        android:src="@mipmap/ic_launcher_round"
-        android:contentDescription="@string/app_name" />
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        android:layout_marginTop="32dp"
-        android:textSize="32sp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/about_suggestions"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="32dp"
-        android:paddingBottom="12dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:textSize="18sp"
-        android:text="@string/about_suggestions"
-        android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/title" />
-    
-    <mehdi.sakout.fancybuttons.FancyButton
-        android:id="@+id/button_github"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        fancy:fb_fontIconResource="&#xf09b;"
-        fancy:fb_text="babydots/babydots"
-        android:padding="8dp"
-        fancy:fb_textSize="18sp"
-        fancy:fb_radius="12dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/about_suggestions"
-    />
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
-    <TextView
-        android:id="@+id/about_attribution"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="32dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:paddingBottom="12dp"
-        android:textSize="18sp"
-        android:text="@string/about_credits"
-        android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/button_github" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/attribution"
-        android:clickable="true"
-        android:focusable="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="0dp"
-        android:paddingBottom="12dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:textSize="14sp"
-        android:text="@string/attribution"
-        android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/about_attribution" />
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_launcher_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/app_name"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logo" />
+
+            <TextView
+                android:id="@+id/about_suggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingTop="32dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/about_suggestions"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/about_suggestions"
+                fancy:fb_fontIconResource="&#xf09b;"
+                fancy:fb_radius="12dp"
+                fancy:fb_text="babydots/babydots"
+                fancy:fb_textSize="18sp" />
+
+            <TextView
+                android:id="@+id/about_attribution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingTop="32dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/about_credits"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/button_github" />
+
+            <TextView
+                android:id="@+id/attribution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="12dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/attribution"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/about_attribution" />
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
