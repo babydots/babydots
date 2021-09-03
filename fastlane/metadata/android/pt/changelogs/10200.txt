@@ -1,0 +1,17 @@
+Traduções:
+* Finlandês (Edanas)
+* Francês (Edanas)
+* Alemão (Edanas)
+* Italiano (Edanas)
+* Bokmål norueguês (kingu)
+* Santali (Prasanta-Hembram)
+* Turco (ersen)
+
+Melhorias:
+
+* Dois novos temas (escuro + néon)
+* Memorizar preferências selecionadas
+* Bloqueio de despertar (não desligue o ecrã)
+* Tornar aleatória a velocidade de cada ponto
+
+Por favor, forneça qualquer comentário ou relate qualquer problema no rastreador de problemas em https://github.com/babydots/babydots/issues.

@@ -1,0 +1,3 @@
+Correção de erro: impedir que bebés desbloqueiem o BabyDots ao rodar o dispositivo (obrigado ao yamatt por relatar este problema).
+
+Forneça qualquer comentário ou relate quaisquer problemas no rastreador de problemas em https://github.com/babydots/babydots/issues.

@@ -1,0 +1,9 @@
+Adicionado o bloqueio de ecrã opcional, evitando toques acidentais de bebés excitados.
+
+Visualização melhorada das mensagens ao tocar rapidamente no botão de desbloqueio muitas vezes.
+
+Traduções:
+* Adicionado o holandês (obrigado vistaus)
+* Traduções atualizadas
+
+Forneça qualquer comentário ou relate quaisquer problemas no rastreador de problemas em https://github.com/babydots/babydots/issues.

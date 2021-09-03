@@ -1,0 +1,3 @@
+Música clássica adicionada (silenciada por padrão), interface melhorada para personalização.
+
+Por favor, forneça qualquer comentário ou relate qualquer problema no rastreador de problemas em https://github.com/babydots/babydots/issues.
