@@ -1,0 +1,8 @@
+Traduções:
+ - Adicionada tradução para o lituano (obrigado @g)
+ - Traduções atualizadas
+
+Correções de bugs:
+ - Permitir que a tela "Acerca" seja rolada quando a tela do dispositivo for muito pequena ou o tipo de letra for muito grande (obrigado @yuhuitech por primeiro relatar e depois corrigir)
+
+Forneça qualquer comentário ou relate quaisquer problemas no rastreador de problemas em https://github.com/babydots/babydots/issues.

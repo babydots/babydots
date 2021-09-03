@@ -1,0 +1,9 @@
+Adicionado bloqueio de tela opcional, evitando toques acidentais de bebês excitados.
+
+Exibição aprimorada de mensagens ao tocar muito rápido no botão de desbloqueio muitas vezes.
+
+Traduções:
+* Adicionado o holandês (obrigado vistaus)
+* Traduções atualizadas
+
+Forneça qualquer comentário ou relate quaisquer problemas no rastreador de problemas em https://github.com/babydots/babydots/issues.

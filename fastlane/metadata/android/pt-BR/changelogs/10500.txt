@@ -1,0 +1,3 @@
+Pontos tornados mais divertidos para interagir com dedos minúsculos. Tocar nos pontos agora os torna maiores.
+
+Forneça qualquer comentário ou relate quaisquer problemas no rastreador de problemas em https://github.com/babydots/babydots/issues.

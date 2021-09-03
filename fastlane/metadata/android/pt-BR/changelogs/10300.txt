@@ -1,0 +1,4 @@
+Adicionado temporizador de suspensão:
+ * Quando o cronômetro chegar a zero, a tela escurecerá, a música será pausada e a tela desligará logo em seguida.
+
+Forneça qualquer comentário ou relate quaisquer problemas no rastreador de problemas em https://github.com/babydots/babydots/issues.
