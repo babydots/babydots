@@ -1,0 +1,9 @@
+Verbeterde aanrakingen:
+ - Vergroot stippen op vloeiende wijze door ze aan te raken of los te laten;
+ - Stippen blijven voortaan ingedrukt bij hele kleine vingers.
+
+Vertalingen:
+ - Portugese en Portugees-Braziliaanse vertalingen toegevoegd (met dank aan @larcansal);
+ - Overige vertalingen bijgewerkt.
+
+Deel je feedback, problemen en ideeën op onze probleemtracker: https://github.com/babydots/babydots/issues
