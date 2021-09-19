@@ -1,0 +1,9 @@
+Noktaya dokunma deneyimi iyileştirildi:
+ - Dokunurken veya bırakırken noktaları sorunsuzca yakınlaştırın.
+ - Küçük parmakların altından hareket ederken noktalara dokunulduğundan emin olun.
+
+Çeviriler:
+ - Portekizce ve Portekizce (Brezilya) eklendi (teşekkürler larcansal).
+ - Çeviriler güncellendi.
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
