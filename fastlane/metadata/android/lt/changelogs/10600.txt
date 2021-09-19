@@ -1,0 +1,9 @@
+Patobulinta taškų lietimo patirtis:
+ - Sklandžiai priartinkite taškus liečiant ar paleidžiant.
+ - Užtikrinti, kad taškai liko paliesti, kai jie juda iš po mažų pirštų.
+
+Vertimai:
+ - Pridėta portugalų ir portugalų (Brazilų) kalbos (dėka larcansal).
+ - Atnaujinti vertimai.
+
+Pateikite atsiliepimų arba praneškite apie problemas, susijusias su problemų stebėjimo priemone, adresu https://github.com/babydots/babydots/issues.
