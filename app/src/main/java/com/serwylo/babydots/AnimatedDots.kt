@@ -185,8 +185,14 @@ class AnimatedDots @JvmOverloads constructor(
         else -> dotRadius
     }
 
+    private var lastTimeStep: Long = System.currentTimeMillis()
+
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
+
+        val deltaMs = System.currentTimeMillis() - lastTimeStep
+        val delta = deltaMs / 1000f
+        lastTimeStep += deltaMs
 
         canvas?.drawColor(context.resources.getColor(backgroundPaints[colourScheme] ?: android.R.color.white))
 
@@ -217,12 +223,19 @@ class AnimatedDots @JvmOverloads constructor(
             val x = point[0]
             val y = point[1]
 
-            val isTouching = isTouching(x, y, radius)
+            val currentSize = radius + (radius * dot.zoomAnimation)
+
+            val isTouching = isTouching(x, y, currentSize)
+            if (isTouching && dot.zoomAnimation < 1f) {
+                dot.zoomAnimation = (dot.zoomAnimation + 10f * delta).coerceAtMost(1f)
+            } else if (!isTouching && dot.zoomAnimation > 0f) {
+                dot.zoomAnimation = (dot.zoomAnimation - 10f * delta).coerceAtLeast(0f)
+            }
 
             if (x > -radius && x < width + radius && y > -radius && y < height + radius) {
-                val size = if(isTouching) radius * 2 else radius
-                canvas?.drawCircle(x, y, size, dotFillPaint)
-                canvas?.drawCircle(x, y, size, dotStrokePaint)
+                val newSize = radius + (radius * dot.zoomAnimation)
+                canvas?.drawCircle(x, y, newSize, dotFillPaint)
+                canvas?.drawCircle(x, y, newSize, dotStrokePaint)
             }
         }
     }
@@ -289,6 +302,7 @@ class AnimatedDots @JvmOverloads constructor(
 
     data class Dot(val path: Path) {
         val pathMeasure = PathMeasure(path, true)
+        var zoomAnimation: Float = 0f
     }
 
 }
