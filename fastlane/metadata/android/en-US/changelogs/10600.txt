@@ -1,0 +1,5 @@
+Improved dot-touching experience:
+ - Smoothly zoom dots in when touching or letting go.
+ - Ensure dots remained touched when they move from under small fingers.
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
