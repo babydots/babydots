@@ -1,0 +1,5 @@
+Papildoma vaivorykštės spalvų schema.
+
+Esamoje buvo tokios spalvos kaip žydra ir purpurinė. Dabar, kai mūsų vaikas pradeda mokytis spalvų, norėjome daugiau „įprastų“ spalvų, tokių kaip oranžinė, mėlyna, violetinė, geltona. Esama schema išlaikyta, tai prideda naują schemą.
+
+Prašome pateikti bet kokius atsiliepimus arba pranešti apie bet kokias problemas problemų stebėjimo sistemoje adresu https://github.com/babydots/babydots/issues.
