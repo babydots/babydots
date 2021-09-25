@@ -1,0 +1,5 @@
+Er is nu een nieuw regenboogthema.
+
+Het bestaande thema had kleuren als blauwgroen en magenta. Nu ons kind kleuren begint te herkennen, wilden we ook gebruikelijker kleuren toevoegen, zoals oranje, blauw, paars en geel. Het oude thema blijft echter ook beschikbaar.
+
+Deel je feedback of problemen op https://github.com/babydots/babydots/issues
