@@ -36,6 +36,26 @@
     <color name="scheme_rainbow_background">#FFFFFF</color>
 
     <array name="scheme_rainbow_dots">
+        <item>#4CAF50</item>
+        <item>#2196F3</item>
+        <item>#FFEB3B</item>
+        <item>#FF9800</item>
+        <item>#9C27B0</item>
+        <item>#F82D2D</item>
+    </array>
+
+    <array name="scheme_rainbow_dot_borders">
+        <item>#1B5E20</item>
+        <item>#0D47A1</item>
+        <item>#827717</item>
+        <item>#E65100</item>
+        <item>#4A148C</item>
+        <item>#B71C1C</item>
+    </array>
+
+    <color name="scheme_bright_rainbow_background">#FFFFFF</color>
+
+    <array name="scheme_bright_rainbow_dots">
         <item>#00FF00</item>
         <item>#0000FF</item>
         <item>#FFFF00</item>
@@ -44,7 +64,7 @@
         <item>#FF0000</item>
     </array>
 
-    <array name="scheme_rainbow_dot_borders">
+    <array name="scheme_bright_rainbow_dot_borders">
         <item>#00BB00</item>
         <item>#0000BB</item>
         <item>#BBBB00</item>
