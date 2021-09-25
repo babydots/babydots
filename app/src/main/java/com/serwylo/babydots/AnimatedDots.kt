@@ -21,6 +21,7 @@ class AnimatedDots @JvmOverloads constructor(
     enum class ColourScheme {
         Monochrome,
         SplashOfColour,
+        BrightRainbow,
         Rainbow,
         Dark,
         Neon,
@@ -90,6 +91,7 @@ class AnimatedDots @JvmOverloads constructor(
         ColourScheme.Monochrome to context.resources.getIntArray(R.array.scheme_monochrome_dots),
         ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.scheme_splash_of_colour_dots),
         ColourScheme.Rainbow to context.resources.getIntArray(R.array.scheme_rainbow_dots),
+        ColourScheme.BrightRainbow to context.resources.getIntArray(R.array.scheme_bright_rainbow_dots),
         ColourScheme.Dark to context.resources.getIntArray(R.array.scheme_dark_dots),
         ColourScheme.Neon to context.resources.getIntArray(R.array.scheme_neon_dots),
     )
@@ -98,6 +100,7 @@ class AnimatedDots @JvmOverloads constructor(
         ColourScheme.Monochrome to context.resources.getIntArray(R.array.scheme_monochrome_dot_borders),
         ColourScheme.SplashOfColour to context.resources.getIntArray(R.array.scheme_splash_of_colour_dot_borders),
         ColourScheme.Rainbow to context.resources.getIntArray(R.array.scheme_rainbow_dot_borders),
+        ColourScheme.BrightRainbow to context.resources.getIntArray(R.array.scheme_bright_rainbow_dot_borders),
         ColourScheme.Dark to context.resources.getIntArray(R.array.scheme_dark_dot_borders),
         ColourScheme.Neon to context.resources.getIntArray(R.array.scheme_neon_dot_borders),
     )
@@ -106,6 +109,7 @@ class AnimatedDots @JvmOverloads constructor(
         ColourScheme.Monochrome to R.color.scheme_monochrome_background,
         ColourScheme.SplashOfColour to R.color.scheme_splash_of_colour_background,
         ColourScheme.Rainbow to R.color.scheme_rainbow_background,
+        ColourScheme.BrightRainbow to R.color.scheme_bright_rainbow_background,
         ColourScheme.Dark to R.color.scheme_dark_background,
         ColourScheme.Neon to R.color.scheme_neon_background,
     )
