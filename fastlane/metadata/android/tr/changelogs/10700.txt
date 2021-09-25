@@ -1,0 +1,5 @@
+Ek gökkuşağı renk düzeni.
+
+Mevcut olanın camgöbeği ve eflatun gibi renkleri vardı. Çocuğumuz artık renkleri öğrenmeye başladığı için turuncu, mavi, mor, sarı gibi daha 'normal' renkler istedik. Mevcut renk düzeni korunuyor, bu yeni bir düzen ekliyor.
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
