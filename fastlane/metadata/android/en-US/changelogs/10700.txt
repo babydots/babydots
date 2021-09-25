@@ -1,0 +1,5 @@
+Additional rainbow colour scheme.
+
+The existing one had colours like cyan and magenta. Now that our child is starting to learn colours, we wanted more 'normal' colours such as orange, blue, purple, yellow. The existing scheme is maintained, this adds a new scheme.
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
