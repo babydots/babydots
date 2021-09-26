@@ -1,0 +1,5 @@
+Esquema adicional de cores do arco-íris.
+
+O existente tinha cores como ciano e magenta. Agora que nosso filho está começando a aprender cores, queríamos cores mais "normais", como laranja, azul, roxo, amarelo. O esquema existente é mantido, isto adiciona um novo esquema.
+
+Por favor, forneça qualquer comentário ou reporte quaisquer problemas em https://github.com/babydots/babydots/issues.
