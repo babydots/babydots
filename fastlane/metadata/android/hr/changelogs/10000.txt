@@ -1,0 +1,6 @@
+Prvo izdanje programa Baby Dots:
+
+ * Gledaj plesajuće točke sa svojom bebom.
+ * Biraj između različitih veličina, boja i brzina.
+
+Pošalji povratne informacije ili prijavi sve probleme s alatom za praćenje problema na https://github.com/babydots/babydots/issues.
