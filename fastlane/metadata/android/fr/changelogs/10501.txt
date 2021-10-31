@@ -1,0 +1,3 @@
+Correctif : empêche les bébés de déverrouiller BabyDots en tournant l'appareil (merci à yamatt pour le signalement).
+
+Merci de donner votre avis ou de signaler les problèmes sur le gestionnaire de tickets sur https://github.com/babydots/babydots/issues.
