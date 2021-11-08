@@ -1,0 +1,3 @@
+Bugfix: Avoid memory issue when drawing dots on newer devices, preventing potential crashes or flickering of dots (thanks to @lateski for both investigating and fixing).
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
