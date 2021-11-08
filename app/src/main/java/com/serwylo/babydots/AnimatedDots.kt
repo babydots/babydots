@@ -122,9 +122,9 @@ class AnimatedDots @JvmOverloads constructor(
     private val drawPaths = false
 
     init {
-
-        dotStrokePaint.style = Paint.Style.STROKE
-        dotStrokePaint.strokeWidth = 8f
+        // see comment at onDraw()
+        //dotStrokePaint.style = Paint.Style.STROKE
+        //dotStrokePaint.strokeWidth = 8f
 
         linePaint.style = Paint.Style.STROKE
         linePaint.color = Color.BLACK
@@ -191,6 +191,14 @@ class AnimatedDots @JvmOverloads constructor(
 
     private var lastTimeStep: Long = System.currentTimeMillis()
 
+    /**
+     * Drawing dot borders with Paint.style.STROKE causes graphics memory leak on some devices.
+     * Because of that, drawing the borders is currently substituted by drawing a larger circle below/before
+     * the actual filler circle.
+     * This is not an optimal solution but it does not use that much extra resources in this case.
+     * See:
+     *  - Bug report: https://github.com/babydots/babydots/issues/49
+     */
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 
@@ -238,8 +246,9 @@ class AnimatedDots @JvmOverloads constructor(
 
             if (x > -radius && x < width + radius && y > -radius && y < height + radius) {
                 val newSize = radius + (radius * dot.zoomAnimation)
+                //draw slightly larger circle first to simulate dot border
+                canvas?.drawCircle(x, y, newSize + 8f, dotStrokePaint)
                 canvas?.drawCircle(x, y, newSize, dotFillPaint)
-                canvas?.drawCircle(x, y, newSize, dotStrokePaint)
             }
         }
     }
