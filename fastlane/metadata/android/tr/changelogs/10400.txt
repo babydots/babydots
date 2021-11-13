@@ -1,6 +1,6 @@
 Heyecanlı bebeklerin yanlışlıkla dokunmasını önleyen isteğe bağlı ekran kilidi eklendi.
 
 Çeviriler:
-* Flemenkçe eklendi (teşekkürler vistaus)
+* Felemenkçe eklendi (teşekkürler vistaus)
 
 Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.

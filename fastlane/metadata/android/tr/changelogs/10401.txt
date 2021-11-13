@@ -3,7 +3,7 @@ Heyecanlı bebeklerin yanlışlıkla dokunmasını önleyen isteğe bağlı ekra
 Kilit açma düğmesine birçok kez hızlıca dokunulduğunda mesajların görüntülenmesi iyileştirildi.
 
 Çeviriler:
-* Flemenkçe eklendi (teşekkürler vistaus)
+* Felemenkçe eklendi (teşekkürler vistaus)
 * Çeviriler güncellendi
 
 Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
