@@ -152,24 +152,22 @@ class AnimatedDots @JvmOverloads constructor(
      * There also isn't much to be gained in terms of accessibility from this click.
      */
     @SuppressLint("ClickableViewAccessibility")
-    override fun onTouchEvent(event: MotionEvent?): Boolean {
+    override fun onTouchEvent(event: MotionEvent): Boolean {
 
-        if (event != null) {
-            if (event.actionMasked == MotionEvent.ACTION_POINTER_DOWN || event.actionMasked == MotionEvent.ACTION_DOWN) {
-                (0 until event.pointerCount).map { pointerId ->
-                    touchLocations[pointerId] = Point(event.getX(pointerId).toInt(), event.getY(pointerId).toInt())
-                }
-            } else if (event.actionMasked == MotionEvent.ACTION_MOVE) {
-                (0 until event.pointerCount).map { pointerId ->
-                    touchLocations[pointerId]?.set(event.getX(pointerId).toInt(), event.getY(pointerId).toInt())
-                }
-            } else if (event.actionMasked == MotionEvent.ACTION_POINTER_UP || event.actionMasked == MotionEvent.ACTION_UP) {
-                (0 until event.pointerCount).map { pointerId ->
-                    touchLocations.remove(pointerId)
-                }
-            } else if (event.actionMasked == MotionEvent.ACTION_CANCEL) {
-                touchLocations.clear()
+        if (event.actionMasked == MotionEvent.ACTION_POINTER_DOWN || event.actionMasked == MotionEvent.ACTION_DOWN) {
+            (0 until event.pointerCount).map { pointerId ->
+                touchLocations[pointerId] = Point(event.getX(pointerId).toInt(), event.getY(pointerId).toInt())
             }
+        } else if (event.actionMasked == MotionEvent.ACTION_MOVE) {
+            (0 until event.pointerCount).map { pointerId ->
+                touchLocations[pointerId]?.set(event.getX(pointerId).toInt(), event.getY(pointerId).toInt())
+            }
+        } else if (event.actionMasked == MotionEvent.ACTION_POINTER_UP || event.actionMasked == MotionEvent.ACTION_UP) {
+            (0 until event.pointerCount).map { pointerId ->
+                touchLocations.remove(pointerId)
+            }
+        } else if (event.actionMasked == MotionEvent.ACTION_CANCEL) {
+            touchLocations.clear()
         }
 
         return super.onTouchEvent(event)
@@ -199,14 +197,14 @@ class AnimatedDots @JvmOverloads constructor(
      * See:
      *  - Bug report: https://github.com/babydots/babydots/issues/49
      */
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
 
         val deltaMs = System.currentTimeMillis() - lastTimeStep
         val delta = deltaMs / 1000f
         lastTimeStep += deltaMs
 
-        canvas?.drawColor(context.resources.getColor(backgroundPaints[colourScheme] ?: android.R.color.white))
+        canvas.drawColor(context.resources.getColor(backgroundPaints[colourScheme] ?: android.R.color.white))
 
         val colourScheme = dotFillPaints[colourScheme] ?: intArrayOf(android.R.color.black)
         val borderColourScheme = dotStrokePaints[this.colourScheme] ?: intArrayOf(android.R.color.black)
@@ -216,7 +214,7 @@ class AnimatedDots @JvmOverloads constructor(
 
         dots.forEach { dot ->
             if (drawPaths) {
-                canvas?.drawPath(dot.path, linePaint)
+                canvas.drawPath(dot.path, linePaint)
             }
 
             dot.pathMeasure.getPosTan(dot.pathMeasure.length * animator.animatedValue as Float, point, null)
@@ -247,8 +245,8 @@ class AnimatedDots @JvmOverloads constructor(
             if (x > -radius && x < width + radius && y > -radius && y < height + radius) {
                 val newSize = radius + (radius * dot.zoomAnimation)
                 //draw slightly larger circle first to simulate dot border
-                canvas?.drawCircle(x, y, newSize + 8f, dotStrokePaint)
-                canvas?.drawCircle(x, y, newSize, dotFillPaint)
+                canvas.drawCircle(x, y, newSize + 8f, dotStrokePaint)
+                canvas.drawCircle(x, y, newSize, dotFillPaint)
             }
         }
     }

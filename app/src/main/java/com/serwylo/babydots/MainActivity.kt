@@ -298,10 +298,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
 
-        setMenuIconForSound(menu?.findItem(R.id.menu_sound), isMusicOn)
+        setMenuIconForSound(menu.findItem(R.id.menu_sound), isMusicOn)
 
         return true
     }
@@ -322,8 +322,8 @@ class MainActivity : AppCompatActivity() {
         setMenuIconForSound(item, isMusicOn)
     }
 
-    private fun setMenuIconForSound(item: MenuItem?, isMusicOn: Boolean) {
-        item?.setIcon(
+    private fun setMenuIconForSound(item: MenuItem, isMusicOn: Boolean) {
+        item.setIcon(
             if (isMusicOn) R.drawable.ic_sound_on else R.drawable.ic_sound_off
         )
     }
