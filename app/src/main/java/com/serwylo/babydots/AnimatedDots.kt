@@ -39,6 +39,12 @@ class AnimatedDots @JvmOverloads constructor(
         Fast,
     }
 
+    enum class Shape {
+        Circle,
+        Square,
+        Triangle,
+    }
+
     var size: Size = Size.Medium
         set(value) {
             field = value
@@ -64,6 +70,12 @@ class AnimatedDots @JvmOverloads constructor(
             animator.setCurrentFraction(current)
 
             field = value
+        }
+
+    var shape: Shape = Shape.Circle
+        set (value) {
+            field = value
+            invalidate()
         }
 
     private val dots = mutableListOf<Dot>()
@@ -244,9 +256,31 @@ class AnimatedDots @JvmOverloads constructor(
 
             if (x > -radius && x < width + radius && y > -radius && y < height + radius) {
                 val newSize = radius + (radius * dot.zoomAnimation)
-                //draw slightly larger circle first to simulate dot border
-                canvas.drawCircle(x, y, newSize + 8f, dotStrokePaint)
-                canvas.drawCircle(x, y, newSize, dotFillPaint)
+                //draw slightly larger shape first to simulate dot border
+                drawShape(canvas, x, y, newSize + 8f, dotStrokePaint)
+                drawShape(canvas, x, y, newSize, dotFillPaint)
+            }
+        }
+    }
+
+    private fun drawShape(canvas: Canvas, x: Float, y: Float, size: Float, paint: Paint) {
+        when (shape) {
+            Shape.Circle -> {
+                canvas.drawCircle(x, y, size, paint)
+            }
+            Shape.Square -> {
+                canvas.drawRect(
+                    x - size, y - size, x + size, y + size, paint,
+                )
+            }
+            Shape.Triangle -> {
+                val p = Path()
+
+                p.moveTo(x - size, y - 0.5769f * size)
+                p.lineTo(x + size, y - 0.5769f * size)
+                p.lineTo(x, y + size)
+
+                canvas.drawPath(p, paint)
             }
         }
     }

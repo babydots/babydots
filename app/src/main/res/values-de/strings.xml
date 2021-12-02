@@ -8,6 +8,7 @@
     <string name="mute">Stumm</string>
     <string name="speed">Geschwindigkeit</string>
     <string name="size">Größe</string>
+    <string name="shape">Form</string>
     <string name="colour_scheme">Farbschema</string>
     <string name="app_name">Baby Dots</string>
     <string name="sleep_timer_description">Wenn die Schaltuhr Null erreicht, wird der Bildschirm gedimmt, die Musik hört auf und der Bildschirm wird bald danach ausgeschaltet.</string>
