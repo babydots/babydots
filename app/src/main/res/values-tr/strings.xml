@@ -30,4 +30,5 @@
     <string name="touch_to_unlock">Kilidi açmak için dokunun</string>
     <string name="lock">Kilitle</string>
     <string name="screen_unlocked">Ekran kilidi açıldı</string>
+    <string name="shape">Şekil</string>
 </resources>
