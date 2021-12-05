@@ -1,0 +1,3 @@
+New shapes: Circles, squares, and triangles! (thanks to @bananer)
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
