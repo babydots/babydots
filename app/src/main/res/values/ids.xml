@@ -4,4 +4,5 @@
     <item type="id" name="menu_speed_dial_size" />
     <item type="id" name="menu_speed_dial_speed" />
     <item type="id" name="menu_speed_dial_timer" />
+    <item type="id" name="menu_speed_dial_shape" />
 </resources>

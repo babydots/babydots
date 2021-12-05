@@ -79,6 +79,7 @@ class MainActivity : AppCompatActivity() {
         dots.colourScheme = Preferences.getColourScheme(this)
         dots.speed = Preferences.getSpeed(this)
         dots.size = Preferences.getSize(this)
+        dots.shape = Preferences.getShape(this)
 
         dots.setOnClickListener {
             speedDial.close()
@@ -111,12 +112,19 @@ class MainActivity : AppCompatActivity() {
                 .create()
         )
 
+        speedDial.addActionItem(
+            SpeedDialActionItem.Builder(R.id.menu_speed_dial_shape, R.drawable.ic_shape)
+                .setLabel(R.string.shape)
+                .create()
+        )
+
         speedDial.setOnActionSelectedListener { item ->
             when (item.id) {
                 R.id.menu_speed_dial_colour -> changeColour()
                 R.id.menu_speed_dial_size -> changeSize()
                 R.id.menu_speed_dial_speed -> changeSpeed()
                 R.id.menu_speed_dial_timer -> toggleTimer()
+                R.id.menu_speed_dial_shape -> changeShape()
             }
             true // Prevents the menu from closing when an option is selected.
         }
@@ -298,10 +306,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
 
-        setMenuIconForSound(menu?.findItem(R.id.menu_sound), isMusicOn)
+        setMenuIconForSound(menu.findItem(R.id.menu_sound), isMusicOn)
 
         return true
     }
@@ -322,8 +330,8 @@ class MainActivity : AppCompatActivity() {
         setMenuIconForSound(item, isMusicOn)
     }
 
-    private fun setMenuIconForSound(item: MenuItem?, isMusicOn: Boolean) {
-        item?.setIcon(
+    private fun setMenuIconForSound(item: MenuItem, isMusicOn: Boolean) {
+        item.setIcon(
             if (isMusicOn) R.drawable.ic_sound_on else R.drawable.ic_sound_off
         )
     }
@@ -359,6 +367,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         Preferences.setSpeed(this, dots.speed)
+    }
+
+    private fun changeShape() {
+        dots.shape = when(dots.shape) {
+            AnimatedDots.Shape.Circle -> AnimatedDots.Shape.Square
+            AnimatedDots.Shape.Square -> AnimatedDots.Shape.Triangle
+            AnimatedDots.Shape.Triangle -> AnimatedDots.Shape.Circle
+        }
+
+        Preferences.setShape(this, dots.shape)
     }
 
     private var timer: Timer? = null

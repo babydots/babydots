@@ -3,6 +3,7 @@
     <string name="colour_scheme">Colour Scheme</string>
     <string name="size">Size</string>
     <string name="speed">Speed</string>
+    <string name="shape">Shape</string>
     <string name="mute">Mute</string>
     <string name="about">About</string>
     <string name="url_github">https://github.com/babydots/babydots</string>

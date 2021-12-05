@@ -14,6 +14,7 @@ object Preferences {
     private const val PREF_COLOUR_SCHEME = "colourScheme"
     private const val PREF_SPEED = "speed"
     private const val PREF_SIZE = "size"
+    private const val PREF_SHAPE = "shape"
 
     /**
      * This is defined in the settings.xml, others are just managed by this class.
@@ -49,6 +50,15 @@ object Preferences {
 
     }
 
+    fun getShape(context: Context): AnimatedDots.Shape {
+        return try {
+            val shape = PreferenceManager.getDefaultSharedPreferences(context).getString(PREF_SHAPE, null) ?: AnimatedDots.Size.Medium.toString()
+            AnimatedDots.Shape.valueOf(shape)
+        } catch (e: IllegalArgumentException) {
+            AnimatedDots.Shape.Circle
+        }
+    }
+
     fun getSleepTimerMins(context: Context): Int {
         val pref = PreferenceManager.getDefaultSharedPreferences(context).getString(PREF_SLEEP_TIMER, DEFAULT_SLEEP_TIMER.toString())
         val int = pref?.toInt()
@@ -66,6 +76,10 @@ object Preferences {
 
     fun setSize(context: Context, size: AnimatedDots.Size) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putString(PREF_SIZE, size.toString()).apply()
+    }
+
+    fun setShape(context: Context, shape: AnimatedDots.Shape) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit().putString(PREF_SHAPE, shape.toString()).apply()
     }
 
 }
