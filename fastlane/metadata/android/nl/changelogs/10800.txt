@@ -1,0 +1,3 @@
+[NIEUW] Nieuwe vormen: cirkels, vierkanten en driehoeken! (met dank aan @bananer)
+
+Deel je feedback of problemen op https://github.com/babydots/babydots/issues
