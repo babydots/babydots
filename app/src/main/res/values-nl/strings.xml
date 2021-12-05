@@ -30,4 +30,5 @@
     <string name="touch_to_unlock">Druk om te ontgrendelen</string>
     <string name="lock">Vergrendelen</string>
     <string name="screen_unlocked">Het scherm is ontgrendeld</string>
+    <string name="shape">Vorm</string>
 </resources>
