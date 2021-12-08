@@ -30,4 +30,5 @@
     <string name="touch_to_unlock">Touchez pour déverrouiller</string>
     <string name="lock">Verrouiller</string>
     <string name="screen_unlocked">Écran déverrouillé</string>
+    <string name="shape">Forme</string>
 </resources>
