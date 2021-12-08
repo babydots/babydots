@@ -30,4 +30,5 @@
     <string name="touch_to_unlock">Tocca per sbloccare</string>
     <string name="lock">Blocca</string>
     <string name="screen_unlocked">Schermo sbloccato</string>
+    <string name="shape">Forma</string>
 </resources>
