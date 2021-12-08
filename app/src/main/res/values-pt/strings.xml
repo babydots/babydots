@@ -30,4 +30,5 @@
     <string name="size">Tamanho</string>
     <string name="colour_scheme">Esquema de cores</string>
     <string name="app_name">Baby Dots</string>
+    <string name="shape">Forma</string>
 </resources>
