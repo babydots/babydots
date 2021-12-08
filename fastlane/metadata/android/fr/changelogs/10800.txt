@@ -1,0 +1,3 @@
+De nouvelles formes : des cercles, des carrés et des triangles ! (merci à @bananer)
+
+N'hésitez pas à nous faire part de vos commentaires ou à signaler tout problème sur le gestionnaire de problèmes à l'adresse https://github.com/babydots/babydots/issues.

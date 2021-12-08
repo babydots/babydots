@@ -1,0 +1,8 @@
+Traductions :
+ - Ajout de la traduction en lituanien (merci @g)
+ - Traductions mises à jour
+
+Corrections de bugs :
+ - Permet de faire défiler l'écran « à propos » lorsque l'écran de l'appareil est trop petit ou que la police est grande (merci @yuhuitech pour l'avoir signalé puis corrigé).
+
+Merci de nous faire part de vos commentaires ou de signaler tout problème sur le gestionnaire de problèmes à l'adresse https://github.com/babydots/babydots/issues.
