@@ -1,0 +1,5 @@
+Improvements:
+ * More accurate touch sensing for new shapes.
+ * Updated translations.
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
