@@ -1,0 +1,5 @@
+İyileştirmeler:
+ * Yeni şekiller için daha doğru dokunma algılama.
+ * Çeviriler güncellendi.
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
