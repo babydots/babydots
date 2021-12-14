@@ -247,7 +247,7 @@ class AnimatedDots @JvmOverloads constructor(
 
             val currentSize = radius + (radius * dot.zoomAnimation)
 
-            val isTouching = isTouching(x, y, currentSize)
+            val isTouching = isTouching(x, y, currentSize, shape)
             if (isTouching && dot.zoomAnimation < 1f) {
                 dot.zoomAnimation = (dot.zoomAnimation + 10f * delta).coerceAtMost(1f)
             } else if (!isTouching && dot.zoomAnimation > 0f) {
@@ -285,28 +285,86 @@ class AnimatedDots @JvmOverloads constructor(
         }
     }
 
-    private fun isTouching(x: Float, y: Float, radius: Float): Boolean {
+    private fun isTouching(x: Float, y: Float, size: Float, shape: Shape): Boolean {
 
         return touchLocations.values.any { touchPoint ->
 
-            // Use a bounding box check to eliminate those which are definitely not touching...
-            if (touchPoint.x < x - radius || touchPoint.x > x + radius || touchPoint.y < y - radius || touchPoint.y > y + radius) {
-
-                false
-
-            } else {
-
-                // ...before performing a more accurate check.
-                val dx = abs(touchPoint.x - x)
-                val dy = abs(touchPoint.y - y)
-                val distance = sqrt(dx * dx + dy * dy)
-
-                distance < radius
-
+            when (shape) {
+                Shape.Triangle -> isTouchingTriangle(touchPoint, x, y, size)
+                Shape.Circle -> isTouchingCircle(touchPoint, x, y, size)
+                Shape.Square -> isTouchingSquare(touchPoint, x, y, size)
             }
 
         }
 
+    }
+
+    private fun isTouchingSquare(touchPoint: Point, shapeX: Float, shapeY: Float, shapeSize: Float): Boolean {
+        return touchPoint.x > shapeX - shapeSize
+                && touchPoint.x < shapeX + shapeSize
+                && touchPoint.y > shapeY - shapeSize
+                && touchPoint.y < shapeY + shapeSize
+    }
+
+    private fun isTouchingTriangle(touchPoint: Point, shapeX: Float, shapeY: Float, shapeSize: Float): Boolean {
+        /*
+         * For reference, this is the drawing code used above:
+         *   p.moveTo(x - size, y - 0.5769f * size)
+         *   p.lineTo(x + size, y - 0.5769f * size)
+         *   p.lineTo(x, y + size)
+         */
+
+        val x1 = shapeX - shapeSize
+        val x2 = shapeX + shapeSize
+        val x3 = shapeX
+
+        val y1 = shapeY - 0.5769f * shapeSize
+        val y2 = y1
+        val y3 = shapeY + shapeSize
+
+        val px = touchPoint.x
+        val py = touchPoint.y
+
+        // Bounding box check before the more expensive and accurate check below...
+        if (touchPoint.x < shapeX - shapeSize
+            || touchPoint.x > shapeX + shapeSize
+            || touchPoint.y < shapeY - 0.5769f * shapeSize
+            || touchPoint.y > shapeY + shapeSize) {
+            return false
+        }
+
+        // Almost verbatim copied from: http://jeffreythompson.org/collision-detection/tri-point.php
+
+        // Get the area of the triangle
+        val areaOrig = abs((x2-x1)*(y3-y1) - (x3-x1)*(y2-y1))
+
+        // Get the area of 3 triangles made between the point and the corners of the triangle
+        val area1 = abs((x1-px)*(y2-py) - (x2-px)*(y1-py))
+        val area2 = abs((x2-px)*(y3-py) - (x3-px)*(y2-py))
+        val area3 = abs((x3-px)*(y1-py) - (x1-px)*(y3-py))
+
+        // if the sum of the three areas equals the original, we're inside the triangle!
+        val sum = area1 + area2 + area3
+
+        // Account for floating point errors by allowing a little bit of variation when comparing
+        // to the area of the original triangle.
+        return (sum > areaOrig - shapeSize * 0.001f && sum < areaOrig + shapeSize * 0.001f)
+    }
+
+    private fun isTouchingCircle(touchPoint: Point, shapeX: Float, shapeY: Float, shapeSize: Float): Boolean {
+        // Use a bounding box check to eliminate those which are definitely not touching...
+        return if (!isTouchingSquare(touchPoint, shapeX, shapeY, shapeSize)) {
+            false
+        } else {
+
+            // ...before performing a more accurate check.
+            val dx = abs(touchPoint.x - shapeX)
+            val dy = abs(touchPoint.y - shapeY)
+            val distance = sqrt(dx * dx + dy * dy)
+
+            distance < shapeSize
+
+        }
     }
 
     private fun createRandomPath(w: Int, h: Int): Path {
