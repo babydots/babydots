@@ -1,0 +1,5 @@
+Verbeteringen:
+* Betere aanraakherkenning van nieuwe vormen;
+* Bijgewerkte vertalingen.
+
+Deel je feedback, problemen en ideeën op onze probleemtracker: https://github.com/babydots/babydots/issues
