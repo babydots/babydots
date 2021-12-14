@@ -373,7 +373,8 @@ class MainActivity : AppCompatActivity() {
         dots.shape = when(dots.shape) {
             AnimatedDots.Shape.Circle -> AnimatedDots.Shape.Square
             AnimatedDots.Shape.Square -> AnimatedDots.Shape.Triangle
-            AnimatedDots.Shape.Triangle -> AnimatedDots.Shape.Circle
+            AnimatedDots.Shape.Triangle -> null
+            null -> AnimatedDots.Shape.Circle
         }
 
         Preferences.setShape(this, dots.shape)

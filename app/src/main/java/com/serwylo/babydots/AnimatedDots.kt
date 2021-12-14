@@ -72,9 +72,18 @@ class AnimatedDots @JvmOverloads constructor(
             field = value
         }
 
-    var shape: Shape = Shape.Circle
+    /**
+     * A null value here means "Random shapes" . We don't add a new "Random" entry in the [Shape]
+     * enum because it is helpful to be able to guarantee that a [Shape] is something tangeable.
+     * This allows us to correctly use "when" statements for rendering and collision detection
+     * without having to ask the question "What shape is this 'Random' shape?".
+     */
+    var shape: Shape? = Shape.Circle
         set (value) {
             field = value
+            dots.onEach {
+                it.shape = value ?: Shape.values().random()
+            }
             invalidate()
         }
 
@@ -189,7 +198,8 @@ class AnimatedDots @JvmOverloads constructor(
         dots.clear()
 
         for (x in 0 until numDots) {
-            dots.add(Dot(createRandomPath(width, height)))
+            val dotShape = shape ?: Shape.values().random()
+            dots.add(Dot(createRandomPath(width, height), dotShape))
         }
     }
 
@@ -247,7 +257,7 @@ class AnimatedDots @JvmOverloads constructor(
 
             val currentSize = radius + (radius * dot.zoomAnimation)
 
-            val isTouching = isTouching(x, y, currentSize, shape)
+            val isTouching = isTouching(x, y, currentSize, dot.shape)
             if (isTouching && dot.zoomAnimation < 1f) {
                 dot.zoomAnimation = (dot.zoomAnimation + 10f * delta).coerceAtMost(1f)
             } else if (!isTouching && dot.zoomAnimation > 0f) {
@@ -257,14 +267,14 @@ class AnimatedDots @JvmOverloads constructor(
             if (x > -radius && x < width + radius && y > -radius && y < height + radius) {
                 val newSize = radius + (radius * dot.zoomAnimation)
                 //draw slightly larger shape first to simulate dot border
-                drawShape(canvas, x, y, newSize + 8f, dotStrokePaint)
-                drawShape(canvas, x, y, newSize, dotFillPaint)
+                drawShape(canvas, x, y, newSize + 8f, dot.shape, dotStrokePaint)
+                drawShape(canvas, x, y, newSize, dot.shape, dotFillPaint)
             }
         }
     }
 
-    private fun drawShape(canvas: Canvas, x: Float, y: Float, size: Float, paint: Paint) {
-        when (shape) {
+    private fun drawShape(canvas: Canvas, x: Float, y: Float, size: Float, dotShape: Shape, paint: Paint) {
+        when (dotShape) {
             Shape.Circle -> {
                 canvas.drawCircle(x, y, size, paint)
             }
@@ -403,7 +413,7 @@ class AnimatedDots @JvmOverloads constructor(
         return path
     }
 
-    data class Dot(val path: Path) {
+    data class Dot(val path: Path, var shape: Shape) {
         val pathMeasure = PathMeasure(path, true)
         var zoomAnimation: Float = 0f
     }
