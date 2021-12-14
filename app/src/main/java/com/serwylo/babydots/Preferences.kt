@@ -50,10 +50,10 @@ object Preferences {
 
     }
 
-    fun getShape(context: Context): AnimatedDots.Shape {
+    fun getShape(context: Context): AnimatedDots.Shape? {
         return try {
-            val shape = PreferenceManager.getDefaultSharedPreferences(context).getString(PREF_SHAPE, null) ?: AnimatedDots.Size.Medium.toString()
-            AnimatedDots.Shape.valueOf(shape)
+            val shape = PreferenceManager.getDefaultSharedPreferences(context).getString(PREF_SHAPE, null)
+            if (shape == null) null else AnimatedDots.Shape.valueOf(shape)
         } catch (e: IllegalArgumentException) {
             AnimatedDots.Shape.Circle
         }
@@ -78,8 +78,8 @@ object Preferences {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putString(PREF_SIZE, size.toString()).apply()
     }
 
-    fun setShape(context: Context, shape: AnimatedDots.Shape) {
-        PreferenceManager.getDefaultSharedPreferences(context).edit().putString(PREF_SHAPE, shape.toString()).apply()
+    fun setShape(context: Context, shape: AnimatedDots.Shape?) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit().putString(PREF_SHAPE, shape?.toString()).apply()
     }
 
 }
