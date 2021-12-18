@@ -32,4 +32,5 @@
     <string name="size">Veličina</string>
     <string name="colour_scheme">Paleta boja</string>
     <string name="app_name">Dječje točkice</string>
+    <string name="shape">Oblik</string>
 </resources>
