@@ -1,0 +1,5 @@
+Melhorias:
+ * Sensoriamento de toque mais preciso para novas formas.
+ * Traduções atualizadas.
+
+Por favor, dê feedback ou relate qualquer problema no rasteador de problemas em https://github.com/babydots/babydots/issues.
