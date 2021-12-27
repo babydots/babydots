@@ -8,7 +8,7 @@
     <string name="mute">Sourdine</string>
     <string name="speed">Vitesse</string>
     <string name="size">Taille</string>
-    <string name="colour_scheme">Thème de couleurs</string>
+    <string name="colour_scheme">Schéma de couleurs</string>
     <string name="app_name">Baby Dots</string>
     <string name="sleep_timer_started_help_text">Touchez la minuterie de veille pour plus d’infos.</string>
     <string name="stop_timer_button">Arrêter</string>
