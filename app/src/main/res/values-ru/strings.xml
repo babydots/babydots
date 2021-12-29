@@ -33,4 +33,5 @@
     <string name="size">Размер</string>
     <string name="colour_scheme">Цветовая схема</string>
     <string name="app_name">Baby Dots</string>
+    <string name="shape">Форма</string>
 </resources>
