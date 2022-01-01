@@ -7,7 +7,10 @@
     <string name="mute">Mute</string>
     <string name="about">About</string>
     <string name="url_github">https://github.com/babydots/babydots</string>
-    <string name="attribution"><b>Music - </b> John Harrison w/ Wichita State University Chamber - Vivaldi Spring mvt 1 Allegro - <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
+    <string name="attribution"><a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">Vivaldi - The Four Seasons - Spring, Movement 1 - By John Harrison w/ Wichita State University Chamber</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>)\n\n
+        <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1">Erik Satie - Gymnopedie No 1 - By Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>)\n\n
+        <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J.S. Bach - Canon in D Major - By Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>)
+    </string>
     <string name="about_suggestions">Suggestions and bug reports</string>
     <string name="about_credits">Credits</string>
     <string name="sleep_timer">Sleep Timer</string>
@@ -30,4 +33,8 @@
         <item quantity="one">Quickly touch the lock %d more time to unlock.</item>
         <item quantity="other">Quickly touch the lock %d more times to unlock.</item>
     </plurals>
+    <string name="song_vivaldi">The Four Seasons - Spring, Movement 1</string>
+    <string name="song_canon_in_d_major">Canon in D Major</string>
+    <string name="song_gymnopedie_1">Gymnopedie No 1</string>
+    <string name="music">Music</string>
 </resources>
