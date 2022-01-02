@@ -1,0 +1,8 @@
+Aanvullende muziek:
+ * J.S. Bach - Canon in D-majeur
+ * Erik Satie - Gymnopédie nr. 1
+ * Vivaldi - De vier jaargetijden - Lente, opus 1 (reeds aanwezig)
+
+Kies de favoriete muziek van je baby via het instellingenmenu.
+
+Deel je feedback, ideeën voor andere nummers of problemen op https://github.com/babydots/babydots/issues
