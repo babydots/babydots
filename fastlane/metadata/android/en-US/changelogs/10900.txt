@@ -1,0 +1,8 @@
+Additional songs:
+ * J.S. Bach - Canon in D Major
+ * Erik Satie - Gymnopedie No 1
+ * Vivaldi - The Four Seasons - Spring, Movement 1 (existing)
+
+Choose your babies favourite from the settings menu.
+
+Please recommend any other songs, provide any feedback, or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.

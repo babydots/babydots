@@ -26,13 +26,23 @@ class SettingsActivity : AppCompatActivity() {
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
             addPreferencesFromResource(R.xml.settings)
 
-            val sleepTimer = findPreference<ListPreference>("sleep_timer")
-            sleepTimer?.setDefaultValue(Preferences.DEFAULT_SLEEP_TIMER.toString())
-            sleepTimer?.entries = sleepTimerMinutes.map { resources.getQuantityString(R.plurals.pref_x_minutes, it, it) }.toTypedArray()
-            sleepTimer?.entryValues = sleepTimerMinutes.map { it.toString() }.toTypedArray()
-            sleepTimer?.summaryProvider = Preference.SummaryProvider<ListPreference> {
-                val mins = it.value?.toInt() ?: Preferences.DEFAULT_SLEEP_TIMER
-                resources.getQuantityString(R.plurals.pref_x_minutes, mins, mins)
+            findPreference<ListPreference>("song")?.apply {
+                setDefaultValue(Preferences.DEFAULT_SONG)
+                entries = resources.getStringArray(R.array.song_labels)
+                entryValues = resources.getStringArray(R.array.song_keys)
+                summaryProvider = Preference.SummaryProvider<ListPreference> {
+                    it.entry ?: getString(R.string.song_vivaldi)
+                }
+            }
+
+            findPreference<ListPreference>("sleep_timer")?.apply {
+                setDefaultValue(Preferences.DEFAULT_SLEEP_TIMER.toString())
+                entries = sleepTimerMinutes.map { resources.getQuantityString(R.plurals.pref_x_minutes, it, it) }.toTypedArray()
+                entryValues = sleepTimerMinutes.map { it.toString() }.toTypedArray()
+                summaryProvider = Preference.SummaryProvider<ListPreference> {
+                    val mins = it.value?.toInt() ?: Preferences.DEFAULT_SLEEP_TIMER
+                    resources.getQuantityString(R.plurals.pref_x_minutes, mins, mins)
+                }
             }
         }
 

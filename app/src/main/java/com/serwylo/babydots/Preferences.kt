@@ -17,10 +17,16 @@ object Preferences {
     private const val PREF_SHAPE = "shape"
 
     /**
-     * This is defined in the settings.xml, others are just managed by this class.
+     * Defined in settings.xml (rather than managed by this class)
      */
     private const val PREF_SLEEP_TIMER = "sleep_timer"
     public const val DEFAULT_SLEEP_TIMER = 10
+
+    /**
+     * Defined in settings.xml (rather than managed by this class)
+     */
+    private const val PREF_SONG = "song"
+    public const val DEFAULT_SONG = "classical"
 
     fun getSpeed(context: Context): AnimatedDots.Speed {
         return try {
@@ -64,6 +70,10 @@ object Preferences {
         val int = pref?.toInt()
         val number = int ?: 10
         return number
+    }
+
+    fun getSongName(context: Context): String {
+        return PreferenceManager.getDefaultSharedPreferences(context).getString(PREF_SONG, null) ?: DEFAULT_SONG
     }
 
     fun setSpeed(context: Context, speed: AnimatedDots.Speed) {

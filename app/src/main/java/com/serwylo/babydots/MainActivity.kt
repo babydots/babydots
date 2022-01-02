@@ -5,7 +5,6 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.graphics.Point
 import android.media.MediaPlayer
-import android.os.Build
 import android.os.Bundle
 import android.view.*
 import android.widget.ImageView
@@ -30,6 +29,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var timerWrapper: View
     private lateinit var timerLabel: TextView
     private lateinit var timerIcon: ImageView
+
+    private var currentSong: String? = null
 
     /**
      * Remember this item so that we can swap the "Sleep timer" with the "Stop timer".
@@ -85,8 +86,7 @@ class MainActivity : AppCompatActivity() {
             speedDial.close()
         }
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.classical)
-        mediaPlayer.isLooping = true
+        reloadMusicPlayer()
 
         sleepTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_speed_dial_timer, R.drawable.ic_timer)
             .setLabel(R.string.sleep_timer)
@@ -147,6 +147,34 @@ class MainActivity : AppCompatActivity() {
         if (intent.getBooleanExtra(EXTRA_SLEEP_TIME, false)) {
             startSleepTime()
         }
+    }
+
+    /**
+     * If the song we are currently playing is different to that specified by the preferences,
+     * then stop any existing music and re-create the [MediaPlayer].
+     *
+     * Does *not* play the newly created music player, that is up to you.
+     */
+    private fun reloadMusicPlayer() {
+        val songName = Preferences.getSongName(this)
+        if (currentSong == songName) {
+            return
+        }
+
+        currentSong = songName
+
+        if (isMusicOn) {
+            mediaPlayer.stop()
+        }
+
+        val songRes = when(songName) {
+            "canon_in_d_major" -> R.raw.canon_in_d_major
+            "gymnopedie_1" -> R.raw.gymnopedie_1
+            else -> R.raw.vivaldi
+        }
+
+        mediaPlayer = MediaPlayer.create(this, songRes)
+        mediaPlayer.isLooping = true
     }
 
     /**
@@ -296,6 +324,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+
+        // If we are returning from settings, then we may have changed the song - in which case
+        // we need to re-create the music player.
+        reloadMusicPlayer()
 
         if (isMusicOn) {
             mediaPlayer.start()

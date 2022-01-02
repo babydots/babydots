@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="song_keys">
+        <item>vivaldi</item>
+        <item>canon_in_d_major</item>
+        <item tools:ignore="Typos">gymnopedie_1</item>
+    </string-array>
+    <string-array name="song_labels">
+        <item>@string/song_vivaldi</item>
+        <item>@string/song_canon_in_d_major</item>
+        <item>@string/song_gymnopedie_1</item>
+    </string-array>
+</resources>
