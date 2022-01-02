@@ -2,7 +2,7 @@
 <resources>
     <string name="about_credits">Tekijät</string>
     <string name="about_suggestions">Ehdotukset ja virheraportit</string>
-    <string name="attribution"><b>Musiikki – </b> John Harrison ja Wichitan osavaltion yliopiston kamariorkesteri – Vivaldin ”Kevät”, 1. osa Allegro – <a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">https://freemusicarchive.org</a></string>
+    <string name="attribution"><a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">Vivaldi – Neljä vuodenaikaa, Kevät, 1. osa – John Harrison ja Wichitan osavaltion yliopiston kamariorkesteri</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1">Erik Satie – Gymnopédie no 1 – Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J.S. Bach - Kanoni D-duuri – Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) </string>
     <string name="url_github">https://github.com/babydots/babydots</string>
     <string name="about">Tietoja</string>
     <string name="mute">Mykistä</string>
@@ -31,4 +31,8 @@
     <string name="lock">Lukitse</string>
     <string name="screen_unlocked">Näytön lukitus avattu</string>
     <string name="shape">Muoto</string>
+    <string name="song_vivaldi">Neljä vuodenaikaa – Kevät, osa 1</string>
+    <string name="song_canon_in_d_major">Kanoni D-duuri</string>
+    <string name="song_gymnopedie_1">Gymnopédie no 1</string>
+    <string name="music">Musiikki</string>
 </resources>
