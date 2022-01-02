@@ -31,4 +31,7 @@
     <string name="colour_scheme">Esquema de cores</string>
     <string name="app_name">Baby Dots</string>
     <string name="shape">Forma</string>
+    <string name="music">Música</string>
+    <string name="song_gymnopedie_1">Gymnopédie nº 1</string>
+    <string name="song_vivaldi">As Quatro Estações – Primavera, Movimento 1</string>
 </resources>
