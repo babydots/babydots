@@ -1,0 +1,8 @@
+Ek şarkılar:
+ * J.S. Bach - Canon in D Major
+ * Erik Satie - Gymnopedie No 1
+ * Vivaldi - The Four Seasons - Spring, Movement 1 (existing)
+
+Ayarlar menüsünden bebeğinizin en sevdiğini seçin.
+
+Lütfen https://github.com/babydots/babydots/issues adresinde başka şarkılar tavsiye edin, geri bildirim sağlayın veya sorun bildirin.
