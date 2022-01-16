@@ -32,4 +32,9 @@
     <string name="about">O aplikaci</string>
     <string name="speed">Rychlost</string>
     <string name="size">Velikost</string>
+    <string name="shape">Tvar</string>
+    <string name="song_vivaldi">Čtvero ročních období - Jaro, část 1</string>
+    <string name="song_canon_in_d_major">Kánon D dur</string>
+    <string name="song_gymnopedie_1">Gymnopedie č. 1</string>
+    <string name="music">Hudba</string>
 </resources>
