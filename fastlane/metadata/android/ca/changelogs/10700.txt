@@ -1,0 +1,5 @@
+Esquema addicional de colors de l'arc de Sant Martí.
+
+L'existent tenia colors com el cian i el magenta. Ara que el nostre fill comença a aprendre els colors, volíem colors més «normals» com ara el taronja, el blau, el morat, el groc. Es manté l'esquema existent, això afegeix un nou esquema.
+
+Si us plau, comenteu o informeu-nos de qualsevol error a https://github.com/babydots/babydots/issues.

@@ -1,0 +1,8 @@
+Traduccions:
+ - S'ha afegit una traducció al lituà (gràcies @g)
+ - Traduccions actualitzades
+
+Reparació d'errors:
+- Permet que la pantalla "Quant a" es desplaci quan la pantalla del dispositiu és massa petita o el tipus de lletra és massa gran (gràcies @yuhuitech per informar i per corregir-lo)
+
+Si us plau, comenteu o informeu-nos de qualsevol error a https://github.com/babydots/babydots/issues.

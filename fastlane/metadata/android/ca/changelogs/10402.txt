@@ -1,0 +1,7 @@
+Detalla adequadament quants tocs es calen per a desbloquejar.
+
+Traduccions:
+* S'ha afegit polonès (gràcies WaldiS)
+* Traduccions actualitzades
+
+Si us plau, comenteu o informeu-nos de qualsevol error a https://github.com/babydots/babydots/issues.

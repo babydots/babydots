@@ -1,0 +1,9 @@
+Afegeix un bloqueig de pantalla opcional, evitant els tocs accidentals dels nadons emocionats.
+
+Visualització millorada dels missatges en tocar ràpidament el botó de desbloqueig moltes vegades.
+
+Traduccions:
+* S'ha afegit holandès (gràcies vistaus)
+* Traduccions actualitzades
+
+Si us plau, comenteu o informeu-nos de qualsevol error a https://github.com/babydots/babydots/issues.

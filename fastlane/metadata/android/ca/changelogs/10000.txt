@@ -1,0 +1,6 @@
+Primer llançament de Baby Dots:
+
+ * Mira els punts ballant amb el teu nadó.
+ * Tria entre diferents mides, colors i velocitat.
+
+Si us plau, comenteu o informeu-nos de qualsevol error a https://github.com/babydots/babydots/issues.

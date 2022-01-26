@@ -1,0 +1,17 @@
+Traduccions:
+* Finès (gràcies Edanas)
+* Francès (gràcies Edanas)
+* Alemany (gràcies Edanas)
+* Italià (gràcies Edanas)
+* Bokmål (gràcies Kingu)
+* Santali (gràcies Prasanta-Hembram)
+* Turc (gràcies ersen)
+
+Millores:
+
+* Dos temes nous (fosc + neó)
+* Recorda les teves preferències
+* Sistema per a no apagar la pantalla
+* Aleatoritza la velocitat de cada punt
+
+Si us plau, comenteu o informeu-nos de qualsevol error a https://github.com/babydots/babydots/issues.

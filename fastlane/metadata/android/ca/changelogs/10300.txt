@@ -1,0 +1,4 @@
+Temporitzador afegit:
+ * Quan el temporitzador arribi a zero, la pantalla s'enfosquirà, la música s'aturarà i poc després la pantalla s'apagarà.
+
+Si us plau, comenteu o informeu-nos de qualsevol error a https://github.com/babydots/babydots/issues.

@@ -1,0 +1,3 @@
+Correcció d'errors: evita que els nadons desbloquegin BabyDots en girar el dispositiu (gràcies a Yamatt per informar).
+
+Si us plau, comenteu o informeu-nos de qualsevol error a https://github.com/babydots/babydots/issues.

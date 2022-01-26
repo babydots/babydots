@@ -1,0 +1,3 @@
+Afegeix música clàssica (per defecte silenciada), millora la interfície d'usuari personalitzant-la.
+
+Si us plau, comenteu o informeu-nos de qualsevol error a https://github.com/babydots/babydots/issues.
