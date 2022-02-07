@@ -22,7 +22,7 @@
     <string name="resume_dots_button">Reativar</string>
     <string name="about_credits">Créditos</string>
     <string name="about_suggestions">Sugestões e erros reportados</string>
-    <string name="attribution">"<a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">Vivaldi - The Four Seasons - Spring, Movement 1 - By John Harrison w/ Wichita State University Chamber</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>)           <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1">Erik Satie - Gymnopedie No 1 - By Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>)           <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J.S. Bach - Canon in D Major - By Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>)     "</string>
+    <string name="attribution"><a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">Vivaldi - The Four Seasons - Spring, Movement 1 - por John Harrison w/ Wichita State University Chamber</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1">Erik Satie - Gymnopedie No 1 - By Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J.S. Bach - Canon in D Major - por Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) </string>
     <string name="url_github">https://github.com/babydots/babydots</string>
     <string name="about">Sobre</string>
     <string name="mute">Silenciar</string>
@@ -34,4 +34,5 @@
     <string name="music">Música</string>
     <string name="song_gymnopedie_1">Gymnopédie nº 1</string>
     <string name="song_vivaldi">As Quatro Estações – Primavera, Movimento 1</string>
+    <string name="song_canon_in_d_major">Cânone em Ré Maior</string>
 </resources>
