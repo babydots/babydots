@@ -4,7 +4,6 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 31
-    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.serwylo.babydots"
@@ -23,41 +22,41 @@ android {
         }
     }
 
-    lintOptions{
-        // Crowd sourced community translations, more than happy with whatever is provided, don't expect full coverage for all languages.
-        disable 'MissingTranslation'
-    }
 
     compileOptions {
-        sourceCompatibility = 1.8
-        targetCompatibility = 1.8
+        sourceCompatibility = 11
+        targetCompatibility = 11
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
+    }
+
+    lint {
+        // Crowd sourced community translations, more than happy with whatever is provided, don't expect full coverage for all languages.
+        disable 'MissingTranslation'
     }
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
-    implementation 'androidx.preference:preference-ktx:1.1.1'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.preference:preference-ktx:1.2.0'
 
-    def lifecycle_version = '2.4.0'
+    def lifecycle_version = '2.4.1'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 
-    implementation "com.leinardi.android:speed-dial:3.1.1"
-    implementation 'com.github.medyo:fancybuttons:1.9.1'
+    implementation "com.leinardi.android:speed-dial:3.2.0"
+    implementation 'com.github.medyo:fancybuttons:1.9.0'
 
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0-alpha02'
-    androidTestImplementation 'androidx.test:rules:1.3.1-alpha02'
-    androidTestImplementation 'androidx.test:core:1.3.0'
-    androidTestImplementation 'androidx.test:core-ktx:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0-alpha04'
+    androidTestImplementation 'androidx.test:rules:1.4.1-alpha04'
+    androidTestImplementation 'androidx.test:core:1.4.0'
+    androidTestImplementation 'androidx.test:core-ktx:1.4.0'
 
-    androidTestImplementation 'tools.fastlane:screengrab:2.0.0', {
+    androidTestImplementation 'tools.fastlane:screengrab:2.1.1', {
         exclude group: 'androidx.test.uiautomator', module: 'uiautomator'
     }
 }
