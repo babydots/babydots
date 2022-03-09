@@ -1,0 +1,11 @@
+Bug fix:
+ * Don't stop music when rotating device.
+
+Known issue:
+ * Sleep timer still resets when rotating - to be fixed in next version.
+
+Translations:
+ * Added Catalan (thanks @maite.guix)
+ * Updated multiple other translations (thanks to the community of translators)
+
+Please provide any feedback, or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
