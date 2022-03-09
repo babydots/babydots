@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.serwylo.babydots"
         minSdkVersion 22
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 10900
         versionName "1.9.0"
 
@@ -27,6 +27,15 @@ android {
         // Crowd sourced community translations, more than happy with whatever is provided, don't expect full coverage for all languages.
         disable 'MissingTranslation'
     }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
@@ -35,6 +44,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
     implementation 'androidx.preference:preference-ktx:1.1.1'
+
+    def lifecycle_version = '2.4.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 
     implementation "com.leinardi.android:speed-dial:3.1.1"
     implementation 'com.github.medyo:fancybuttons:1.9.1'
