@@ -15,6 +15,7 @@
     <plurals name="pref_x_minutes">
         <item quantity="one">%d minute</item>
         <item quantity="other">%d minutes</item>
+        <item quantity="many">%d minutes</item>
     </plurals>
     <string name="settings">Paramètres</string>
     <string name="sleep_timer_description">Quand la minuterie atteindra zéro, l’écran s’assombrira, la musique s’arrêtera et l’écran s’éteindra peu après.</string>
@@ -25,6 +26,7 @@
     <string name="sleep_timer">Minuterie de veille</string>
     <plurals name="touch_lock_to_unlock">
         <item quantity="one">Appuyez rapidement sur le verrou %d fois de plus pour déverrouiller.</item>
+        <item quantity="many">Appuyez rapidement sur le verrou %d fois de plus pour déverrouiller.</item>
         <item quantity="other">Appuyez rapidement sur le verrou %d fois de plus pour déverrouiller.</item>
     </plurals>
     <string name="touch_to_unlock">Touchez pour déverrouiller</string>

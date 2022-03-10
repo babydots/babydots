@@ -4,12 +4,12 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.graphics.Point
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -21,7 +21,6 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var dots: AnimatedDots
-    private lateinit var mediaPlayer: MediaPlayer
     private lateinit var speedDial: SpeedDialView
     private lateinit var sleepTimeWrapper: View
     private lateinit var toolbar: Toolbar
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var timerLabel: TextView
     private lateinit var timerIcon: ImageView
 
-    private var currentSong: String? = null
+    private val viewModel: MainViewModel by viewModels()
 
     /**
      * Remember this item so that we can swap the "Sleep timer" with the "Stop timer".
@@ -51,17 +50,6 @@ class MainActivity : AppCompatActivity() {
          */
         const val TOUCHES_REQUIRED_TO_UNLOCK = 5
     }
-
-    private var isMusicOn = false
-        set(value) {
-            if (value) {
-                mediaPlayer.start()
-            } else {
-                mediaPlayer.pause()
-            }
-
-            field = value
-        }
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -86,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             speedDial.close()
         }
 
-        reloadMusicPlayer()
+        viewModel.reloadMusicPlayer()
 
         sleepTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_speed_dial_timer, R.drawable.ic_timer)
             .setLabel(R.string.sleep_timer)
@@ -147,34 +135,6 @@ class MainActivity : AppCompatActivity() {
         if (intent.getBooleanExtra(EXTRA_SLEEP_TIME, false)) {
             startSleepTime()
         }
-    }
-
-    /**
-     * If the song we are currently playing is different to that specified by the preferences,
-     * then stop any existing music and re-create the [MediaPlayer].
-     *
-     * Does *not* play the newly created music player, that is up to you.
-     */
-    private fun reloadMusicPlayer() {
-        val songName = Preferences.getSongName(this)
-        if (currentSong == songName) {
-            return
-        }
-
-        currentSong = songName
-
-        if (isMusicOn) {
-            mediaPlayer.stop()
-        }
-
-        val songRes = when(songName) {
-            "canon_in_d_major" -> R.raw.canon_in_d_major
-            "gymnopedie_1" -> R.raw.gymnopedie_1
-            else -> R.raw.vivaldi
-        }
-
-        mediaPlayer = MediaPlayer.create(this, songRes)
-        mediaPlayer.isLooping = true
     }
 
     /**
@@ -315,9 +275,7 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
 
-        if (isMusicOn) {
-            mediaPlayer.pause()
-        }
+        viewModel.stopMusic()
 
         pauseTimer()
     }
@@ -327,11 +285,9 @@ class MainActivity : AppCompatActivity() {
 
         // If we are returning from settings, then we may have changed the song - in which case
         // we need to re-create the music player.
-        reloadMusicPlayer()
+        viewModel.reloadMusicPlayer()
 
-        if (isMusicOn) {
-            mediaPlayer.start()
-        }
+        viewModel.resumeMusic()
 
         if (timerCounter > 0) {
             resumeTimer()
@@ -341,7 +297,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
 
-        setMenuIconForSound(menu.findItem(R.id.menu_sound), isMusicOn)
+        setMenuIconForSound(menu.findItem(R.id.menu_sound), viewModel.isMusicOn)
 
         return true
     }
@@ -357,9 +313,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onSoundSelected(item: MenuItem) {
-        isMusicOn = !isMusicOn
+        viewModel.isMusicOn = !viewModel.isMusicOn
 
-        setMenuIconForSound(item, isMusicOn)
+        setMenuIconForSound(item, viewModel.isMusicOn)
     }
 
     private fun setMenuIconForSound(item: MenuItem, isMusicOn: Boolean) {
@@ -523,8 +479,8 @@ class MainActivity : AppCompatActivity() {
      *  - Attach listener to timer for a prompt to cancel sleep time
      */
     private fun startSleepTime() {
-        if (isMusicOn) {
-            isMusicOn = false
+        if (viewModel.isMusicOn) {
+            viewModel.isMusicOn = false
             invalidateOptionsMenu()
         }
 

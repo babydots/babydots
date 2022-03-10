@@ -3,6 +3,7 @@
     <plurals name="touch_lock_to_unlock">
         <item quantity="one">Pro odemknutí, rychle se %d krát dotknětě visacího zámku.</item>
         <item quantity="few">Pro odemknutí, rychle se %d krát dotknětě visacího zámku.</item>
+        <item quantity="many">Pro odemknutí, rychle se %d krát dotknětě visacího zámku.</item>
         <item quantity="other">Pro odemknutí, rychle se %d krát dotknětě visacího zámku.</item>
     </plurals>
     <string name="sleep_timer_started_help_text">Klepněte na časovač uspání pro více informací.</string>
@@ -22,6 +23,7 @@
     <plurals name="pref_x_minutes">
         <item quantity="one">%d minuta</item>
         <item quantity="few">%d minuty</item>
+        <item quantity="many">%d minut</item>
         <item quantity="other">%d minut</item>
     </plurals>
     <string name="settings">Nastavení</string>
