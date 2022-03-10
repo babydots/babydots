@@ -3,6 +3,7 @@ package com.serwylo.babydots
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.ActivityInfo
+import android.graphics.Color
 import android.graphics.Point
 import android.os.Bundle
 import android.view.*
@@ -13,6 +14,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.content.res.ResourcesCompat
 import com.leinardi.android.speeddial.SpeedDialActionItem
 import com.leinardi.android.speeddial.SpeedDialView
 import java.util.*
@@ -78,6 +80,7 @@ class MainActivity : AppCompatActivity() {
 
         sleepTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_speed_dial_timer, R.drawable.ic_timer)
             .setLabel(R.string.sleep_timer)
+            .setFabImageTintColor(ResourcesCompat.getColor(resources, R.color.white, theme))
             .create()
 
         speedDial.addActionItem(sleepTimerMenuItem)
@@ -85,24 +88,28 @@ class MainActivity : AppCompatActivity() {
         speedDial.addActionItem(
             SpeedDialActionItem.Builder(R.id.menu_speed_dial_colour, R.drawable.ic_colour)
                 .setLabel(R.string.colour_scheme)
+                .setFabImageTintColor(ResourcesCompat.getColor(resources, R.color.white, theme))
                 .create()
         )
 
         speedDial.addActionItem(
             SpeedDialActionItem.Builder(R.id.menu_speed_dial_size, R.drawable.ic_size)
                 .setLabel(R.string.size)
+                .setFabImageTintColor(ResourcesCompat.getColor(resources, R.color.white, theme))
                 .create()
         )
 
         speedDial.addActionItem(
             SpeedDialActionItem.Builder(R.id.menu_speed_dial_speed, R.drawable.ic_speed)
                 .setLabel(R.string.speed)
+                .setFabImageTintColor(ResourcesCompat.getColor(resources, R.color.white, theme))
                 .create()
         )
 
         speedDial.addActionItem(
             SpeedDialActionItem.Builder(R.id.menu_speed_dial_shape, R.drawable.ic_shape)
                 .setLabel(R.string.shape)
+                .setFabImageTintColor(ResourcesCompat.getColor(resources, R.color.white, theme))
                 .create()
         )
 
@@ -411,10 +418,10 @@ class MainActivity : AppCompatActivity() {
         runOnUiThread {
             timerWrapper.visibility = View.VISIBLE
 
-            val stopTimerMenuItem = SpeedDialActionItem.Builder(
-                R.id.menu_speed_dial_timer,
-                R.drawable.ic_stop_sleep_timer
-            ).setLabel(R.string.stop_timer_button).create()
+            val stopTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_speed_dial_timer, R.drawable.ic_stop_sleep_timer)
+                .setLabel(R.string.stop_timer_button)
+                .setFabImageTintColor(ResourcesCompat.getColor(resources, R.color.white, theme))
+                .create()
             speedDial.replaceActionItem(sleepTimerMenuItem, stopTimerMenuItem)
             sleepTimerMenuItem = stopTimerMenuItem
 
@@ -458,9 +465,10 @@ class MainActivity : AppCompatActivity() {
 
         timerWrapper.visibility = View.GONE
 
-        val startTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_speed_dial_timer, R.drawable.ic_timer).setLabel(
-            R.string.sleep_timer
-        ).create()
+        val startTimerMenuItem = SpeedDialActionItem.Builder(R.id.menu_speed_dial_timer, R.drawable.ic_timer)
+            .setLabel(R.string.sleep_timer)
+            .setFabImageTintColor(ResourcesCompat.getColor(resources, R.color.white, theme))
+            .create()
         speedDial.replaceActionItem(sleepTimerMenuItem, startTimerMenuItem)
         sleepTimerMenuItem = startTimerMenuItem
     }
