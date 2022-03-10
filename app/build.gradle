@@ -9,8 +9,8 @@ android {
         applicationId "com.serwylo.babydots"
         minSdkVersion 22
         targetSdkVersion 31
-        versionCode 10901
-        versionName "1.9.1"
+        versionCode 10902
+        versionName "1.9.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
