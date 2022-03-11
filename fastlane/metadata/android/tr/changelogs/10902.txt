@@ -1,0 +1,12 @@
+Hata düzeltme:
+ * Aygıtı döndürürken müziği durdurma.
+ * Simge rengi düzeltildi
+
+Bilinen sorun:
+ * Uyku zamanlayıcısı dönerken hala sıfırlanıyor - sonraki sürümde düzeltilecek.
+
+Çeviriler:
+ * Katalanca eklendi (teşekkürler @maite.guix)
+ * Birçok başka çeviri güncellendi (çevirmenler topluluğuna teşekkürler)
+
+Lütfen https://github.com/babydots/babydots/issues adresinde geri bildirim sağlayın veya sorun bildirin.
