@@ -1,0 +1,12 @@
+Opgelost:
+* De muziek wordt voortaan niet meer onderbroken na het draaien van het scherm;
+* De pictogramkleur is hersteld.
+
+Bekende problemen:
+* De klok wordt teruggedraaid na het draaien van het scherm - dit wordt binnenkort opgelost.
+
+Vertalingen:
+* Nieuw: Catalaanse vertaling, met dank aan @maite.guix;
+* Bijgewerkte vertalingen.
+
+Deel je feedback, problemen en ideeën op onze probleemtracker: https://github.com/babydots/babydots/issues
