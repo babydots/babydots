@@ -1,0 +1,12 @@
+Correções:
+ * Não parar a música ao girar o dispositivo.
+ * Corrigida a cor do ícone
+
+Problema conhecido:
+ * O temporizador ainda é reiniciado ao girar - problema a ser corrigido na próxima versão.
+
+Traduções:
+ * Catalão adicionado (graças a @maite.guix)
+ * Atualização de várias outras traduções (graças à comunidade de tradutores)
+
+Por favor dê feedbacks ou informe problemas em https://github.com/babydots/babydots/issues.
