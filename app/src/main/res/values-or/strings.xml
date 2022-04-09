@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="about_credits">ଶ୍ରେୟ</string>
+    <string name="size">ଆକାର</string>
+    <string name="speed">ବେଗ</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d ମିନିଟ୍</item>
+        <item quantity="other">%d ମିନିଟ୍</item>
+    </plurals>
+</resources>
