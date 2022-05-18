@@ -1,0 +1,4 @@
+Fix:
+ * Correct attribution of Johann Pachelbel for Canon in D (thanks @Quoor8ee).
+
+Please provide feedback or report issues at https://github.com/babydots/babydots/issues.
