@@ -1,0 +1,3 @@
+Bugfix: Zapobieganie odblokowywaniu BabyDots przez dzieci podczas obracania urządzenia (dzięki yamatt za zgłoszenie).
+
+Prosimy o wszelkie opinie lub zgłaszanie problemów na GitHubie pod adresem https://github.com/babydots/babydots/issues.

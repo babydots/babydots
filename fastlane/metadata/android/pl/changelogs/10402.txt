@@ -1,0 +1,7 @@
+Prawidłowa informacja zwrotna o tym, ile dotknięć jest wymaganych do odblokowania.
+
+Tłumaczenia:
+* Dodano język polski (dzięki WaldiS)
+* Zaktualizowane tłumaczenia
+
+Prosimy o wszelkie opinie lub zgłaszanie problemów na GitHubie pod adresem https://github.com/babydots/babydots/issues.

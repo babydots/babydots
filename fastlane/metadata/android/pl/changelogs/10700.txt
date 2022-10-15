@@ -1,0 +1,5 @@
+Dodatkowy schemat kolorów tęczy.
+
+Dotychczasowa miała takie kolory jak cyjan i magenta. Teraz, gdy nasze dziecko zaczyna uczyć się kolorów, chcieliśmy więcej "normalnych" kolorów takich jak pomarańczowy, niebieski, fioletowy, żółty. Istniejący schemat jest zachowany, to dodaje nowy schemat.
+
+Prosimy o wszelkie opinie lub zgłaszanie problemów na GitHubie pod adresem https://github.com/babydots/babydots/issues.

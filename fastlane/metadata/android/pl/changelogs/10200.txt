@@ -6,8 +6,12 @@ Tłumaczenia:
 * Norweski Bokmål (dzięki kingu)
 * Santali (dzięki Prasanta-Hembram)
 * Turecki (dzięki ersen)
+
 Ulepszenia:
+
 * Dwa nowe motywy (ciemny + neon)
 * Zapamiętaj wybrane preferencje
-*Obudź blokadę (nie wyłączaj ekranu)
+* Obudź blokadę (nie wyłączaj ekranu)
 * Losowa prędkość każdej kropki
+
+Prosimy o przekazanie wszelkich opinii lub zgłoszenie problemów na GitHubie pod adresem https://github.com/babydots/babydots/issues.

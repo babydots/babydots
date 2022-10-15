@@ -1,0 +1,8 @@
+Tłumaczenia:
+ - Dodano tłumaczenie na język litewski (dzięki @g)
+ - Zaktualizowane tłumaczenia
+
+Bugfixes:
+ - Zezwól na przewijanie ekranu informacji, gdy ekran urządzenia jest zbyt mały lub czcionka jest duża (dzięki @yuhuitech za pierwsze zgłoszenie, a następnie naprawę)
+
+Prosimy o wszelkie opinie lub zgłaszanie problemów na GitHubie pod adresem https://github.com/babydots/babydots/issues.
