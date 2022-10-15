@@ -22,7 +22,7 @@
     <string name="resume_dots_button">Continuar puntos</string>
     <string name="about_credits">Créditos</string>
     <string name="about_suggestions">Sugerencias y reporte de bugs</string>
-    <string name="attribution">"<a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">Vivaldi - The Four Seasons - Spring, Movement 1 - By John Harrison w/ Wichita State University Chamber</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>)           <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1">Erik Satie - Gymnopedie No 1 - By Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>)           <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J. Pachelbel - Canon in D Major - By Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>)     "</string>
+    <string name="attribution"><a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">Vivaldi - The Four Seasons - Spring, Movement 1 - By John Harrison w/ Wichita State University Chamber</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1 ">Erik Satie - Gymnopedie No 1 - Por Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J. Pachelbel - Canon en re mayor - Por Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) </string>
     <string name="url_github">https://github.com/babydots/babydots</string>
     <string name="about">Acerca de</string>
     <string name="mute">Silenciar</string>
@@ -32,4 +32,7 @@
     <string name="app_name">Baby Dots</string>
     <string name="shape">Forma</string>
     <string name="music">Música</string>
+    <string name="song_vivaldi">Las Cuatro Estaciones - Primavera, Movimiento 1</string>
+    <string name="song_canon_in_d_major">Canon en re mayor</string>
+    <string name="song_gymnopedie_1">Gymnopedie Número 1</string>
 </resources>
