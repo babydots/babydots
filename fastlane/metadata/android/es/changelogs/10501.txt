@@ -1,0 +1,3 @@
+Corrección de errores: Evitar que los bebés desbloqueen los BabyDots al girar el dispositivo (gracias a yamatt por informar).
+
+Por favor, proporcione cualquier comentario o informe de cualquier problema en el rastreador de problemas en https://github.com/babydots/babydots/issues.

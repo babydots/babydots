@@ -1,3 +1,3 @@
-Haz que los puntos sean más divertidos de interactuar para dedos pequeños. Tocar los puntos, ahora los hace más grandes.
+Haz que los puntos sean más divertidos de interactuar para los dedos pequeños. Ahora, al tocar los puntos, éstos se hacen más grandes.
 
-Por favor, deja tus sugerencias o avisa de cualquier problema en la pagina de seguimiento: https://github.com/babydots/babydots/issues.
+Por favor, proporciona cualquier comentario o informa de cualquier problema en el rastreador de problemas en https://github.com/babydots/babydots/issues.

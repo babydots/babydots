@@ -1,0 +1,5 @@
+Esquema adicional de colores del arco iris.
+
+El existente tenía colores como el cian y el magenta. Ahora que nuestro hijo está empezando a aprender los colores, queríamos colores más "normales" como el naranja, el azul, el morado y el amarillo. El esquema existente se mantiene, esto añade un nuevo esquema.
+
+Por favor, proporcione cualquier comentario o informe de cualquier problema en el rastreador de problemas en https://github.com/babydots/babydots/issues.

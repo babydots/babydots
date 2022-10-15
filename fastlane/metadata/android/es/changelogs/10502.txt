@@ -1,0 +1,8 @@
+Traducciones:
+ - Añadida la traducción al lituano (gracias @g)
+ - Traducciones actualizadas
+
+Corrección de errores:
+ - Permitir que la pantalla sobre se desplace cuando la pantalla del dispositivo es demasiado pequeña o la fuente es grande (gracias @yuhuitech por informar primero y arreglar después)
+
+Por favor, proporciona cualquier comentario o informa de cualquier problema en el rastreador de problemas en https://github.com/babydots/babydots/issues.
