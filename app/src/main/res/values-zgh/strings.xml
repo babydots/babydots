@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Baby Dots</string>
+    <string name="colour_scheme">ⵜⴰⵡⵏⴰⵖⵜ ⵏ ⵉⴽⵯⵍⴰⵏ</string>
+    <string name="size">ⴰⴷⴷⵓⴷ</string>
+    <string name="speed">ⵜⴰⵣⵣⵍⴰ</string>
+    <string name="shape">ⴰⵎⴰⵖⵏⵓ</string>
+    <string name="url_github">https://github.com/babydots/babydots</string>
+    <string name="about_credits">ⵜⵉⵙⵖⵣⴰⵏ</string>
+    <string name="sleep_timer">ⴰⵎⵙⴼⴰⴼⴰ</string>
+    <string name="sleep_time">ⴰⴽⵓⴷ ⵏ ⵢⵉⴹⵚ</string>
+    <string name="resume_dots_button">ⴳⵔ ⴷⴰⵖ ⵜⵉⵏⵇⵇⴰⴹ</string>
+    <string name="back">ⵓⵖⵓⵍ</string>
+    <string name="settings">ⵜⵉⵙⵖⴰⵍ</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d ⵏ ⵜⵓⵙⴷⵉⴷⵜ</item>
+        <item quantity="other">%d ⵏ ⵜⵓⵙⴷⵉⴷⵉⵏ</item>
+    </plurals>
+    <string name="stop_timer_button">ⵙⴱⴷⴷ</string>
+    <string name="lock">ⵔⴳⵍ</string>
+    <string name="song_gymnopedie_1">Gymnopedie ⵓⵟⵟⵓⵏ 1</string>
+    <string name="music">ⴰⵥⴰⵡⴰⵏ</string>
+    <string name="stop_sleep_time_message">ⴳⵔ ⴷⴰⵖ ⵜⵉⵏⵇⵇⴰⴹ, ⵜⴽⴽⵙⴷ ⴰⵎⵙⴼⴰⴼⴰ ⵜⴼⴼⵖⴷ ⵙⴳ ⵡⴰⴽⵓⴷ ⵏ ⵢⵉⴹⵚ.</string>
+    <string name="sleep_timer_description">ⴰⴷⴷⴰⵢ ⵢⴰⵡⴹ ⵓⵎⵙⴼⴰⴼⴰ ⵖⵔ ⵓⵎⵢⴰ, ⵔⴰⴷ ⵉⵙⵍⵍⴷ ⵓⵎⵉⵥⴰⵕ ⴷⴰⵓ ⵉⴱⴷⴷ ⵉⵎⵉⴽ ⵓⵥⴰⵡⴰⵏ ⴷ ⴰⴷ ⵉⵅⵙⵉ ⵓⵎⵉⵥⴰⵕ ⵛⵡⵉ ⴷⴼⴼⵉⵔ ⴰⵙ.</string>
+    <string name="sleep_timer_started_help_text">ⵙⵙⵉⵖ ⴰⵎⵙⴼⴰⴼⴰ ⵉ ⵓⴳⴳⴰⵔ ⵏ ⵡⵓⵎⵍⴰⵏ.</string>
+    <plurals name="touch_lock_to_unlock">
+        <item quantity="one">ⴰⴷⵔ ⴷⵖⵢⴰ ⵅⴼ ⵜⵉⴽⴼⵔⵜ %d ⵓⴳⴳⴰⵔ ⵏ ⵡⴰⴽⵓⴷ ⵉ ⵜⵓⴽⴽⵙⴰ ⵏ ⵜⵉⴷⴼⵔⵜ.</item>
+        <item quantity="other">ⴰⴷⵔ ⴷⵖⵢⴰ ⵅⴼ ⵜⵉⴽⴼⵔⵜ %d ⵓⴳⴳⴰⵔ ⵏ ⵡⴰⴽⵓⴷⵏ ⵉ ⵜⵓⴽⴽⵙⴰ ⵏ ⵜⵉⴷⴼⵔⵜ.</item>
+    </plurals>
+    <string name="song_vivaldi">ⴽⴽⵓⵥ ⵉⵎⵉⵔⵏ - ⵜⴰⴼⵙⵓⵜ, ⴰⵎⵓⵙⵙⵓ 1</string>
+    <string name="song_canon_in_d_major">ⴽⴰⵏⵓⵏ ⴳ ⵜⴰⵎⵎⴰⵙⵜ</string>
+    <string name="mute">ⴰⵏⵙⵙⴰⵙⵎ</string>
+    <string name="about">ⵅⴼ ⵜⵙⵏⵙⵉ</string>
+    <string name="about_suggestions">ⵜⵉⵙⵓⵎⴰⵔ ⴷ ⵜⴰⵏⴰⴹⵉⵏ ⵏ ⵜⵣⴳⵍⵉⵏ</string>
+    <string name="touch_to_unlock">ⵙⵙⵉⵖ ⵜ ⴰⴷ ⵉⵔⴳⵍ</string>
+    <string name="screen_unlocked">ⵉⵇⵇⵏ ⵓⵎⵉⵥⴰⵕ</string>
+    <string name="attribution"><a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">Vivaldi - ⴽⴽⵓⵥ ⵉⵎⵉⵔⵏ - ⵜⴰⴼⵙⵓⵜ, ⴰⵎⵓⵙⵙⵓ 1 - ⵡⵉⵏ John Harrison w/ Wichita ⴰⵃⴰⵏⵓ ⵏ ⵜⵙⴷⴰⵡⵉⵜ ⵏ ⵜⴳⵔⴰⵡⵜ</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1">Erik Satie - Gymnopedie ⵓⵟⵟⵓⵏ 1 - ⵡⵉⵏ Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J. Pachelbel - Canon in D Major - By Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) </string>
+</resources>
