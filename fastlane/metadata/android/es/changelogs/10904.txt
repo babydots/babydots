@@ -1,0 +1,4 @@
+Actualizaciones:
+* Traducciones múltiples actualizadas (gracias a la comunidad de traductores)
+
+Envía tus comentarios o informe de problemas en https://github.com/babydots/babydots/issues.
