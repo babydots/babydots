@@ -1,0 +1,4 @@
+Güncellemeler:
+* Birden fazla çeviri güncellendi (çevirmenler topluluğuna teşekkürler)
+
+Lütfen https://github.com/babydots/babydots/issues adresinden geri bildirimde bulunun veya sorunları bildirin.
