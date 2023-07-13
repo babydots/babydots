@@ -1,0 +1,1 @@
+Aktualizacja docelowego zestawu SDK do najnowszej wersji.
