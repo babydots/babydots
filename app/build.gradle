@@ -1,16 +1,15 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.serwylo.babydots"
         minSdkVersion 22
-        targetSdkVersion 31
-        versionCode 10904
-        versionName "1.9.4"
+        targetSdkVersion 33
+        versionCode 10905
+        versionName "1.9.5"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -39,22 +38,22 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.preference:preference-ktx:1.2.0'
 
-    def lifecycle_version = '2.4.1'
+    def lifecycle_version = '2.6.1'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 
     implementation "com.leinardi.android:speed-dial:3.2.0"
     implementation 'com.github.medyo:fancybuttons:1.9.0'
 
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0-alpha04'
-    androidTestImplementation 'androidx.test:rules:1.4.1-alpha04'
-    androidTestImplementation 'androidx.test:core:1.4.0'
-    androidTestImplementation 'androidx.test:core-ktx:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.0-alpha01'
+    androidTestImplementation 'androidx.test:rules:1.6.0-alpha01'
+    androidTestImplementation 'androidx.test:core:1.5.0'
+    androidTestImplementation 'androidx.test:core-ktx:1.5.0'
 
     androidTestImplementation 'tools.fastlane:screengrab:2.1.1', {
         exclude group: 'androidx.test.uiautomator', module: 'uiautomator'
