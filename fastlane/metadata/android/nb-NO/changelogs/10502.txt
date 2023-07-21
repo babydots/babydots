@@ -1,0 +1,8 @@
+Translations:
+ - Litauisk oversettelse (takk til @g)
+ - Oppdaterte oversettelser
+
+Feilfikser:
+ - Tillat rulling av «Om»-skjermen når enhetsskjermen er for liten, eller skriften er for stor (takk til @yuhuitech for innrapportering og fiksing)
+
+Gi tilbakemelding eller rapporter feil i feilsporeren på https://github.com/babydots/babydots/issues.

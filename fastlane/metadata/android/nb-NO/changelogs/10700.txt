@@ -1,0 +1,5 @@
+Ytterligere regnbue-fargedrakt.
+
+Eksisterende hadde farger som blågrønn og magenta. Når barnet lærer farger er det bedre med normale farger, som f.eks. oransje, blå, lilla, og gul. Eksisterende fargedrakt beholdes, og nytt legges til.
+
+Gi tilbakemeldinger eller rapporter feil i feilsporeren på https://github.com/babydots/babydots/issues

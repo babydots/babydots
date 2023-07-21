@@ -1,0 +1,3 @@
+Feilfiks: Forhindre babyer fra å låse opp Baby Dots ved rotering av enheten (takk til yamatt for innrapportering).
+
+Gi tilbakemelding eller rapporter feil i feilsporeren på https://github.com/babydots/babydots/issues
