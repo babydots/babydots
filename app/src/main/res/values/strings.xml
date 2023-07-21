@@ -15,7 +15,7 @@
     <string name="resume_dots_button">Resume dots</string>
     <string name="back">Back</string>
     <string name="stop_sleep_time_message">Resume dots, remove the sleep timer, and exit sleep time.</string>
-    <string name="sleep_timer_description">When the timer reaches zero, the screen will dim, the music will pause, and the screen will turn off soon after.</string>
+    <string name="sleep_timer_description">When the timer reaches zero, the music pauses, the screen dims and turns off.</string>
     <string name="settings">Settings</string>
     <plurals name="pref_x_minutes">
         <item quantity="one">%d minute</item>
@@ -30,8 +30,8 @@
         <item quantity="one">Quickly touch the lock %d more time to unlock.</item>
         <item quantity="other">Quickly touch the lock %d more times to unlock.</item>
     </plurals>
-    <string name="song_vivaldi">The Four Seasons - Spring, Movement 1</string>
-    <string name="song_canon_in_d_major">Canon in D Major</string>
-    <string name="song_gymnopedie_1">Gymnopedie No 1</string>
+    <string name="song_vivaldi">The Four Seasons — Spring, Movement 1</string>
+    <string name="song_canon_in_d_major">Canon in D major</string>
+    <string name="song_gymnopedie_1">Gymnopédie No. 1</string>
     <string name="music">Music</string>
 </resources>
