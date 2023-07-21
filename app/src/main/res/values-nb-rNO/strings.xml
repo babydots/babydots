@@ -30,4 +30,9 @@
     <string name="touch_to_unlock">Trykk for å låse opp</string>
     <string name="lock">Lås</string>
     <string name="screen_unlocked">Skjerm opplåst</string>
+    <string name="shape">Form</string>
+    <string name="music">Musikk</string>
+    <string name="song_vivaldi">De fire årstidene — vår, første sats</string>
+    <string name="song_canon_in_d_major">Flerstemt i D-dur</string>
+    <string name="song_gymnopedie_1">Gymnopédie nr. 1</string>
 </resources>
