@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="about_credits">Кредиты</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Чтобы разблокировать, быстро коснитесь замка еще %d раз.</item>
-        <item quantity="few">Чтобы разблокировать, быстро коснитесь замка еще %d раза.</item>
-        <item quantity="many">Чтобы разблокировать, быстро коснитесь замка еще %d раз.</item>
-        <item quantity="other">Чтобы разблокировать, быстро коснитесь замка еще %d раз.</item>
-    </plurals>
-    <string name="lock">Блокировано</string>
-    <string name="touch_to_unlock">Нажмите, чтобы разблокировать</string>
-    <string name="screen_unlocked">Экран разблокирован</string>
     <string name="sleep_timer_started_help_text">Коснитесь таймера сна, чтобы получить дополнительную информацию.</string>
     <string name="stop_timer_button">Остановить таймер</string>
     <plurals name="pref_x_minutes">

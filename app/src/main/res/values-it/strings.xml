@@ -23,13 +23,6 @@
     <string name="resume_dots_button">Riavvia i punti</string>
     <string name="sleep_time">Tempo di spegnimento</string>
     <string name="sleep_timer">Temporizzatore</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Sfiora rapidamente la serratura %d altra volta per sbloccare.</item>
-        <item quantity="other">Sfiora rapidamente la serratura altre %d volte per sbloccare.</item>
-    </plurals>
-    <string name="touch_to_unlock">Tocca per sbloccare</string>
-    <string name="lock">Blocca</string>
-    <string name="screen_unlocked">Schermo sbloccato</string>
     <string name="shape">Forma</string>
     <string name="song_vivaldi">Le quattro stagioni – Primavera, movimento 1</string>
     <string name="song_canon_in_d_major">Canone in re maggiore</string>

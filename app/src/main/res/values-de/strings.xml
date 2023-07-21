@@ -24,13 +24,6 @@
     <string name="resume_dots_button">Fortsetzen</string>
     <string name="sleep_time">Schlafzeit</string>
     <string name="sleep_timer">Schaltuhr</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Berühren Sie das Schloss %d Mal mehr schnell, um es zu entsperren.</item>
-        <item quantity="other">Berühren Sie das Schloss %d Mal mehr schnell, um es zu entsperren.</item>
-    </plurals>
-    <string name="touch_to_unlock">Berühren Sie zum Entsperren</string>
-    <string name="lock">Sperren</string>
-    <string name="screen_unlocked">Bildschirm entsperrt</string>
     <string name="song_vivaldi">Die vier Jahreszeiten – Frühling, Satz 1</string>
     <string name="song_canon_in_d_major">Kanon in D-Dur</string>
     <string name="song_gymnopedie_1">Gymnopedie Br. 1</string>

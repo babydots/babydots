@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Toca rápidamente la cerradura %d vez más para desbloquear.</item>
-        <item quantity="other">Toca rápidamente la cerradura %d veces más para desbloquear.</item>
-    </plurals>
-    <string name="touch_to_unlock">Toca para desbloquear</string>
-    <string name="lock">Bloquear</string>
-    <string name="screen_unlocked">Pantalla desbloqueada</string>
     <string name="sleep_timer_started_help_text">Toca el temporizador de reposo para más info.</string>
     <string name="stop_timer_button">Detener temporizador</string>
     <plurals name="pref_x_minutes">

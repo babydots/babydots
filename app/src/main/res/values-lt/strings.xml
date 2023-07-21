@@ -3,15 +3,6 @@
     <string name="stop_sleep_time_message">Tęskite taškelius, pašalinkite miego laikmatį ir išeikite iš miego laiko.</string>
     <string name="resume_dots_button">Tęsti taškelius</string>
     <string name="app_name">Baby Dots</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Greitai palieskite užraktą dar %d kartą, kad atrakintumėte.</item>
-        <item quantity="few">Greitai palieskite užraktą dar %d kartus, kad atrakintumėte.</item>
-        <item quantity="many">Greitai palieskite užraktą dar %d kartų, kad atrakintumėte.</item>
-        <item quantity="other">Greitai palieskite užraktą dar %d kartų, kad atrakintumėte.</item>
-    </plurals>
-    <string name="touch_to_unlock">Palieskite, kad atrakintumėte</string>
-    <string name="lock">Užrakinti</string>
-    <string name="screen_unlocked">Ekranas atrakintas</string>
     <string name="sleep_timer_started_help_text">Palieskite miego laikmatį, kad gautumėte daugiau informacijos.</string>
     <string name="stop_timer_button">Sustabdyti laikmatį</string>
     <plurals name="pref_x_minutes">

@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Швидко торкніться замка ще %d раз, щоб розблокувати.</item>
-        <item quantity="few">Швидко торкніться замка ще %d рази, щоб розблокувати.</item>
-        <item quantity="many">Швидко торкніться замка ще %d разів, щоб розблокувати.</item>
-        <item quantity="other">Швидко торкніться замка ще %d разів, щоб розблокувати.</item>
-    </plurals>
-    <string name="touch_to_unlock">Торкніться, щоб розблокувати</string>
-    <string name="lock">Блокувати</string>
-    <string name="screen_unlocked">Екран розблоковано</string>
     <string name="sleep_timer_started_help_text">Торкніться таймера сну для отримання додаткових відомостей.</string>
     <string name="stop_timer_button">Зупинити таймер</string>
     <plurals name="pref_x_minutes">

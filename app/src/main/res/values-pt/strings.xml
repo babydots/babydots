@@ -2,13 +2,6 @@
 <resources>
     <string name="sleep_timer_started_help_text">Toque no relógio de suspensão programada para mais informações.</string>
     <string name="sleep_timer_description">Quanto o temporizador da suspensão programada chegar a zero, o ecrã é escurecido, a música é parada e o ecrã será desligado pouco depois.</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Tocar rapidamente no cadeado mais %d vez para desbloquear.</item>
-        <item quantity="other">Tocar rapidamente no cadeado mais %d vezes para desbloquear.</item>
-    </plurals>
-    <string name="touch_to_unlock">Tocar para desbloquear</string>
-    <string name="lock">Bloquear</string>
-    <string name="screen_unlocked">Ecrã desbloqueado</string>
     <string name="stop_timer_button">Parar temporizador</string>
     <plurals name="pref_x_minutes">
         <item quantity="one">%d minuto</item>

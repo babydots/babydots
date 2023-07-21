@@ -15,13 +15,6 @@
     <string name="resume_dots_button">ᱰᱚᱴ ᱠᱚ ᱞᱟᱦᱟᱭ ᱪᱷᱚ</string>
     <string name="sleep_time">ᱜᱤᱛᱤᱡ ᱴᱟᱭᱢᱟᱹᱨ</string>
     <string name="sleep_timer">ᱜᱤᱛᱤᱡ ᱴᱟᱭᱢᱟᱹᱨ</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">ᱡᱟᱹᱥᱛᱤ ᱥᱚᱢᱚᱭ ᱦᱟᱹᱵᱤᱡ ᱛᱮ ᱠᱷᱭᱞᱟᱹ ᱫᱚᱦᱚ ᱞᱟᱹᱜᱤᱹᱫ %d ᱠᱩᱞᱩᱯ ᱨᱮ ᱞᱚᱜᱚᱱ ᱚᱛᱟᱭ ᱢᱮ ᱾</item>
-        <item quantity="other">ᱡᱟᱹᱥᱛᱤ ᱥᱚᱢᱚᱭ ᱦᱟᱹᱵᱤᱡ ᱛᱮ ᱠᱷᱩᱞᱟᱹ ᱫᱚᱦᱚ ᱞᱟᱹᱜᱤᱹᱫ %d ᱠᱩᱞᱩᱯ ᱨᱮ ᱞᱚᱜᱚᱱ ᱚᱛᱟᱭ ᱢᱮ ᱾</item>
-    </plurals>
-    <string name="touch_to_unlock">ᱠᱩᱞᱩᱯ ᱠᱷᱩᱞᱟᱹ ᱨᱮ ᱚᱛᱟᱭ ᱢᱮ</string>
-    <string name="lock">ᱠᱩᱞᱩᱯ</string>
-    <string name="screen_unlocked">ᱥᱠᱨᱤᱻᱱ ᱠᱷᱩᱞᱟᱹᱭᱮᱱᱟ</string>
     <string name="sleep_timer_started_help_text">ᱡᱟᱹᱥᱛᱤ ᱵᱤᱵᱨᱚᱬ ᱞᱟᱹᱜᱤᱫ ᱜᱤᱛᱤᱡ ᱴᱟᱭᱢᱟᱹᱨ ᱚᱛᱟᱭ ᱢᱮ ᱾</string>
     <string name="stop_timer_button">ᱴᱟᱭᱢᱟᱹᱨ ᱵᱚᱸᱫ</string>
     <plurals name="pref_x_minutes">
