@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="sleep_timer_description">Als de klok de nul aantikt, verduistert het scherm, wordt de muziek onderbroken en het scherm langzaam uitgeschakeld.</string>
+    <string name="sleep_timer_description">Als de klok de nul aantikt, wordt de muziek onderbroken en het scherm langzaam uitgeschakeld.</string>
     <string name="sleep_timer_started_help_text">Druk voor meer informatie op de tijdklok.</string>
     <string name="stop_timer_button">Tijdklok stopzetten</string>
     <plurals name="pref_x_minutes">
@@ -24,7 +24,7 @@
     <string name="colour_scheme">Kleurenschema</string>
     <string name="app_name">Babystippen</string>
     <string name="shape">Vorm</string>
-    <string name="song_vivaldi">De vier seizoenen - Lente, opus 1</string>
+    <string name="song_vivaldi">De vier seizoenen — Lente, opus 1</string>
     <string name="song_canon_in_d_major">Canon in D-majeur</string>
     <string name="song_gymnopedie_1">Gymnopédie nr. 1</string>
     <string name="music">Muziek</string>
