@@ -1,10 +1,6 @@
 package com.serwylo.babydots
 
-import android.annotation.SuppressLint
 import android.content.Intent
-import android.content.pm.ActivityInfo
-import android.graphics.Color
-import android.graphics.Point
 import android.os.Bundle
 import android.view.*
 import android.widget.ImageView
@@ -17,6 +13,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.res.ResourcesCompat
 import com.leinardi.android.speeddial.SpeedDialActionItem
 import com.leinardi.android.speeddial.SpeedDialView
+import com.serwylo.immersivelock.ImmersiveLock
 import java.util.*
 
 
@@ -26,10 +23,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var speedDial: SpeedDialView
     private lateinit var sleepTimeWrapper: View
     private lateinit var toolbar: Toolbar
-    private lateinit var unlockWrapper: View
     private lateinit var timerWrapper: View
     private lateinit var timerLabel: TextView
     private lateinit var timerIcon: ImageView
+    private lateinit var immersiveLock: ImmersiveLock
 
     private val viewModel: MainViewModel by viewModels()
 
@@ -124,7 +121,12 @@ class MainActivity : AppCompatActivity() {
             true // Prevents the menu from closing when an option is selected.
         }
 
-        unlockWrapper = findViewById(R.id.unlock_wrapper)
+        immersiveLock = ImmersiveLock.Builder(findViewById(R.id.unlock_wrapper))
+            .onStopImmersiveMode {
+                speedDial.visibility = View.VISIBLE
+                toolbar.visibility = View.VISIBLE
+            }
+            .build()
 
         sleepTimeWrapper = findViewById(R.id.sleep_time_wrapper)
         timerWrapper = findViewById(R.id.timer_wrapper)
@@ -142,141 +144,6 @@ class MainActivity : AppCompatActivity() {
         if (intent.getBooleanExtra(EXTRA_SLEEP_TIME, false)) {
             startSleepTime()
         }
-    }
-
-    /**
-     * Put the screen in "Immersive sticky mode" which prevents accidental clicking of home or other
-     * buttons that could leave the app. However the UX to escape this is pretty terrible (for
-     * somewhat understandable reasons), so also show a lock which can be used to unlock this mode.
-     *
-     * To unlock this mode, you need to tap the unlock button TOUCHES_REQUIRED_TO_UNLOCK times, each
-     * time no more  than 750ms apart.
-     */
-    @SuppressLint("ShowToast") // We keep the toast so that we can cancel when the user is prompted to press many times quickly. Therefore "show()" is called later on.
-    private fun startImmersiveMode() {
-
-        try {
-            @Suppress("DEPRECATION") // The recommended alternative was only introduced in API 30.
-            window.decorView.systemUiVisibility =
-                View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-        } catch (e: Exception) {}
-
-        lockActivityOrientation()
-
-        startLockTask()
-
-        speedDial.visibility = View.GONE
-        toolbar.visibility = View.GONE
-        unlockWrapper.visibility = View.VISIBLE
-
-        var lastClickTime = -1L
-        var counter = TOUCHES_REQUIRED_TO_UNLOCK
-
-        // Remember the toast, so that we can update it when the user touches multiple times quickly,
-        // rather than showing multiple toasts on top of eachother, whch tends to have a bad UX on
-        // some Android versions.
-        var toast:Toast? = null
-
-        unlockWrapper.setOnClickListener {
-            if (lastClickTime == -1L || System.currentTimeMillis() - lastClickTime > 750L) {
-                counter = TOUCHES_REQUIRED_TO_UNLOCK - 1
-                toast?.cancel()
-                toast = null
-            } else {
-                counter -= 1
-            }
-
-            if (counter == 0) {
-                toast?.cancel()
-                toast = null
-                stopImmersiveMode()
-            } else {
-                lastClickTime = System.currentTimeMillis()
-
-                val toastMessage = resources.getQuantityString(R.plurals.touch_lock_to_unlock, counter, counter)
-
-                if (toast == null) {
-                    toast = Toast.makeText(
-                        this,
-                        toastMessage,
-                        Toast.LENGTH_SHORT
-                    )
-                } else {
-                    toast?.setText(toastMessage)
-                }
-
-                toast?.show()
-            }
-        }
-
-    }
-
-    /**
-     * During immersive mode, don't let the screen change orientation in immersive mode - the baby
-     * will likely be moving the phone all about and there is no benefit to changing orientation
-     * (there is no real sense of "up" when in full screen).
-     *
-     * See:
-     *  - Original bug report: https://github.com/babydots/babydots/issues/40 and
-     *  - Source for this fix: https://stackoverflow.com/questions/3611457/android-temporarily-disable-orientation-changes-in-an-activity
-     */
-    @SuppressLint("NewApi", "SourceLockedOrientationActivity")
-    private fun lockActivityOrientation() {
-
-        val display = windowManager.defaultDisplay
-        val rotation = display.rotation
-
-        val size = Point()
-        display.getSize(size)
-
-        val height = size.y
-        val width = size.x
-
-        requestedOrientation = when (rotation) {
-            Surface.ROTATION_90 ->
-                if (width > height) {
-                    ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-                } else {
-                    ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT
-                }
-            Surface.ROTATION_180 ->
-                if (height > width) {
-                    ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT
-                } else {
-                    ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
-                }
-            Surface.ROTATION_270 ->
-                if (width > height) {
-                    ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
-                } else {
-                    ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-                }
-            else ->
-                if (height > width) {
-                    ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-                } else {
-                    ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-                }
-        }
-    }
-
-    private fun stopImmersiveMode() {
-
-        unlockWrapper.visibility = View.GONE
-        toolbar.visibility = View.VISIBLE
-        speedDial.visibility = View.VISIBLE
-
-        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
-
-        stopLockTask()
-
-        try {
-            @Suppress("DEPRECATION") // The recommended alternative was only introduced in API 30.
-            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-        } catch (e: Exception) {}
-
-        Toast.makeText(this, getString(R.string.screen_unlocked), Toast.LENGTH_SHORT).show()
-
     }
 
     override fun onPause() {
@@ -313,7 +180,11 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.menu_sound -> onSoundSelected(item)
             R.id.menu_settings -> startActivity(Intent(this, SettingsActivity::class.java))
-            R.id.menu_lock -> startImmersiveMode()
+            R.id.menu_lock -> {
+                immersiveLock.startImmersiveMode(this)
+                speedDial.visibility = View.GONE
+                toolbar.visibility = View.GONE
+            }
             R.id.menu_about -> startActivity(Intent(this, AboutActivity::class.java))
         }
         return false

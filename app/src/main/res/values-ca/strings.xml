@@ -14,13 +14,6 @@
     </plurals>
     <string name="stop_timer_button">Aturar temporitzador</string>
     <string name="sleep_timer_started_help_text">Tocar el temporitzador per a més informació.</string>
-    <string name="screen_unlocked">Pantalla desbloquejada</string>
-    <string name="lock">Blocar</string>
-    <string name="touch_to_unlock">Tocar per a desbloquejar</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Tocar ràpidament el candau %d vegada més per desblocar-lo.</item>
-        <item quantity="other">Tocar ràpidament el candau %d vegades més per desblocar-lo.</item>
-    </plurals>
     <string name="song_vivaldi">Les quatre estacions - Primavera, moviment 1</string>
     <string name="song_canon_in_d_major">Canon en re major</string>
     <string name="song_gymnopedie_1">Gymnopédie No 1</string>

@@ -23,13 +23,6 @@
     </plurals>
     <string name="stop_timer_button">Stop timer</string>
     <string name="sleep_timer_started_help_text">Touch the sleep timer for more info.</string>
-    <string name="screen_unlocked">Screen unlocked</string>
-    <string name="lock">Lock</string>
-    <string name="touch_to_unlock">Touch to unlock</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Quickly touch the lock %d more time to unlock.</item>
-        <item quantity="other">Quickly touch the lock %d more times to unlock.</item>
-    </plurals>
     <string name="song_vivaldi">The Four Seasons — Spring, Movement 1</string>
     <string name="song_canon_in_d_major">Canon in D major</string>
     <string name="song_gymnopedie_1">Gymnopédie No. 1</string>

@@ -23,13 +23,6 @@
     <string name="resume_dots_button">Noktaları devam ettir</string>
     <string name="sleep_time">Uyku zamanı</string>
     <string name="sleep_timer">Uyku Zamanlayıcısı</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Açmak için kilide %d defa daha hızlıca dokunun.</item>
-        <item quantity="other">Açmak için kilide %d defa daha hızlıca dokunun.</item>
-    </plurals>
-    <string name="touch_to_unlock">Kilidi açmak için dokunun</string>
-    <string name="lock">Kilitle</string>
-    <string name="screen_unlocked">Ekran kilidi açıldı</string>
     <string name="shape">Şekil</string>
     <string name="song_canon_in_d_major">Canon in D Major</string>
     <string name="song_gymnopedie_1">Gymnopedie No 1</string>

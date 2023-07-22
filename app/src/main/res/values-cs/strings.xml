@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Pro odemknutí, rychle se %d krát dotknětě visacího zámku.</item>
-        <item quantity="few">Pro odemknutí, rychle se %d krát dotknětě visacího zámku.</item>
-        <item quantity="many">Pro odemknutí, rychle se %d krát dotknětě visacího zámku.</item>
-        <item quantity="other">Pro odemknutí, rychle se %d krát dotknětě visacího zámku.</item>
-    </plurals>
     <string name="sleep_timer_started_help_text">Klepněte na časovač uspání pro více informací.</string>
     <string name="stop_timer_button">Zastavit odpočet</string>
     <string name="sleep_timer_description">Až doběhne odpočet, obrazovka se ztlumí, hudba se pozastaví po chvíli se obrazovka úplně vypne.</string>
@@ -17,9 +11,6 @@
     <string name="colour_scheme">Paleta barev</string>
     <string name="app_name">Baby Dots</string>
     <string name="about_credits">Poděkování</string>
-    <string name="touch_to_unlock">Odemknout dotykem</string>
-    <string name="lock">Uzamknout</string>
-    <string name="screen_unlocked">Obrazovka odemčena</string>
     <plurals name="pref_x_minutes">
         <item quantity="one">%d minuta</item>
         <item quantity="few">%d minuty</item>

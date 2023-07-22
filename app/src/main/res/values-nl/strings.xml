@@ -23,13 +23,6 @@
     <string name="size">Grootte</string>
     <string name="colour_scheme">Kleurenschema</string>
     <string name="app_name">Babystippen</string>
-    <plurals name="touch_lock_to_unlock">
-        <item quantity="one">Druk %d keer snel achter elkaar op het slot om te ontgrendelen.</item>
-        <item quantity="other">Druk %d keer snel achter elkaar op het slot om te ontgrendelen.</item>
-    </plurals>
-    <string name="touch_to_unlock">Druk om te ontgrendelen</string>
-    <string name="lock">Vergrendelen</string>
-    <string name="screen_unlocked">Het scherm is ontgrendeld</string>
     <string name="shape">Vorm</string>
     <string name="song_vivaldi">De vier seizoenen - Lente, opus 1</string>
     <string name="song_canon_in_d_major">Canon in D-majeur</string>
