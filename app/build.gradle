@@ -50,10 +50,10 @@ dependencies {
     implementation "com.leinardi.android:speed-dial:3.2.0"
     implementation 'com.github.medyo:fancybuttons:1.9.0'
 
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.0-alpha01'
-    androidTestImplementation 'androidx.test:rules:1.6.0-alpha01'
-    androidTestImplementation 'androidx.test:core:1.5.0'
-    androidTestImplementation 'androidx.test:core-ktx:1.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0-alpha04'
+    androidTestImplementation 'androidx.test:rules:1.4.1-alpha04'
+    androidTestImplementation 'androidx.test:core:1.4.0'
+    androidTestImplementation 'androidx.test:core-ktx:1.4.0'
 
     androidTestImplementation 'tools.fastlane:screengrab:2.1.1', {
         exclude group: 'androidx.test.uiautomator', module: 'uiautomator'

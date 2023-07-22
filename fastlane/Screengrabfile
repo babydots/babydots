@@ -12,6 +12,7 @@ tests_apk_path('app/build/outputs/apk/androidTest/debug/app-debug-androidTest.ap
 
 locales([
 	'en-US',
+	'ca',
 	'cs',
 	'de',
 	'es',
@@ -19,13 +20,19 @@ locales([
 	'fr',
 	'hr',
 	'it',
+	'lt',
 	'nb-NO',
 	'nl',
+	'or',
 	'pl',
+	'pt',
+	'pt-BR',
+	'ro',
 	'ru',
 	'sat',
 	'tr',
-	'uk'
+	'uk',
+	'zgh'
 ])
 
 # clear all previously generated screenshots in your local output directory before creating new ones
