@@ -17,15 +17,15 @@
         <item quantity="other">%d dakika</item>
     </plurals>
     <string name="settings">Ayarlar</string>
-    <string name="sleep_timer_description">Zamanlayıcı sıfıra ulaştığında ekran kararacak, müzik duraklatılacak ve kısa bir süre sonra ekran kapanacaktır.</string>
+    <string name="sleep_timer_description">Zamanlayıcı sıfıra ulaştığında müzik duraklar, ekran kararır ve kapanır.</string>
     <string name="stop_sleep_time_message">Noktaları devam ettir, uyku zamanlayıcısını kaldır ve uyku zamanından çık.</string>
     <string name="back">Geri</string>
     <string name="resume_dots_button">Noktaları devam ettir</string>
     <string name="sleep_time">Uyku zamanı</string>
     <string name="sleep_timer">Uyku Zamanlayıcısı</string>
     <string name="shape">Şekil</string>
-    <string name="song_canon_in_d_major">Canon in D Major</string>
-    <string name="song_gymnopedie_1">Gymnopedie No 1</string>
+    <string name="song_canon_in_d_major">Canon in D major</string>
+    <string name="song_gymnopedie_1">Gymnopédie No. 1</string>
     <string name="music">Müzik</string>
-    <string name="song_vivaldi">The Four Seasons - Spring, Movement 1</string>
+    <string name="song_vivaldi">The Four Seasons — Spring, Movement 1</string>
 </resources>
