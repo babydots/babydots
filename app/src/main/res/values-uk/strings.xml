@@ -9,7 +9,7 @@
         <item quantity="other">%d хвилин</item>
     </plurals>
     <string name="settings">Параметри</string>
-    <string name="sleep_timer_description">Коли таймер досягне нуля, екран затемниться, музика зупиниться, а екран незабаром вимкнеться.</string>
+    <string name="sleep_timer_description">Коли таймер досягне нуля, музика призупиняється, екран притлумлюється і вимикається.</string>
     <string name="stop_sleep_time_message">Відновити крапки, прибрати таймер сну та вийти з режиму сну.</string>
     <string name="back">Назад</string>
     <string name="resume_dots_button">Відновити крапки</string>
@@ -27,7 +27,7 @@
     <string name="app_name">Baby Dots</string>
     <string name="shape">Форма</string>
     <string name="song_canon_in_d_major">Канон у ре мажор</string>
-    <string name="song_gymnopedie_1">Gymnopedie No 1</string>
-    <string name="song_vivaldi">Чотири пори року - Весна, Концерт № 1</string>
+    <string name="song_gymnopedie_1">Gymnopédie No. 1</string>
+    <string name="song_vivaldi">Чотири пори року — Весна, Концерт № 1</string>
     <string name="music">Музика</string>
 </resources>
