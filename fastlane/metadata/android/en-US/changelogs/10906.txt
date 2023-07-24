@@ -1,0 +1,5 @@
+Translations:
+ * Minor rewording and update of various translations.
+ * Updated screenshots in metadata for multiple translations.
+
+Please provide feedback or report issues at https://github.com/babydots/babydots/issues.
