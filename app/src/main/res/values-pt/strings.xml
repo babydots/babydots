@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="sleep_timer_started_help_text">Toque no relógio de suspensão programada para mais informações.</string>
-    <string name="sleep_timer_description">Quanto o temporizador da suspensão programada chegar a zero, o ecrã é escurecido, a música é parada e o ecrã será desligado pouco depois.</string>
+    <string name="sleep_timer_description">Quando o temporizador chega a zero, a música pára, o ecrã escurece e desliga-se.</string>
     <string name="stop_timer_button">Parar temporizador</string>
     <plurals name="pref_x_minutes">
         <item quantity="one">%d minuto</item>
@@ -26,6 +26,6 @@
     <string name="shape">Forma</string>
     <string name="music">Música</string>
     <string name="song_gymnopedie_1">Gymnopédie nº 1</string>
-    <string name="song_vivaldi">As Quatro Estações – Primavera, Movimento 1</string>
-    <string name="song_canon_in_d_major">Cânone em Ré Maior</string>
+    <string name="song_vivaldi">As Quatro Estações — Primavera, Movimento 1</string>
+    <string name="song_canon_in_d_major">Cânone em ré maior</string>
 </resources>
