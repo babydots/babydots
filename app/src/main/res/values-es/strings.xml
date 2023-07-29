@@ -7,7 +7,7 @@
         <item quantity="other">%d minutos</item>
     </plurals>
     <string name="settings">Ajustes</string>
-    <string name="sleep_timer_description">Cuando el temporizador llega a cero, la pantalla se atenúa, la música se detiene y la pantalla se apaga poco después.</string>
+    <string name="sleep_timer_description">Cuando el temporizador llega a cero, la música se detiene, la pantalla se atenúa y se apaga.</string>
     <string name="stop_sleep_time_message">Reanuda los puntos, quita el temporizador de reposo y sale de la hora de reposo.</string>
     <string name="sleep_time">Hora de reposar</string>
     <string name="sleep_timer">Temporizador de reposo</string>
@@ -25,7 +25,7 @@
     <string name="app_name">Baby Dots</string>
     <string name="shape">Forma</string>
     <string name="music">Música</string>
-    <string name="song_vivaldi">Las Cuatro Estaciones - Primavera, Movimiento 1</string>
+    <string name="song_vivaldi">Las Cuatro Estaciones — Primavera, Movimiento 1</string>
     <string name="song_canon_in_d_major">Canon en re mayor</string>
-    <string name="song_gymnopedie_1">Gymnopedie Número 1</string>
+    <string name="song_gymnopedie_1">Gymnopédie Número 1</string>
 </resources>
