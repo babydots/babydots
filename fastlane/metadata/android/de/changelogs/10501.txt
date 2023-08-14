@@ -1,0 +1,3 @@
+Bugfix: Verhindern Sie, dass Babys BabyDots entsperren, wenn das Gerät gedreht wird (Danke an yamatt für die Meldung).
+
+Bitte geben Sie Feedback oder melden Sie Probleme im Issue-Tracker unter: https://github.com/babydots/babydots/issues.

@@ -1,0 +1,5 @@
+Zusätzliches Regenbogen-Farbschema.
+
+Das vorhandene hatte Farben wie Cyan und Magenta. Da unser Kind nun anfängt, Farben zu lernen, wollten wir „normalere“ Farben wie Orange, Blau, Lila, Gelb. Das bestehende Schema bleibt erhalten, dadurch wird ein neues Schema hinzugefügt.
+
+Bitte geben Sie Feedback oder melden Sie Probleme im Issue-Tracker unter https://github.com/babydots/babydots/issues.

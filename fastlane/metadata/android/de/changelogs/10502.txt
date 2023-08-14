@@ -1,0 +1,8 @@
+Übersetzungen
+- Litauische Übersetzung hinzugefügt (danke @g)
+- Aktualisierte Übersetzungen
+
+Fehlerbehebung:
+- Ermöglichen Sie das Scrollen des Info-Bildschirms, wenn der Gerätebildschirm zu klein oder die Schriftart zu groß ist (danke @yuhuitech für die erste Meldung und die anschließende Korrektur)
+
+Bitte geben Sie Feedback oder melden Sie Probleme im Issue-Tracker unter https://github.com/babydots/babydots/issues.
