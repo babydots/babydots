@@ -11,7 +11,7 @@
     <string name="shape">Form</string>
     <string name="colour_scheme">Farbschema</string>
     <string name="app_name">Baby Dots</string>
-    <string name="sleep_timer_description">Wenn die Schaltuhr Null erreicht, wird der Bildschirm gedimmt, die Musik hört auf und der Bildschirm wird bald danach ausgeschaltet.</string>
+    <string name="sleep_timer_description">Wenn der Timer Null erreicht, hört die Musik auf, der Bildschirm wird zunächst gedimmt und sehr bald danach ausgeschaltet.</string>
     <string name="sleep_timer_started_help_text">Berühren Sie die Schaltuhr, um weitere Informationen zu erhalten.</string>
     <string name="stop_timer_button">Stopp</string>
     <plurals name="pref_x_minutes">
@@ -24,8 +24,8 @@
     <string name="resume_dots_button">Fortsetzen</string>
     <string name="sleep_time">Schlafzeit</string>
     <string name="sleep_timer">Schaltuhr</string>
-    <string name="song_vivaldi">Die vier Jahreszeiten – Frühling, Satz 1</string>
+    <string name="song_vivaldi">Die vier Jahreszeiten — Frühling, Satz 1</string>
     <string name="song_canon_in_d_major">Kanon in D-Dur</string>
-    <string name="song_gymnopedie_1">Gymnopedie Br. 1</string>
+    <string name="song_gymnopedie_1">Gymnopédie Br. 1</string>
     <string name="music">Musik</string>
 </resources>
