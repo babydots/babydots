@@ -18,14 +18,14 @@
         <item quantity="many">%d minutes</item>
     </plurals>
     <string name="settings">Paramètres</string>
-    <string name="sleep_timer_description">Quand la minuterie atteindra zéro, l’écran s’assombrira, la musique s’arrêtera et l’écran s’éteindra peu après.</string>
+    <string name="sleep_timer_description">Qaund le minuteur atteint zéro, la musique s\'arrête et l\'écran s\'éteint.</string>
     <string name="stop_sleep_time_message">Relancer les points, retirer la minuterie de veille et quitter le mode veille.</string>
     <string name="back">Retour</string>
     <string name="resume_dots_button">Relancer les points</string>
     <string name="sleep_time">Heure de veille</string>
     <string name="sleep_timer">Minuterie de veille</string>
     <string name="shape">Forme</string>
-    <string name="song_gymnopedie_1">Gymnopédie nº 1</string>
+    <string name="song_gymnopedie_1">Gymnopédie nº&amp;nbsp;1</string>
     <string name="song_canon_in_d_major">Canon en ré majeur</string>
     <string name="song_vivaldi">Les Quatre Saisons – Printemps, Mouvement 1</string>
     <string name="music">Musique</string>
