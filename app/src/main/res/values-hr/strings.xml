@@ -8,7 +8,7 @@
         <item quantity="other">%d minuta</item>
     </plurals>
     <string name="settings">Postavke</string>
-    <string name="sleep_timer_description">Kad odbrojavanje završi, ekran će se zatamniti, glazba će se zaustaviti i ekran će se nakon toga isključiti.</string>
+    <string name="sleep_timer_description">Kad odbrojavanje završi, glazba će se zaustaviti, ekran će se zatamniti i isključiti.</string>
     <string name="stop_sleep_time_message">Nastavi točkice, ukloni odbrojavanje i napusti spavanje.</string>
     <string name="back">Natrag</string>
     <string name="resume_dots_button">Nastavi točkice</string>
