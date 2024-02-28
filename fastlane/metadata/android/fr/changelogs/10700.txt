@@ -1,0 +1,5 @@
+Couleurs arc-en-ciel supplémentaires.
+
+L'ancienne version avait des couleurs comme le cyan et le magenta. Maintenant que notre enfant commence à apprendre les couleurs, nous voulions des couleurs plus « normales » comme l'orange, le bleu, le violet, le jaune. Le système existant est maintenu, ce qui ajoute un nouveau schéma.
+
+Veuillez nous envoyer vos remarques ou signaler les erreurs à l'adresse https://github.com/babydots/babydots/issues.
