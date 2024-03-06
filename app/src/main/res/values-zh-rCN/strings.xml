@@ -1,2 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="speed">速度</string>
+    <string name="shape">形状</string>
+    <string name="mute">静音</string>
+    <string name="about">关于</string>
+    <string name="url_github">https://github.com/babydots/babydots</string>
+    <string name="about_suggestions">建议与问题报告</string>
+    <string name="sleep_timer">睡眠计时器</string>
+    <string name="sleep_time">睡眠时间</string>
+    <string name="back">返回</string>
+    <string name="resume_dots_button">恢复点</string>
+    <string name="stop_timer_button">停止计时器</string>
+    <string name="sleep_timer_started_help_text">点击睡眠计时器以获取更多信息。</string>
+    <string name="sleep_timer_description">当计时结束时，音乐将暂停，屏幕变暗后关闭。</string>
+    <string name="song_vivaldi">四季 — 春，第一乐章</string>
+    <string name="song_canon_in_d_major">D 大调卡农</string>
+    <string name="music">音乐</string>
+    <string name="song_gymnopedie_1">第一乐章（Gymnopédie No. 1）</string>
+    <string name="app_name">宝宝点点</string>
+    <string name="size">大小</string>
+    <string name="colour_scheme">颜色主题</string>
+    <string name="about_credits">鸣谢</string>
+    <string name="settings">设置</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="other">%d 分钟</item>
+    </plurals>
+    <string name="stop_sleep_time_message">恢复点的显示，移除睡眠计时器，并退出睡眠时间。</string>
+    <string name="attribution"><a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">维瓦尔第 - 四季 - 春，第一乐章 - 由 John Harrison w/ 威奇托州立大学室内乐团</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1">Erik Satie - Gymnopedie No 1 - 由 Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J. 帕赫贝尔 - D 大调卡农 - 由 Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) </string>
+</resources>
