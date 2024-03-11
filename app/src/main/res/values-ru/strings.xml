@@ -10,7 +10,7 @@
         <item quantity="other">%d минут</item>
     </plurals>
     <string name="settings">Настройки</string>
-    <string name="sleep_timer_description">Когда таймер достигает нуля, экран тускнеет, музыка приостанавливается, а экран вскоре выключается.</string>
+    <string name="sleep_timer_description">Когда таймер достигает нуля, музыка останавливается, экран тускнеет и выключается.</string>
     <string name="resume_dots_button">Возобновить точки</string>
     <string name="stop_sleep_time_message">Возобновить точки, удалить таймер сна и выйти из режима сна.</string>
     <string name="back">Назад</string>
@@ -29,4 +29,5 @@
     <string name="song_canon_in_d_major">Канон ре мажор</string>
     <string name="song_gymnopedie_1">Гимнопедия No 1</string>
     <string name="music">Музыка</string>
+    <string name="url_github">Не отображается визуально, а скорее URL-адрес, на который вы попадаете при нажатии в разделе \"Предложения и отчеты об ошибках\"</string>
 </resources>
