@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.serwylo.babydots"
         minSdkVersion 22
-        targetSdkVersion 33
-        versionCode 10907
-        versionName "1.9.7"
+        targetSdkVersion 34
+        versionCode 10908
+        versionName "1.9.8"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

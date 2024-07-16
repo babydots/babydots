@@ -1,0 +1,8 @@
+Translations:
+ * Added Chinese (Simplified) (thanks @clonewith)
+ * Updated translations.
+
+Misc:
+ * Target latest Android version.
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
