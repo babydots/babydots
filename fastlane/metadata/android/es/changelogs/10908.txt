@@ -1,0 +1,8 @@
+Traducciones:
+ * Añadido chino (simplificado) (gracias @clonewith)
+ * Traducciones actualizadas.
+
+Misc:
+ * Objetivo última versión de Android.
+
+Por favor, proporciona cualquier comentario o informe de cualquier problema en el rastreador de problemas en https://github.com/babydots/babydots/issues.
