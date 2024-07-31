@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="sleep_timer_started_help_text">Za više informacija dodirni odbrojavanje.</string>
-    <string name="stop_timer_button">Zaustavi odbrojavanje</string>
+    <string name="sleep_timer_started_help_text">Za više informacija dodirni timer za spavanje.</string>
+    <string name="stop_timer_button">Zaustavi timer</string>
     <plurals name="pref_x_minutes">
         <item quantity="one">%d minuta</item>
         <item quantity="few">%d minute</item>
         <item quantity="other">%d minuta</item>
     </plurals>
     <string name="settings">Postavke</string>
-    <string name="sleep_timer_description">Kad odbrojavanje završi, glazba će se zaustaviti, ekran će se zatamniti i isključiti.</string>
-    <string name="stop_sleep_time_message">Nastavi točkice, ukloni odbrojavanje i napusti spavanje.</string>
+    <string name="sleep_timer_description">Kada timer dosegne nulu, glazba će se zaustaviti, ekran će se zatamniti i isključiti.</string>
+    <string name="stop_sleep_time_message">Nastavi s točkicama, ukloni timer i prekini spavanje.</string>
     <string name="back">Natrag</string>
     <string name="resume_dots_button">Nastavi točkice</string>
     <string name="sleep_time">Spavanje</string>
-    <string name="sleep_timer">Odbrojavanje</string>
+    <string name="sleep_timer">Timer za spavanje</string>
     <string name="about_credits">Zasluge</string>
     <string name="about_suggestions">Prijedlozi i javljanje grešaka</string>
     <string name="attribution"><a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">Vivaldi – Četiri godišnja doba – Proljeće, 1. dio – John Harrison i Wichita State University Chamber</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1">Erik Satie – Gymnopedie Br. 1 – Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J. Pachelbel – Kanon u D-duru – Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) </string>
@@ -23,7 +23,7 @@
     <string name="speed">Brzina</string>
     <string name="size">Veličina</string>
     <string name="colour_scheme">Paleta boja</string>
-    <string name="app_name">Dječje točkice</string>
+    <string name="app_name">Baby Dots</string>
     <string name="shape">Oblik</string>
     <string name="music">Glazba</string>
     <string name="song_vivaldi">Četiri godišnja doba – Proljeće, 1. dio</string>
