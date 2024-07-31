@@ -1,0 +1,3 @@
+Ispravaljena greška: Spriječi bebe da otključaju BabyDots prilikom okretanja uređaja (hvala yamattu na prijavi).
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.

@@ -1,0 +1,4 @@
+Dodan je timer za spavanje:
+ * Kada timer dosegne nulu, ekran će se zatamniti, glazba će se zaustaviti, a ekran će se ubrzo nakon toga isključiti.
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.

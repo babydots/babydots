@@ -1,3 +1,3 @@
-Dodaj klasičnu glazbu (standardno je isključeno), poboljšaj korisničko sučelje za prilagodbu.
+Dodana je klasična glazba (standardno je isključena), poboljšano je korisničko sučelje za prilagođavanje.
 
 Pošalji povratne informacije ili prijavi sve probleme u sustavu za praćenje problema na https://github.com/babydots/babydots/issues.

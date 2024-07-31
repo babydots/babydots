@@ -1,0 +1,7 @@
+Prijevodi:
+* Dodan je češki
+* Dodan je španjolski (hvala sguinetti)
+* Dodano je ukrajinski (hvala IhorHordiichuk)
+* Aktualizirani prijevodi (veliko hvala cijeloj zajednici prevoditelja)
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.

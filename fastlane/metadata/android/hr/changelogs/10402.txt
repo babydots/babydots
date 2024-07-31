@@ -1,0 +1,7 @@
+Ispravna informacija o tome koliko je dodira potrebno za otključavanje.
+
+Prijevodi:
+* Dodan je poljski (hvala WaldiS)
+* Aktualizirani prijevodi
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.

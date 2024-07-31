@@ -1,0 +1,6 @@
+Dodano je opcionalno zaključavanje ekrana, za sprečavanje slučajnih dodira uzbuđenih beba.
+
+Prijevodi:
+* Dodan je nizozemski (hvala vistaus)
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.

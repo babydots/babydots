@@ -1,0 +1,5 @@
+Dodatna shema duginih boja.
+
+Postojeća shema je imala boje poput cijana i magente. Budući da naše dijete sada počinje učiti boje, htjeli smo više „normalnih” boja kao što su narančasta, plava, ljubičasta, žuta. Postojeća shema ostaje. Ova funkcija dodaje jednu novu shemu.
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.

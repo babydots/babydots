@@ -1,0 +1,8 @@
+Prijevodi:
+- Dodan je litvanski (hvala @g)
+- Aktualizirani prijevodi
+
+Ispravke grešaka:
+ - Dozvoli pomicanje ekrana s informacijama programa kada je ekran uređaja premalen ili font velik (hvala @yuhuitech na prijavljanju i ispravljanju)
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.

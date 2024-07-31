@@ -1,0 +1,3 @@
+Zabavnija interakcija s točkama s malim prstima. Dodirivanje točki sada povećava točke.
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.

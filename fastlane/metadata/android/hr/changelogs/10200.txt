@@ -1,0 +1,17 @@
+Prijevodi:
+ * Finski (hvala Edanas)
+ * Francuski (hvala Edanas)
+ * Njemački (hvala Edanas)
+ * Talijanski (hvala Edanas)
+ * Norveški Bokmål (hvala kingu)
+ * Santali (hvala Prasanta-Hembram)
+ * Turski (hvala ersen)
+
+Poboljšanja:
+
+ * Nove teme (tamna + neonska)
+ * Pamti odabrane postavke
+ * Wake lock (ne isključuje ekran)
+ * Nasumično određivanje brzine svake točke
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.

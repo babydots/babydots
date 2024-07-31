@@ -1,0 +1,9 @@
+Dodano je opcionalno zaključavanje ekrana, za sprečavanje slučajnih dodira uzbuđenih beba.
+
+Poboljšan je prikaz poruka kada se mnogo puta brzo dodirne gumb za otključavanje.
+
+Prijevodi:
+* Dodan je nizozemski (hvala vistaus)
+* Aktualizirani prijevodi
+
+Pošalji sve povratne informacije ili prijavi probleme u program za praćenje problema na https://github.com/babydots/babydots/issues.
