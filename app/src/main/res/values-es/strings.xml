@@ -4,6 +4,7 @@
     <string name="stop_timer_button">Detener temporizador</string>
     <plurals name="pref_x_minutes">
         <item quantity="one">%d minuto</item>
+        <item quantity="many">%d minutos</item>
         <item quantity="other">%d minutos</item>
     </plurals>
     <string name="settings">Ajustes</string>
