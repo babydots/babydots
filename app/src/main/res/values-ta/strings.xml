@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">குழந்தை புள்ளிகள்</string>
+    <string name="colour_scheme">வண்ணத் திட்டம்</string>
+    <string name="size">அளவு</string>
+    <string name="speed">வேகம்</string>
+    <string name="shape">வடிவம்</string>
+    <string name="mute">முடக்கு</string>
+    <string name="about">பற்றி</string>
+    <string name="url_github">https://github.com/babydots/babydots</string>
+    <string name="attribution">&lt;a href=\"https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin\"&gt;Vivaldi - The நான்கு, நாலடி, நான்கடி Seasons - Spring, Movement 1 - By John Harrison w/ விட்சிட்டா State University Chamber&lt;/a&gt; (&lt;a href=\"https://creativecommons.org/licenses/by/3.0/\"&gt;CC-BY&lt;/a&gt;) &lt;a href=\"https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1 \"&gt; எரிக் சூழ்ச்சி - சிம்னோபீடி எண் 1 - கெவின் மேக்லியோட் எழுதியது &lt;/a&gt; (&lt;a href=\" . பச்செல்பெல் - கேனான் டி மேசர் - கெவின் மேக்லியோட் எழுதியது &lt;/a&gt; (&lt;a href = \"&gt; cc -by &lt;/a&gt;)</string>
+    <string name="about_suggestions">பரிந்துரைகள் மற்றும் பிழை அறிக்கைகள்</string>
+    <string name="about_credits">வரவு</string>
+    <string name="sleep_timer">தூக்க நேரங்குறிகருவி</string>
+    <string name="sleep_time">தூக்க நேரம்</string>
+    <string name="resume_dots_button">புள்ளிகளை மீண்டும் தொடங்குங்கள்</string>
+    <string name="back">பின்</string>
+    <string name="stop_sleep_time_message">புள்ளிகளை மீண்டும் தொடங்குங்கள், தூக்க நேரத்தை அகற்றி, தூக்க நேரத்திலிருந்து வெளியேறவும்.</string>
+    <string name="sleep_timer_description">நேரங்குறிகருவி பூச்சியத்தை அடையும் போது, இசை இடைநிறுத்தப்பட்டு, திரை மங்கப்பட்டு அணைக்கப்படும்.</string>
+    <string name="settings">அமைப்புகள்</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="one">%d மணித்துளி</item>
+        <item quantity="other">%d நிமிடங்கள்</item>
+    </plurals>
+    <string name="stop_timer_button">டைமரை நிறுத்து</string>
+    <string name="sleep_timer_started_help_text">மேலும் தகவலுக்கு தூக்க நேரத்தைத் தொடவும்.</string>
+    <string name="song_vivaldi">நான்கு பருவங்கள் - வேனில், இயக்கம் 1</string>
+    <string name="song_canon_in_d_major">டி மேசரில் நியதி</string>
+    <string name="song_gymnopedie_1">சிம்னோபரேசன் எண் 1</string>
+    <string name="music">இசை</string>
+</resources>
