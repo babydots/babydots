@@ -297,7 +297,7 @@ class AnimatedDots @JvmOverloads constructor(
                val p = Path()
                val sizeFactor = size / 2f
 
-               p.moveTo(x, y + size + 0.9f)
+               p.moveTo(x, y + size * 0.9f)
 
                p.cubicTo(
                    x - size * 2.0f, y + sizeFactor * 0.3f,
