@@ -43,6 +43,7 @@ class AnimatedDots @JvmOverloads constructor(
         Circle,
         Square,
         Triangle,
+        Heart,
     }
 
     var size: Size = Size.Medium
