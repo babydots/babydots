@@ -300,14 +300,14 @@ class AnimatedDots @JvmOverloads constructor(
                p.moveTo(x, y + sizeFactor)
 
                p.cubicTo(
-                   x - size * 1.5f, y + sizeFactor * 0.2f,
-                   x - sizeFactor * 1.5f, y - sizeFactor * 1.3f,
-                   x, y - sizeFactor * 0.3f
+                   x - size * 1.1f, y + sizeFactor * 0.3f,
+                   x - sizeFactor * 1.1f, y - sizeFactor * 1.6f,
+                   x, y - sizeFactor * 0.2f
                )
 
                 p.cubicTo(
-                    x + sizeFactor * 1.5f, y - sizeFactor * 1.3f,
-                    x + size * 1.5f, y + sizeFactor * 0.2f,
+                    x + sizeFactor * 1.1f, y - sizeFactor * 1.6f,
+                    x + size * 1.1f, y + sizeFactor * 0.3f,
                     x, y + sizeFactor
                 )
 
