@@ -13,12 +13,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: set up JDK 11
-      uses: actions/setup-java@v1
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
       with:
         java-version: 11
-    - name: Gradle build
-      run: ./gradlew build
-    - name: Gradle check
+
+    - name: Grant execute permission for Gradle
+      run: chmod +x ./gradlew
+
+    - name: Build with Gradle
+      run: ./gradlew assembleDebug
+
+    - name: Run Gradle checks
       run: ./gradlew check
+
+    - name: Upload all APKs
+      uses: actions/upload-artifact@v4
+      with:
+        name: built-apks
+        path: babydots/build/outputs/apk/**/*.apk
