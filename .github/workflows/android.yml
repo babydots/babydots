@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: built-apks
-        path: babydots/build/outputs/apk/**/*.apk
+        path: '**/*.apk'
