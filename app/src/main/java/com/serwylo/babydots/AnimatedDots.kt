@@ -43,6 +43,7 @@ class AnimatedDots @JvmOverloads constructor(
         Circle,
         Square,
         Triangle,
+        Heart,
     }
 
     var size: Size = Size.Medium
@@ -292,6 +293,27 @@ class AnimatedDots @JvmOverloads constructor(
 
                 canvas.drawPath(p, paint)
             }
+            Shape.Heart -> {
+               val p = Path()
+               val sizeFactor = size / 2f
+
+               p.moveTo(x, y + size * 0.9f)
+
+               p.cubicTo(
+                   x - size * 2.0f, y + sizeFactor * 0.3f,
+                   x - sizeFactor * 1.1f, y - sizeFactor * 1.6f,
+                   x, y - sizeFactor * 0.4f
+               )
+
+                p.cubicTo(
+                    x + sizeFactor * 1.1f, y - sizeFactor * 1.6f,
+                    x + size * 2.0f, y + sizeFactor * 0.3f,
+                    x, y + size * 0.9f
+                )
+
+                p.close()
+                canvas.drawPath(p, paint)
+            }
         }
     }
 
@@ -301,6 +323,7 @@ class AnimatedDots @JvmOverloads constructor(
 
             when (shape) {
                 Shape.Triangle -> isTouchingTriangle(touchPoint, x, y, size)
+                Shape.Heart -> isTouchingSquare(touchPoint, x, y, size) 
                 Shape.Circle -> isTouchingCircle(touchPoint, x, y, size)
                 Shape.Square -> isTouchingSquare(touchPoint, x, y, size)
             }
