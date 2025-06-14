@@ -1,0 +1,11 @@
+New features:
+ * Added heart shape (thanks @alexjyong).
+
+Translations:
+ * Added Tamil (thanks @TamilNeram).
+ * Updated translations.
+
+Misc:
+ * Bump dependencies, target latest Android version.
+
+Please provide any feedback or report any issues on the issue tracker at https://github.com/babydots/babydots/issues.
