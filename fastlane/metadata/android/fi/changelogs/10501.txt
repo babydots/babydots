@@ -1,0 +1,3 @@
+Viankorjaus: Estää vauvoja avaamasta BabyDots-laseja laitetta pyöritettäessä (kiitos yamattille raportoinnista).
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

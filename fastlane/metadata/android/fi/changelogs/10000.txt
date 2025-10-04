@@ -1,0 +1,6 @@
+Baby Dotsin ensimmäinen julkaisu:
+
+* Katso tanssivia pisteitä vauvasi kanssa.
+* Valitse eri kokoisista, väreistä ja nopeuksista.
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

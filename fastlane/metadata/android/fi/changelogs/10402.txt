@@ -1,0 +1,7 @@
+Asianmukainen palaute siitä, kuinka monta kosketusta lukituksen avaamiseen tarvitaan.
+
+Käännökset:
+* Lisätty puolaksi (kiitos WaldiS)
+* Päivitetyt käännökset
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

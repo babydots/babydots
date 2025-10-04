@@ -1,0 +1,6 @@
+Käännökset:
+* Lisätty kroatia (kiitos milotype)
+* Lisätty venäjä (kiitos Kudesu)
+* Päivitetyt käännökset
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

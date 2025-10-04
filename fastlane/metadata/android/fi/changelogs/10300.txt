@@ -1,0 +1,4 @@
+Lisätty uniajastin:
+* Kun ajastin saavuttaa nollan, näyttö himmenee, musiikki keskeytyy ja näyttö sammuu pian sen jälkeen.
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

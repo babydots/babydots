@@ -1,0 +1,8 @@
+Käännökset:
+- Lisätty liettuankielinen käännös (kiitos @g)
+- Päivitetyt käännökset
+
+Viankorjaukset:
+- Tietoja-näytön vierittäminen on sallittua, kun laitteen näyttö on liian pieni tai fontti on liian suuri (kiitos @yuhuitech ensimmäisestä raportoinnista ja korjauksesta)
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

@@ -1,0 +1,17 @@
+Käännökset:
+* Suomi (kiitos Edanas)
+* Ranska (kiitos Edanas)
+* Saksa (kiitos Edanas)
+* Italia (kiitos Edanas)
+* Norja (bokmål) (kiitos kingu)
+* Santali (kiitos Prasanta-Hembram)
+* Turkki (kiitos ersen)
+
+Parannukset:
+
+* Kaksi uutta teemaa (tumma + neon)
+* Muista valitut asetukset
+* Herätyslukko (ei sammuta näyttöä)
+* Satunnainen pisteen nopeus
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

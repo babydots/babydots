@@ -1,0 +1,6 @@
+Lisää valinnainen näytön lukitus, joka estää innostuneiden vauvojen tahattomat kosketukset.
+
+Käännökset:
+* Lisätty hollanniksi (kiitos vistaus)
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

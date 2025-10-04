@@ -1,0 +1,5 @@
+Lisätty sateenkaaren värimaailma.
+
+Aiemmin käytössä oli värejä, kuten syaani ja magenta. Nyt kun lapsemme alkaa oppia värejä, halusimme lisää "normaaleja" värejä, kuten oranssia, sinistä, violettia ja keltaista. Nykyinen värimaailma säilytetään, ja tähän lisätään uusi värimaailma.
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

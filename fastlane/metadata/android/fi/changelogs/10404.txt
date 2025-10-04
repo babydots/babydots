@@ -1,0 +1,7 @@
+Käännökset:
+* Lisätty tšekki
+* Lisätty espanja (kiitos sguinetti)
+* Lisätty ukraina (kiitos IhorHordiichuk)
+* Päivitetyt käännökset (suuret kiitokset koko kääntäjien yhteisölle)
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.

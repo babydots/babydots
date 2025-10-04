@@ -1,0 +1,3 @@
+Lisää klassinen musiikki (oletusarvoisesti mykistetty), paranna käyttöliittymää mukauttamista varten.
+
+Anna palautetta tai ilmoita vioista vianseurantajärjestelmässä osoitteessa https://github.com/babydots/babydots/issues.
