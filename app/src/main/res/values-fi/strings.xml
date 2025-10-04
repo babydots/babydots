@@ -18,7 +18,7 @@
         <item quantity="other">%d minuuttia</item>
     </plurals>
     <string name="settings">Asetukset</string>
-    <string name="sleep_timer_description">Kun ajastin saavuttaa nollan, näyttö himmenee, musiikki pysähtyy ja näyttö sammuu pian sen jälkeen.</string>
+    <string name="sleep_timer_description">Kun ajastin saavuttaa nollan, musiikki pysähtyy, näyttö himmenee ja sammuu.</string>
     <string name="back">Takaisin</string>
     <string name="resume_dots_button">Jatka</string>
     <string name="sleep_time">Nukkumaanmenoaika</string>
