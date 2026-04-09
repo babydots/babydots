@@ -1,3 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Baby Dots</string>
+    <string name="colour_scheme">Skema Warna</string>
+    <string name="size">Ukuran</string>
+    <string name="speed">Kecepatan</string>
+    <string name="shape">Bentuk</string>
+    <string name="mute">Bisukan</string>
+    <string name="about">Tentang</string>
+    <string name="url_github">https://github.com/babydots/babydots</string>
+    <string name="attribution"><a href="https://freemusicarchive.org/music/John_Harrison_with_the_Wichita_State_University_Chamber_Players/The_Four_Seasons_Vivaldi/01_-_Vivaldi_Spring_mvt_1_Allegro_-_John_Harrison_violin">Vivaldi - The Four Seasons - Spring, Movement 1 - Oleh John Harrison w/ Wichita State University Chamber</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) \u0020 \u0020 \u0020 \u0020 \u0020 <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Gymnopedie_No_1">Erik Satie - Gymnopedie No 1 - Oleh Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) \u0020 \u0020 \u0020 \u0020 \u0020 <a href="https://freemusicarchive.org/music/Kevin_MacLeod/Classical_Sampler/Canon_in_D_Major">J. Pachelbel - Canon in D Major - Oleh Kevin MacLeod</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>) \u0020 \u0020 </string>
+    <string name="about_suggestions">Saran dan laporan bug</string>
+    <string name="about_credits">Kredit</string>
+    <string name="sleep_timer">Pengatur Waktu Tidur</string>
+    <string name="sleep_time">Waktu tidur</string>
+    <string name="resume_dots_button">Lanjutkan titik-titik</string>
+    <string name="back">Kembali</string>
+    <string name="stop_sleep_time_message">Lanjutkan titik-titik, hapus pengatur waktu tidur, dan keluar dari waktu tidur.</string>
+    <string name="sleep_timer_description">Ketika pengatur waktu mencapai nol, musik berhenti, layar meredup dan mati.</string>
+    <string name="settings">Pengaturan</string>
+    <plurals name="pref_x_minutes">
+        <item quantity="other">%d menit</item>
+    </plurals>
+    <string name="stop_timer_button">Hentikan pengatur waktu</string>
+    <string name="sleep_timer_started_help_text">Sentuh pengatur waktu tidur untuk informasi selengkapnya.</string>
+    <string name="song_vivaldi">The Four Seasons — Spring, Movement 1</string>
+    <string name="song_canon_in_d_major">Canon in D major</string>
+    <string name="song_gymnopedie_1">Gymnopédie No. 1</string>
+    <string name="music">Musik</string>
 </resources>
